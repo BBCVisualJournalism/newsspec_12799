@@ -1,6 +1,6 @@
 @import "./../../bower_components/normalize-scss/_normalize.scss";
 @import "./../../bower_components/news-vj-css-defaults/css/main";
-@import "./../../bower_components/sharetools/bin/templates/dropdown/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
+@import "./../../bower_components/sharetools/bin/templates/buttons/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
 
 // YOUR APPLICATION CSS GOES BELOW
 
@@ -13,9 +13,9 @@
 }
 
 @import "hero";
-@import "section1";
+@import "section1"; //intro section
 @import "ticker";
-@import "sections";
+@import "sections"; //all other sections
 
 .bbc-news-vj-wrapper--js-enabled {
     // @media (min-width: 1008px) {

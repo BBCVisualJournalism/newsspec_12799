@@ -47,8 +47,8 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'video', 'pubsu
         setAutopauseEvent(i);
     }
 
-    var shareTitle   = 'Share this content',
-        shareMessage = 'This is my share message',
+    var shareTitle   = 'Share this content',       //vocabs here
+        shareMessage = 'This is my share message', //vocabs here
         config = {
             holderEl: '.tmpShareToolsHolder',
             label: 'Share this page',
