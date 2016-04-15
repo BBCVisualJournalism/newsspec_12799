@@ -5,45 +5,23 @@
 // YOUR APPLICATION CSS GOES BELOW
 
 .bbc-news-vj-wrapper {
+    position:relative;
+}
 
-    // Developer:
-    //  SASS placeholder selectors (i.e. `%button--standard`) mean that the corresponding CSS
-    //  is only pulled into our CSS file if we use `@extend`.
-    //  The CSS for the buttons, radio inputs and checkboxes amount to around 10KB, so only
-    //  include these if you need them.
+.bbc-news-vj-grid-wrapper {
+    position: relative;
+}
 
-    input[type="submit"],
-    input[type="button"],
-    button {
-        @extend %button--standard;
+@import "hero";
+@import "section1";
+@import "ticker";
+@import "sections";
 
-        &:disabled {
-            @extend %button--inactive;
-        }
-
-        &.button--prev {
-            @extend %button--cta-reverse;
-        }
-
-        &.button--next {
-            @extend %button--cta;
-        }
-
-        &.button--reset {
-            @extend %button--reset;
-        }
-    }
-
-    select {
-        @extend %form--select;
-    }
-
-    input[type="checkbox"] {
-        @extend %form--checkbox;
-    }
-
-    input[type="radio"] {
-        @extend %form--radio;
-    }
-
+.bbc-news-vj-wrapper--js-enabled {
+    // @media (min-width: 1008px) {
+    //     padding-top:60%;
+    // }
+    // .bbc-news-vj-video-wrapper--hero {
+    //     display: inherit;
+    // }
 }

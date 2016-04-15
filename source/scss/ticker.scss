@@ -1,0 +1,27 @@
+.bbc-news-vj-wrapper .ticker {
+    background-color: #333;
+    color: #fff;
+    margin: 25px 0 25px 0;
+    min-height: 90px;
+    padding:6px 20px 6px 20px;
+    width: 100%;
+    &:before {
+        content: '';
+        background-image: url(../img/1_death/buildings.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 193.5px;
+        height: 64.5px;
+        position: absolute;
+        top: -48px;
+    }
+    &__title-one {
+        font-size: 1.5em;
+    }
+    &__title-two {
+        font-size: 1.5em;
+    }
+    &__title__stat {
+        font-weight: 800;
+    }
+}

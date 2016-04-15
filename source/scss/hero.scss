@@ -1,0 +1,70 @@
+.hero {
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg');
+    height: 0;
+    padding-bottom: 45%;
+    position: relative;
+   @media (max-aspect-ratio: 1/1) {
+        padding-bottom: 67%;
+    }
+
+    @media (min-width: 320px) and (max-aspect-ratio: 8/10) {
+        padding-bottom: 100%;
+    }
+
+    @media (min-width: 480px) and (max-aspect-ratio: 1/1) {
+        padding-bottom: 67%;
+    }
+
+    @media (min-width: 1008px) {
+        padding-bottom: 35%;
+    }
+
+    .bbc-news-vj-grid-wrapper {
+        position: static;
+    }
+
+    &__titles {
+        bottom: 20px;
+        color: #fff;
+        // text-shadow: 0.0625em 0.0625em 0.25em #000;
+        margin-top:40px;
+        padding-bottom: 1.25em;
+        position:absolute;
+        @media (min-width: 1008px) {
+            text-shadow: none;
+        }
+    }
+
+    &__heading {
+        font-size: 2.5em;
+        line-height: 1;
+        margin: 0;
+
+        @media (min-width: 600px) {
+            // font-size: 4.5em;
+        }
+
+        @media (min-width: 1008px) {
+            // font-size: 3.5em;
+        }
+    }
+
+    .hero__subheading {
+        font-size: 1.25em;
+        line-height: 1;
+        margin: 0;
+        margin-top: 0.5em;
+
+        @media (min-width: 600px) {
+            // font-size: 1.25em;
+        }
+
+        @media (min-width: 1280px) {
+            // font-size: 1.5em;
+        }
+    }
+}

@@ -1,8 +1,51 @@
-define(['wrapper', 'ShareTools', 'ShareToolsTemplate', 'buttons'], function (wrapper, ShareTools, ShareTemplate, exampleButtons) {
+define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'video', 'pubsub', 'progressiveEnhancement'], function (wrapper, $, ShareTools, ShareTemplate, VideoPlayer, pubsub, progressiveEnhancement) {
 
-    console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
+    // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
 
-    exampleButtons.init();
+    var version = '0.1.0';
+
+    var videoSelectors = [
+        '#bbc-news-vj-video--drone',
+        '#bbc-news-vj-video--lesbos',
+        '#bbc-news-vj-video--undertaker'
+    ];
+
+    var videoPids = [
+        'p03lsq25',
+        'p03lsq25',
+        'p03lsq25'
+    ];
+
+    var videoHoldingImgs = [
+        'http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg' + '?v=' + version,
+        'http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/sharon.jpg' + '?v=' + version,
+        'http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/daniele.jpg' + '?v=' + version
+    ];
+
+    //                  videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled
+    var videoPlayers = [
+        new VideoPlayer(videoSelectors[0], videoPids[0], videoHoldingImgs[0], false, '', true, true),
+        new VideoPlayer(videoSelectors[1], videoPids[1], videoHoldingImgs[1], false, '', true, true),
+        new VideoPlayer(videoSelectors[2], videoPids[2], videoHoldingImgs[2], false, '', true, true)
+    ];
+
+    function pauseVideo(index) {
+        var videosToPause = videos.slice(0); // clone the videos array
+        videosToPause.splice(index, 1);
+        for (var i = 0; i < videosToPause.length; i++) {
+            videosToPause[i].pause();
+        }
+    }
+
+    function setAutopauseEvent(videoIndex) {
+        $.on('video-playing-' + videoSelectors[videoIndex], function () {
+            pauseVideo(videoIndex);
+        });
+    }
+
+    for (var i = 0; i < videoSelectors.length; i++) {
+        setAutopauseEvent(i);
+    }
 
     var shareTitle   = 'Share this content',
         shareMessage = 'This is my share message',
@@ -43,29 +86,34 @@ define(['wrapper', 'ShareTools', 'ShareToolsTemplate', 'buttons'], function (wra
 
     var shareObject = new ShareTools(config);
 
-    wrapper.onOptimizedScroll(function (scrollTop) {
-        console.log('Optimized scroll.', scrollTop);
-    });
+    // wrapper.onOptimizedScroll(function (scrollTop) {
+    //     console.log('Optimized scroll.', scrollTop);
+    // });
 
-    wrapper.onRawScroll(function (scrollTop) {
-        console.log('Raw scroll.', scrollTop);
-    });
+    // wrapper.onRawScroll(function (scrollTop) {
+    //     console.log('Raw scroll.', scrollTop);
+    // });
 
-    setTimeout(function () {
-        wrapper.callIstats({
-            actionType: 'panel-clicked',
-            actionName: 'newsspec-interaction',
-            viewLabel:  3
-        });
-    }, 500);
-    setTimeout(function () {
-        wrapper.callIstats({
-            actionType: 'app loaded',
-            actionName: 'newsspec-nonuser',
-            viewLabel:  true
-        });
-    }, 2000);
+    // setTimeout(function () {
+    //     wrapper.callIstats({
+    //         actionType: 'panel-clicked',
+    //         actionName: 'newsspec-interaction',
+    //         viewLabel:  3
+    //     });
+    // }, 500);
+
+    // setTimeout(function () {
+    //     wrapper.callIstats({
+    //         actionType: 'app loaded',
+    //         actionName: 'newsspec-nonuser',
+    //         viewLabel:  true
+    //     });
+    // }, 2000);
 
     wrapper.markPageAsLoaded();
+
+    progressiveEnhancement.init();
+
+
 
 });
