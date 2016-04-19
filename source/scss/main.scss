@@ -12,10 +12,12 @@
     position: relative;
 }
 
+@import "_mediaquery";
 @import "hero";
 @import "section1"; //intro section
-@import "ticker";
 @import "sections"; //all other sections
+@import "charts"; //all other sections
+@import "credits";
 
 .bbc-news-vj-wrapper--js-enabled {
     // @media (min-width: 1008px) {

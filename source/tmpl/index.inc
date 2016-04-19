@@ -1,8 +1,7 @@
 <%= include("hero.tmpl") %>
-<%= include("section1.tmpl") %>
-<%= include("ticker.tmpl") %>
-<%= include("section2.tmpl") %>
-<%= include("section3.tmpl") %>
-<%= include("section4.tmpl") %>
-<%= include("section5.tmpl") %>
+<%= include("section1_intro.tmpl") %>
+<%= include("section2_drone-graveyard.tmpl") %>
+<%= include("section3_case-study.tmpl") %>
+<%= include("section4_finding-relatives.tmpl") %>
+<%= include("section5_undertaker.tmpl") %>
 <%= include("credits.tmpl") %>

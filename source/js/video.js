@@ -2,15 +2,16 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
 
     var Video = function (videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled) {
         this.mp = null;
+        this.fullFeatureWidth = 1008;
         this.selector = videoContainerSelector;
         this.$videoContainer = $(this.selector);
         this.videoEl = bump(this.selector).find('.bbc-news-vj-video__player');
         this.vpid = vpid;
         this.holdingImage = holdingImage;
-        this.autoplay = window.innerWidth < 1008 ? false : autoplay;
+        this.autoplay = window.innerWidth < this.fullFeatureWidth ? false : autoplay;
         this.$overlay = this.$videoContainer.find('.bbc-news-vj-video__overlay');
         this.embedURL = embedURL;
-        this.ctaBreakpoint = 800;
+        this.ctaBreakpoint = this.fullFeatureWidth;
         this.ctaEnabled = ctaEnabled;
         this.controlsEnabled = controlsEnabled;
         this.firstPlay = true;
@@ -65,7 +66,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                 }
             });
             wrapper.onRawScroll(function (scrollTop){
-                if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--hero' && !utils.isElementInViewport(self.$videoContainer)) {
+                if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--drone' && !utils.isElementInViewport(self.$videoContainer)) {
                     self.mp.pause();
                 }
             });
@@ -93,7 +94,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                     actionType: 'video-played',
                     viewLabel: videoTitle
                 });
-                if (this.$videoContainer.attr('id') === 'bbc-news-vj-video--hero' && !utils.isElementInViewport(this.$videoContainer)) {
+                if (this.$videoContainer.attr('id') === 'bbc-news-vj-video--drone' && !utils.isElementInViewport(this.$videoContainer)) {
                     this.mp.pause();
                 }
             }
@@ -112,7 +113,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
         hideBgImg: function () {
             //remove bg img of player container when player is loaded
             this.$videoContainer.css('background-image', 'none');
-            $('.bbc-news-vj-video-wrapper--hero').css('background-image', 'none');
+            $('.bbc-news-vj-video-wrapper--drone').css('background-image', 'none');
         },
 
         videoEnded: function () {

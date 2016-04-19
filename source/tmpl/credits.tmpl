@@ -1,17 +1,40 @@
-<div class="ns_creditsHolder">
-    <div class="ns_creditsLineThin"></div>
-    <h2>Credits</h2>
-    <p>Well done to these people</p>
+<div class="section section--footer" id="section--footer">
 
-    <div class="tmpShareToolsHolder">Loading sharetools...</div>
+    <div class="bbc-news-vj-grid-wrapper">
+        <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+            <div class="ns_creditsLineThin"></div>
+            <h2><%= credits_title %></h2>
+            <p><%= credits %></p>
 
-    <div class="ns_onwardJourneys">
-        <div class="ns_creditsLineThick"></div>
-        <h2>More on this story</h2>
-        <div class="ns_creditsLineThin"></div>
-        <a href="http://google.com" target="_top">related link 1</a>
-        <a href="" target="_top">related link 2</a>
-        <a href="" target="_top">related link 3</a>
-        <span>The BBC is not responsible for the content of external Internet sites</span>
+            <div class="share__holder">Share this page</div>
+
+            <div class="ns_onward-journeys">
+                <div class="ns_creditsLineThick"></div>
+                <h2><%= onward_journeys_title %></h2>
+                <div class="ns_creditsLineThin"></div>
+
+                <div class="ns_onward-journeys-inner">
+                    <ul>
+                        <li>
+                            <a href="<%= onward_journey_url_1 %>">
+                                <span><%= onward_journey_text_1 %></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<%= onward_journey_url_2 %>">
+                                <span><%= onward_journey_text_2 %></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<%= onward_journey_url_3 %>">
+                                <span><%= onward_journey_text_3 %></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p style="clear:both;">The BBC is not responsible for the content of external Internet sites</p>
+        </div>
     </div>
+
 </div>

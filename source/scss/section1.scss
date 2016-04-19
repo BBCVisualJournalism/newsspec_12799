@@ -1,3 +1,7 @@
+.section--one {
+    margin-top:40px;
+}
+
 .bbc-news-vj-wrapper .meta-list {
     display: block;
     font-size: 14px;
@@ -60,6 +64,29 @@
     }
 }
 
-.intro {
+.bbc-news-vj-wrapper .intro {
     font-weight: bold;
+}
+
+.bbc-news-vj-wrapper .hero-stat {
+    width: 100%;
+    &:before {
+        content: '';
+        // background-image: url(../img/1_death/buildings.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 193.5px;
+        height: 64.5px;
+        position: absolute;
+        top: -48px;
+    }
+    &__title-one {
+        font-size: 1.25em;
+    }
+    &__title-two {
+        font-size: 1.25em;
+    }
+    &__title--stat {
+        font-weight: 800;
+    }
 }
