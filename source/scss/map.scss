@@ -1,0 +1,8 @@
+.section {
+    .graveyard-map {
+        border: 1px dashed red;
+        &__source {
+            font-weight: bold;
+        }
+    }
+}

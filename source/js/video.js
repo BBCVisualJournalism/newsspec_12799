@@ -2,7 +2,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
 
     var Video = function (videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled) {
         this.mp = null;
-        this.fullFeatureWidth = 1008;
+        this.fullFeatureWidth = 800;
         this.selector = videoContainerSelector;
         this.$videoContainer = $(this.selector);
         this.videoEl = bump(this.selector).find('.bbc-news-vj-video__player');
