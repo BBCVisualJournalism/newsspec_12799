@@ -1,17 +1,17 @@
-<div class="section section--four"  id="section--four">
+<section class="section section--four"  id="section--four">
     <div class="bbc-news-vj-grid-wrapper">
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <h2><%= section4_title %></h2>
             <p><%= section4_para_1 %></p>
         </div>
-        <div style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
+        <div class="finding-lost-relatives__flowchart" id="finding-lost-relatives__flowchart" style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
             <h3>IMAGE/FLOWCHAT/DIAGRAM GOES HERE</h3>
         </div>
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section4_para_2 %></p>
             <p><%= section4_para_3 %></p>
         </div>
-        <div class="responsive-img__container">
+        <div class="lesbos-map__image" id="lesbos-map__image">
             <picture>
                 <source
                     media="(min-width: 1024px)"
@@ -25,16 +25,16 @@
                     media="(max-width: 751px)"
                     srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg,
                             <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x">
-                <img class="responsive-img__fallback-img"
+                <img class="lesbos-map__image__fallback"
                      src="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg"
                      srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x"
                      alt="< %= section_2_map_alt_text % >">
             </picture>
         </div>
-        <div style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
+        <div class="boat__image" id="boat__image" style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
             <h3>BOAT IMAGE GOES HERE</h3>
         </div>
     </div>
 
-</div>
+</section>
 
