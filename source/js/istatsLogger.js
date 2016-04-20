@@ -77,7 +77,7 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
                         viewLabel: true
                     };
                     // console.log(istatsInfo);
-                    // wrapper.callIstats(istatsInfo);
+                    wrapper.callIstats(istatsInfo);
                 }
             }
         }

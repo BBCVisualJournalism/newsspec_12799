@@ -100,7 +100,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                     actionType: 'video-played',
                     viewLabel: videoTitle
                 };
-                console.log(istatsInfo);
+                // console.log(istatsInfo);
                 wrapper.callIstats(istatsInfo);
                 if (this.$videoContainer.attr('id') === 'bbc-news-vj-video--drone' && !utils.isElementInViewport(this.$videoContainer)) {
                     this.mp.pause();
@@ -134,7 +134,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                     actionType: 'video-ended',
                     viewLabel: videoTitle
                 };
-                console.log(istatsInfo);
+                // console.log(istatsInfo);
                 wrapper.callIstats(istatsInfo);
             }
         },
