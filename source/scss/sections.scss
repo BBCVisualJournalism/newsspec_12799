@@ -7,27 +7,6 @@
         @media (min-width: 800px) {
             margin-bottom: 0;
         }
-
-        //this is for video as hero img
-        // &--drone {
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     background-size: contain;
-        //     background-image: url(../img/976xsenade47.jpg);
-        //     @media (min-width: 1008px) {
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //         background-size: contain;
-        //         background-image: url(../img/976xcecesinkde27.jpg);
-        //         position: absolute;
-        //         top: 0;
-        //         left: 0;
-        //         width: 100%;
-        //         max-width: 100%;
-        //         margin: 0;
-        //         padding: 0;
-        //     }
-        // }
     }
 
     .bbc-news-vj-video {
@@ -133,4 +112,14 @@
             }
         }
     }
+
+    .responsive-img__container {
+        margin-bottom:2em;
+        padding:0;
+        width:100%;
+    }
+    .responsive-img__fallback-img {
+        margin: 0 auto;
+    }
+
 }
