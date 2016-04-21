@@ -95,7 +95,7 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
 //*------------------------------- map stuff ------------------------------- */
 
     function initMaps() {
-        var $map1 = $('#graveyard-map--one');
+        var $map1 = $('#graveyard-map--one__container');
 
         function removeMap(){
             if (window.innerWidth < 1008){
