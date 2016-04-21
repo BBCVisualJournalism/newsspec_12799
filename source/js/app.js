@@ -33,7 +33,7 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
         ];
 
         function pauseVideo(index) {
-            var videosToPause = videos.slice(0); // clone the videos array
+            var videosToPause = videoPlayers.slice(0); // clone the videos array
             videosToPause.splice(index, 1);
             for (var i = 0; i < videosToPause.length; i++) {
                 videosToPause[i].pause();
