@@ -95,10 +95,19 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
 //*------------------------------- map stuff ------------------------------- */
 
     function initMaps() {
-        var map1 = $('#graveyard-map1');
-        console.log(window.innerWidth,
-        documentElement.clientWidth,
-        $(window).width());
+        var $map1 = $('#graveyard-map--one');
+
+        function removeMap(){
+            if (window.innerWidth < 1008){
+                $map1.empty();
+                $map1.remove();
+            }
+        }
+
+        removeMap();
+        $(window).resize(function() {
+            removeMap();
+        });
     }
 
 

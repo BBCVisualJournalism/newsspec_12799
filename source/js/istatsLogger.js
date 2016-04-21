@@ -16,8 +16,16 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#section--two'),
             reached: false
         },
-        'graveyard-map': {
-            element: $('#graveyard-map'),
+        'graveyard-map--one': {
+            element: $('#graveyard-map--one'),
+            reached: false
+        },
+        'graveyard-map--two': {
+            element: $('#graveyard-map--two'),
+            reached: false
+        },
+        'graveyard-map--three': {
+            element: $('#graveyard-map--three'),
             reached: false
         },
         'section-three': {
