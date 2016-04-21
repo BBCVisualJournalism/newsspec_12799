@@ -89,15 +89,19 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
 
         onPlaying: function () {
             this.hideOverlay();
-            $.emit('video-playing-' + this.selector);
             if (this.firstPlay) {
                 this.firstPlay = false;
                 var videoTitle = this.$videoContainer.find('.bbc-news-vj-video__overlay__text__title').text();
-                wrapper.callIstats({
+                if (!videoTitle){
+                    videoTitle = 'drone-video';
+                }
+                var istatsInfo = {
                     actionName: 'newsspec-interaction',
                     actionType: 'video-played',
                     viewLabel: videoTitle
-                });
+                };
+                // console.log(istatsInfo);
+                wrapper.callIstats(istatsInfo);
                 if (this.$videoContainer.attr('id') === 'bbc-news-vj-video--drone' && !utils.isElementInViewport(this.$videoContainer)) {
                     this.mp.pause();
                 }
@@ -125,11 +129,13 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             if (this.firstEnded) {
                 this.firstEnded = false;
                 var videoTitle = this.$videoContainer.find('.bbc-news-vj-video__overlay__text__title').text();
-                wrapper.callIstats({
+                var istatsInfo = {
                     actionName: 'newsspec-interaction',
                     actionType: 'video-ended',
                     viewLabel: videoTitle
-                });
+                };
+                // console.log(istatsInfo);
+                wrapper.callIstats(istatsInfo);
             }
         },
 

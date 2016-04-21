@@ -1,30 +1,66 @@
 define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
     var sectionElements = {
-        'hero': {
+        'section-hero': {
             element: $('#section--hero'),
             reached: false
         },
-        'one': {
+        'section-one': {
             element: $('#section--one'),
             reached: false
         },
-        'two': {
+        'drone-video': {
+            element: $('#bbc-news-vj-video--drone'),
+            reached: false
+        },
+        'section-two': {
             element: $('#section--two'),
             reached: false
         },
-        'three': {
+        'graveyard-map': {
+            element: $('#graveyard-map'),
+            reached: false
+        },
+        'section-three': {
             element: $('#section--three'),
             reached: false
         },
-        'four': {
+        'case-study-image': {
+            element: $('#case-study__image'),
+            reached: false
+        },
+        'lesbos-video': {
+            element: $('#bbc-news-vj-video--lesbos'),
+            reached: false
+        },
+        'section-four': {
             element: $('#section--four'),
             reached: false
         },
-        'five': {
+        'lost-relatives-flowchart': {
+            element: $('#finding-lost-relatives__flowchart'),
+            reached: false
+        },
+        'lesbos-map-image': {
+            element: $('#lesbos-map__image'),
+            reached: false
+        },
+        'boat-image': {
+            element: $('#boat__image'),
+            reached: false
+        },
+        'section-five': {
             element: $('#section--five'),
             reached: false
         },
-        'footer': {
+        'undertaker-video': {
+            element: $('#bbc-news-vj-video--undertaker'),
+            reached: false
+        },
+        'charts': {
+            element: $('#section--five__chart__container'),
+            reached: false
+        },
+        'section-footer': {
             element: $('#section--footer'),
             reached: false
         }
@@ -35,13 +71,13 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             if (utils.isElementInViewport(sectionElements[key].element)) {
                 if (!sectionElements[key].reached) {
                     sectionElements[key].reached = true;
-                    var istatsObj = {
+                    var istatsInfo = {
                         actionName: 'newsspec-interaction',
-                        actionType: 'section-' + key + '-reached',
+                        actionType: '' + key + '-reached',
                         viewLabel: true
                     };
-                    // console.log(istatsObj);
-                    wrapper.callIstats(istatsObj);
+                    // console.log(istatsInfo);
+                    wrapper.callIstats(istatsInfo);
                 }
             }
         }
@@ -51,13 +87,13 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
         $('.share__tool').on('click', function () {
             var parent = $(this).parents('.bbc-news-vj-sharetools');
             var shareToolsIndex = parent.attr('id').split('--')[1];
-            var istatsObj = {
+            var istatsInfo = {
                 actionName: 'newsspec-interaction',
                 actionType: 'user-shared',
                 viewLabel: shareToolsIndex
             };
-            // console.log(shareToolsIndex);
-            wrapper.callIstats(istatsObj);
+            // console.log(istatsInfo);
+            wrapper.callIstats(istatsInfo);
         });
     };
 
