@@ -92,6 +92,16 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
     }
 
 
+//*------------------------------- map stuff ------------------------------- */
+
+    function initMaps() {
+        var map1 = $('#graveyard-map1');
+        console.log(window.innerWidth,
+        documentElement.clientWidth,
+        $(window).width());
+    }
+
+
 //*------------------------------- other stuff ------------------------------- */
     // wrapper.onOptimizedScroll(function (scrollTop) {
     //     console.log('Optimized scroll.', scrollTop);
@@ -123,6 +133,7 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
     function init(){
         initVideo();
         initShareTools();
+        initMaps();
     }
 
     istatsLogger.init();
