@@ -29,39 +29,41 @@
 
     &__titles {
         background-color: #fff;
+        bottom:0;
         color: #000;
         // text-shadow: 0.0625em 0.0625em 0.25em #000;
-        font-size: 0.8em;
-        padding:18px;
-        position:absolute;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        bottom:0;
-        max-width:60%;
+        font-size: 0.9em;
+        left: 15px;
+        right: 15px;
         margin:0 auto;
-        @media (min-width: 375px) {
+        padding:18px;
+        padding-bottom:0;
+        position:absolute;
+        @media (min-width: 280px) {
             max-width:290px;
-            text-shadow: none;
+        }
+        @media (min-width: 350px) {
+            max-width:375px;
         }
         @media (min-width: 415px) {
-            max-width:305px;
-            text-shadow: none;
+            max-width:385px;
         }
         @media (min-width: 545px) {
-            max-width:375px;
-            text-shadow: none;
+            max-width:515px;
         }
         @media (min-width: 600px) {
-            font-size: 0.9em;
-            max-width:465px;
-            text-shadow: none;
+            max-width:560px;
+        }
+        @media (min-width: 700px) {
+            font-size: 1em;
+            max-width:600px;
+            padding:22px;
         }
         @media (min-width: 1008px) {
-            font-size: 1em;
-            text-shadow: none;
-            max-width:620px;
+            max-width:630px;
+        }
+        @media (min-width: 1280px) {
+            max-width:705px;
         }
     }
 
