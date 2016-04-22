@@ -92,6 +92,25 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
     }
 
 
+//*------------------------------- map stuff ------------------------------- */
+
+    function initMaps() {
+        var $map1 = $('#graveyard-map--one__container');
+
+        function removeMap(){
+            if (window.innerWidth < 1008){
+                $map1.empty();
+                $map1.remove();
+            }
+        }
+
+        removeMap();
+        $(window).resize(function() {
+            removeMap();
+        });
+    }
+
+
 //*------------------------------- other stuff ------------------------------- */
     // wrapper.onOptimizedScroll(function (scrollTop) {
     //     console.log('Optimized scroll.', scrollTop);
@@ -123,6 +142,7 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
     function init(){
         initVideo();
         initShareTools();
+        initMaps();
     }
 
     istatsLogger.init();

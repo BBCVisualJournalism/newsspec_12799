@@ -1,8 +1,173 @@
 .section {
     .graveyard-map {
-        border: 1px dashed red;
+        position: relative;
+        max-width: 1008px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: 1px solid red;
+        text-align:center;
+        margin-bottom:50px;
+        padding-top:56.25%;
+        &__overlay{
+            background-color:#aa0000;
+            padding-bottom:15%;
+            position: absolute;
+            top:0;
+            left:0;
+            width:125px;
+        }
+        &--one {
+
+        }
+        &--two {
+
+        }
+        &--three {
+
+        }
         &__source {
             font-weight: bold;
+            position: absolute;
+            margin-top:-24px;
+            margin-left:4px;
         }
+        &__title {
+            &__text{
+                margin-bottom:0;
+            }
+            &__subtext{
+                margin-top:10px;
+            }
+        }
+        &__subtitle {
+        }
+        &__stats {
+            float: left;
+            font-size: 0.8em;
+            line-height:0.75em;
+            margin-right: 20px;
+            @media (min-width: 600px) {
+                font-size: 1em;
+            }
+            &__number {
+                font-size:1.5em;
+                font-weight:bold;
+                margin:0;
+                margin-bottom:-20px;
+                &--one {
+                    color: #ff7700;
+                }
+                &--two {
+                    color: #ff7700;
+                }
+                &--three {
+
+                }
+                &--four {
+
+                }
+            }
+            &--one {
+
+            }
+            &--two {
+
+            }
+            &--three {
+
+            }
+            &--four {
+
+            }
+        }
+        &__footer {
+            font-size:0.9em;
+            margin-top:6em;
+            padding:6px;
+            padding-bottom:18px;
+            position: relative;
+            text-align:left;
+            &__title {
+                font-weight: bold;
+                position: absolute;
+                top: -5em;
+                width: 130px;
+                @media (min-width:600px) {
+                    width:150px;
+                }
+                @media (min-width:1280px) {
+                    width:150px;
+                }
+            }
+            &__scale {
+                margin-right:26px;
+                position: relative;
+                text-align:center;
+                &--one {
+                    margin-left:100px;
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 40px;
+                        position: absolute;
+                        top: -1.075em;
+                        left: -7px;
+                    }
+                }
+                &--two {
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 70px;
+                        position: absolute;
+                        top: -1.0125em;
+                        left: -13px;
+                    }
+                }
+                &--three {
+                    margin-right:36px;
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 100px;
+                        position: absolute;
+                        top: -1em;
+                        left: -17px;
+                    }
+                }
+                &--four {
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 140px;
+                        position: absolute;
+                        top: -1em;
+                        left: -30px;
+                    }
+                }
+
+            }
+            &__grave-marker {
+                display:block;
+                padding-top:8px;
+                @media (min-width:440px){
+                    display:inline-block;
+                    height: 30px;
+                    margin-left: 50px;
+                    position: absolute;
+                    top: -5.5em;
+
+                }
+                &:before {
+                    content: ' \2666 ';
+                    font-size: 24px;
+                    padding-right:8px;
+                }
+            }
+        }
+    }
+    .clearfix {
+        clear: both;
     }
 }
