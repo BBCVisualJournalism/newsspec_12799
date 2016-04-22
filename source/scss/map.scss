@@ -78,9 +78,10 @@
             position: relative;
             text-align:left;
             &__title {
+                font-weight: bold;
                 position: absolute;
                 top: -5em;
-                width: 120px;
+                width: 130px;
             }
             &__scale {
                 margin-right:26px;
