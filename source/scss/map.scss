@@ -78,11 +78,9 @@
             position: relative;
             text-align:left;
             &__title {
-                display:inline-block;
-                height: 30px;
                 position: absolute;
-                left: 0;
                 top: -5em;
+                width: 120px;
             }
             &__scale {
                 margin-right:26px;
@@ -135,6 +133,7 @@
             &__grave-marker {
                 display:inline-block;
                 height: 30px;
+                margin-left: 50px;
                 position: absolute;
                 top: -5.5em;
                     &:before {
