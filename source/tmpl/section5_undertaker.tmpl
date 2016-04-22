@@ -25,9 +25,25 @@
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section5_para_4 %></p>
         </div>
-        <div class="section--five__chart__container" id="section--five__chart__container">
-            <div class="section--five__chart section--five__chart--one"></div>
-            <div class="section--five__chart section--five__chart--two"></div>
+        <div class="chart__container" id="chart__container">
+
+            <div class="chart__header">
+                <h2 class="chart__header--title"><%= chart1_title %></h2>
+                <div><%= chart1_subtitle %></div>
+                <div class="chart__header--impact"><span class="chart__header--impact__stat"><%= chart1_impact_stat %></span> <%= chart1_impact_text %></div>
+            </div>
+            <div class="chart chart--one"></div>
+
+        </div>
+        <div class="chart__container" id="chart__container">
+
+            <div class="chart__header">
+                <h2 class="chart__header--title"><%= chart2_title %></h2>
+                <div><%= chart2_subtitle %></div>
+                <div class="chart__header--impact"><span class="chart__header--impact__stat"><%= chart2_impact_stat %></span> <%= chart2_impact_text %></div>
+            </div>
+            <div class="chart chart--two"></div>
+
         </div>
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section5_para_5 %></p>

@@ -65,7 +65,7 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             reached: false
         },
         'charts': {
-            element: $('#section--five__chart__container'),
+            element: $('#chart__container'),
             reached: false
         },
         'section-footer': {
