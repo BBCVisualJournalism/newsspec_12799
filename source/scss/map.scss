@@ -84,6 +84,7 @@
         &__footer {
             font-size:0.9em;
             margin-top:6em;
+            padding:6px;
             padding-bottom:18px;
             position: relative;
             text-align:left;
@@ -92,6 +93,12 @@
                 position: absolute;
                 top: -5em;
                 width: 130px;
+                @media (min-width:600px) {
+                    width:150px;
+                }
+                @media (min-width:1280px) {
+                    width:150px;
+                }
             }
             &__scale {
                 margin-right:26px;
@@ -142,16 +149,21 @@
 
             }
             &__grave-marker {
-                display:inline-block;
-                height: 30px;
-                margin-left: 50px;
-                position: absolute;
-                top: -5.5em;
-                    &:before {
-                        content: ' \2666 ';
-                        font-size: 24px;
-                        padding-right:8px;
-                    }
+                display:block;
+                padding-top:8px;
+                @media (min-width:440px){
+                    display:inline-block;
+                    height: 30px;
+                    margin-left: 50px;
+                    position: absolute;
+                    top: -5.5em;
+
+                }
+                &:before {
+                    content: ' \2666 ';
+                    font-size: 24px;
+                    padding-right:8px;
+                }
             }
         }
     }
