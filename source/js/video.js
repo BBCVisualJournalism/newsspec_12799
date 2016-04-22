@@ -69,8 +69,8 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                 if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--drone'){
                     if (!utils.isElementInViewport(self.$videoContainer)) {
                         self.mp.pause();
-                    } else {
-                        self.playVideo();
+                    // } else {
+                    //     self.playVideo();
                     }
                 }
             });
