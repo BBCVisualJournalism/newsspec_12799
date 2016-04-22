@@ -19,22 +19,18 @@
         &__source {
             font-weight: bold;
             position: absolute;
-            bottom:0;
-            &--one {
-
-            }
-            &--two {
-
-            }
-            &--three {
-
-            }
+            margin-top:-24px;
+            margin-left:4px;
         }
         &__title {
-
+            &__text{
+                margin-bottom:0;
+            }
+            &__subtext{
+                margin-top:10px;
+            }
         }
         &__subtitle {
-
         }
         &__stats {
             float: left;
@@ -73,6 +69,79 @@
             }
             &--four {
 
+            }
+        }
+        &__footer {
+            font-size:0.9em;
+            margin-top:6em;
+            padding-bottom:18px;
+            position: relative;
+            text-align:left;
+            &__title {
+                display:inline-block;
+                height: 30px;
+                position: absolute;
+                left: 0;
+                top: -5em;
+            }
+            &__scale {
+                margin-right:26px;
+                position: relative;
+                text-align:center;
+                &--one {
+                    margin-left:100px;
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 40px;
+                        position: absolute;
+                        top: -1.075em;
+                        left: -7px;
+                    }
+                }
+                &--two {
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 70px;
+                        position: absolute;
+                        top: -1.0125em;
+                        left: -12px;
+                    }
+                }
+                &--three {
+                    margin-right:36px;
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 100px;
+                        position: absolute;
+                        top: -1em;
+                        left: -15px;
+                    }
+                }
+                &--four {
+                    &:before {
+                        color: #ff8833;
+                        content: ' \25CF';
+                        font-size: 140px;
+                        position: absolute;
+                        top: -1em;
+                        left: -29px;
+                    }
+                }
+
+            }
+            &__grave-marker {
+                display:inline-block;
+                height: 30px;
+                position: absolute;
+                top: -5.5em;
+                    &:before {
+                        content: ' \2666 ';
+                        font-size: 24px;
+                        padding-right:8px;
+                    }
             }
         }
     }
