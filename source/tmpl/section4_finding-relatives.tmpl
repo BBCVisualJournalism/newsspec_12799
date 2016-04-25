@@ -5,34 +5,25 @@
             <p><%= section4_para_1 %></p>
         </div>
         <div class="finding-lost-relatives__flowchart" id="finding-lost-relatives__flowchart" style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
-            <h3>IMAGE/FLOWCHAT/DIAGRAM GOES HERE</h3>
+            <h3>CASE STUDY 2 IMAGE/FLOWCHART</h3>
         </div>
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section4_para_2 %></p>
             <p><%= section4_para_3 %></p>
+            <p><%= section4_para_4 %></p>
         </div>
-        <div class="lesbos-map__image" id="lesbos-map__image">
-            <picture>
-                <source
-                    media="(min-width: 1024px)"
-                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_1400_1x_<%= vocab_dir %>.jpg,
-                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_1400_2x_<%= vocab_dir %>.jpg 2x">
-                <source
-                    media="(min-width: 752px)"
-                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_810_1x_<%= vocab_dir %>.jpg,
-                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_810_2x_<%= vocab_dir %>.jpg 2x">
-                <source
-                    media="(max-width: 751px)"
-                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg,
-                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x">
-                <img class="lesbos-map__image__fallback"
-                     src="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg"
-                     srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x"
-                     alt="< %= section_2_map_alt_text % >">
-            </picture>
-        </div>
-        <div class="boat__image" id="boat__image" style="width:100%;border: 1px solid red;text-align:center;padding:10%;">
-            <h3>BOAT IMAGE GOES HERE</h3>
+    </div>
+
+    <div class="bbc-news-vj-video-wrapper">
+        <div class="bbc-news-vj-video bbc-news-vj-video--undertaker" id="bbc-news-vj-video--undertaker">
+            <div class="bbc-news-vj-video__player"></div>
+            <div class="bbc-news-vj-video__overlay bbc-news-vj-video__overlay--hidden">
+                <button class="bbc-news-vj-video__overlay__play" aria-label="Play"></button>
+                <div class="bbc-news-vj-video__overlay__text">
+                    <div class="bbc-news-vj-video__overlay__text__title"><%= section5_video_title %></div>
+                    <div class="bbc-news-vj-video__overlay__text__summary"><%= section5_video_summary %></div>
+                </div>
+            </div>
         </div>
     </div>
 

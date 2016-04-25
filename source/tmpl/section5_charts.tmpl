@@ -8,42 +8,53 @@
         </div>
     </div>
 
-    <div class="bbc-news-vj-video-wrapper">
-        <div class="bbc-news-vj-video bbc-news-vj-video--undertaker" id="bbc-news-vj-video--undertaker">
-            <div class="bbc-news-vj-video__player"></div>
-            <div class="bbc-news-vj-video__overlay bbc-news-vj-video__overlay--hidden">
-                <button class="bbc-news-vj-video__overlay__play" aria-label="Play"></button>
-                <div class="bbc-news-vj-video__overlay__text">
-                    <div class="bbc-news-vj-video__overlay__text__title"><%= section5_video_title %></div>
-                    <div class="bbc-news-vj-video__overlay__text__summary"><%= section5_video_summary %></div>
-                </div>
-            </div>
+
+    <div class="bbc-news-vj-grid-wrapper">
+        <div class="lesbos-map__image" id="lesbos-map__image">
+            <picture>
+                <source
+                    media="(min-width: 1024px)"
+                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_1400_1x_<%= vocab_dir %>.jpg,
+                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_1400_2x_<%= vocab_dir %>.jpg 2x">
+                <source
+                    media="(min-width: 752px)"
+                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_810_1x_<%= vocab_dir %>.jpg,
+                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_810_2x_<%= vocab_dir %>.jpg 2x">
+                <source
+                    media="(max-width: 751px)"
+                    srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg,
+                            <%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x">
+                <img class="lesbos-map__image__fallback"
+                     src="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_1x_<%= vocab_dir %>.jpg"
+                     srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/brazil_624_2x_<%= vocab_dir %>.jpg 2x"
+                     alt="< %= section_2_map_alt_text % >">
+            </picture>
         </div>
     </div>
 
     <div class="bbc-news-vj-grid-wrapper">
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section5_para_4 %></p>
+            <p><%= section5_para_5 %></p>
         </div>
-        <div class="chart__container" id="chart__container">
+    </div>
 
+    <div class="bbc-news-vj-grid-wrapper">
+        <div class="chart__container" id="chart__container">
             <div class="chart__header">
                 <h2 class="chart__header--title"><%= chart1_title %></h2>
                 <div><%= chart1_subtitle %></div>
                 <div class="chart__header--impact"><span class="chart__header--impact__stat"><%= chart1_impact_stat %></span> <%= chart1_impact_text %></div>
             </div>
             <div class="chart chart--one"></div>
-
         </div>
         <div class="chart__container" id="chart__container">
-
             <div class="chart__header">
                 <h2 class="chart__header--title"><%= chart2_title %></h2>
                 <div><%= chart2_subtitle %></div>
                 <div class="chart__header--impact"><span class="chart__header--impact__stat"><%= chart2_impact_stat %></span> <%= chart2_impact_text %></div>
             </div>
             <div class="chart chart--two"></div>
-
         </div>
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
             <p><%= section5_para_5 %></p>
