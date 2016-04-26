@@ -1,0 +1,270 @@
+define(['maps/defaultStyles', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay','maps/toll'],
+	function (defaultStyles, markerTypes, bbcSettings, markers, BBCMap, BBCLabelOverlay, BBCCircleOverlay, toll) {
+		return function () {
+
+			var map;
+			var bbcCircleOverlay;
+			var zoomLevels;
+
+			function initialize() {
+
+				var overlay;
+				var zoomLevels;
+				var mapOptions = {
+					zoom: bbcSettings.startingZoom,
+					center: new google.maps.LatLng(bbcSettings.startingLat, bbcSettings.startingLng),
+					scaleControl: bbcSettings.showScale,
+					mapTypeId: bbcSettings.mapType,
+					disableDefaultUI: true,
+					draggable: bbcSettings.draggable,
+					zoomControl: (bbcSettings.zoomable) ? (bbcSettings.showCustomZoomControl)? false : true : false,
+					scrollwheel: (bbcSettings.zoomable) ? bbcSettings.scrollwheel : bbcSettings.zoomable,
+					disableDoubleClickZoom: (bbcSettings.zoomable) ? bbcSettings.disableDoubleClickZoom : true,
+					styles: bbcSettings.mapStyle.styles,
+				};
+
+				if (bbcSettings.responsiveZoomLevels && Object.keys(bbcSettings.responsiveZoomLevels).length > 0) {
+					zoomLevels = Object.keys(bbcSettings.responsiveZoomLevels);
+					zoomLevels.sort(function(a,b){
+						return parseInt(a) - parseInt(b);
+					});
+				}
+
+				function getZoomLevel () {
+						var viewportWidth = document.getElementById(bbcSettings.mapElementId).offsetWidth;
+						var chosenZoom = '';
+
+						if (bbcSettings.responsiveZoomLevels && Object.keys(bbcSettings.responsiveZoomLevels).length > 0) {
+
+							for(var i=0; i<zoomLevels.length; i++) {
+								if(parseInt(zoomLevels[i]) < viewportWidth) {
+									chosenZoom = zoomLevels[i];
+								} else {
+									chosenZoom = (i>0)?zoomLevels[i]:zoomLevels[0];
+									break;
+								}
+							}
+
+							return parseInt(bbcSettings.responsiveZoomLevels[chosenZoom]);
+						} else {
+							return bbcSettings.startingZoom;
+						}
+
+				}
+
+
+				map = new google.maps.Map(document.getElementById(bbcSettings.mapElementId),
+						mapOptions);
+
+				//Setup test KML layer and add to map
+				var kmlLayer = new google.maps.KmlLayer({
+					url: 'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml',
+					preserveViewport: true,
+					suppressInfoWindows: true
+				});
+
+				var terrainMap = new google.maps.ImageMapType({
+					getTileUrl: function(coord, zoom) {
+						var normalizedCoord = getNormalizedCoord(coord, zoom);
+				        if (!normalizedCoord) {
+				          return null;
+				        }
+				        var bound = Math.pow(2,zoom);
+						return 'BBCTerrain/' + zoom + '/' + normalizedCoord.x + '/' + (bound-normalizedCoord.y-1) + '.png';
+					},
+					tileSize: new google.maps.Size(256,256),
+					maxZoom: 9,
+					minZoom: 5,
+					name: 'terrain'
+				});
+
+				function getNormalizedCoord(coord, zoom) {
+				  var y = coord.y;
+				  var x = coord.x;
+
+				  // tile range in one direction range is dependent on zoom level
+				  // 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
+				  var tileRange = 1 << zoom;
+
+				  // don't repeat across y-axis (vertically)
+				  if (y < 0 || y >= tileRange) {
+				    return null;
+				  }
+
+				  // repeat across x-axis
+				  if (x < 0 || x >= tileRange) {
+				    x = (x % tileRange + tileRange) % tileRange;
+				  }
+
+				  return {x: x, y: y};
+				}
+
+				bbcCircleOverlay = new BBCCircleOverlay(map, toll);
+
+				//Add terrain tiles to the base map
+				map.overlayMapTypes.insertAt(0, terrainMap);
+
+				//Apply overlay layers
+				var greece = new google.maps.LatLng(39.5416447,21.7700136);
+				var turkey = new google.maps.LatLng(39.2917193,27.676603);
+				var turkey2 = new google.maps.LatLng(39.3173691,26.6920916);
+				//Add overlay to map
+				overlay = new BBCLabelOverlay(map, greece, markerTypes.country, 'Greece');
+
+				var overlay2 = new BBCLabelOverlay(map, turkey, markerTypes.country, 'Turkey');
+				var overlay3 = new BBCLabelOverlay(map, turkey2, markerTypes.placeName, 'Ayvalik');
+
+				//Plot a series of points
+				var grave = {
+					url: 'gravestone.svg',
+					size: new google.maps.Size(16,17),
+					origin: new google.maps.Point(0,0),
+					anchor: new google.maps.Point(8, 8.5)
+				};
+
+				for(var i=0; i < Object.keys(markers).length; i++) {
+					var markerItem = markers[Object.keys(markers)[i]];
+					var marker = new google.maps.Marker({
+							map: map,
+							position: new google.maps.LatLng(markerItem.lat, markerItem.lng),
+							icon: grave,
+							title: markerItem.title
+					});
+				}
+
+				//Window resize event
+				google.maps.event.addDomListener(window, 'resize', function() {
+						map.setCenter(mapOptions.center);
+						map.setZoom(getZoomLevel());
+				});
+
+				//Tile load event
+				google.maps.event.addListener(map, 'tilesloaded', function() {
+
+				});
+
+				google.maps.event.addDomListener(map, 'zoom_changed', function(){
+		            var currentZoom = map.getZoom();
+		            console.log('zoom: ' + currentZoom);
+		        });
+
+				var debounce;
+		        google.maps.event.addListener(map, 'center_changed', function(){
+			        if(debounce) {
+		                clearTimeout(debounce);
+		            }
+		            var center = map.getCenter();
+		            var centerLat = center.lat();
+		            var centerLng = center.lng();
+
+		            debounce = setTimeout(function(){
+				        console.log(centerLat + ',' + centerLng);
+		            }, 500);
+		        });
+
+
+			    if(bbcSettings.showCustomZoomControl && bbcSettings.zoomable) {
+			    	addCustomControls(map);
+			    }
+
+		        logSettings(document.getElementById('mapSettings'));
+			}
+
+			function logSettings(el) {
+				for(var i = 0; i < Object.keys(bbcSettings).length; i++) {
+					var p = document.createElement('p');
+					p.innerText = Object.keys(bbcSettings)[i] + ': ' + bbcSettings[Object.keys(bbcSettings)[i]];
+					el.appendChild(p);
+				}
+			}
+
+			function addCustomControls(map) {
+		        var controlEl = document.createElement('div');
+		        var zoomIn = document.createElement('div');
+		        var zoomOut = document.createElement('div');
+		        // var fullScreen = document.createElement('div');
+
+		        controlEl.className = 'bbcZoomControl';
+		        controlEl.id = 'bbcZoomControl';
+		        // fullScreen.className = 'bbcFullScreen';
+		        zoomIn.className = 'bbcZoomIn';
+		        zoomOut.className = 'bbcZoomOut';
+		        zoomIn.id = 'bbcZoomIn';
+		        zoomOut.id = 'bbcZoomOut';
+
+		        // fullScreen.style.marginBottom = '8px';
+
+		        // fullScreen.textContent = 'Fullscreen view';
+		        zoomIn.textContent = '+';
+		        zoomOut.textContent = '-';
+
+		        // controlEl.appendChild(fullScreen);
+		        controlEl.appendChild(zoomIn);
+		        controlEl.appendChild(zoomOut);
+
+		        controlEl.index = 1;
+		        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlEl);
+
+		        zoomIn.addEventListener('click', function(){controlZoom('in', map)});
+		        zoomOut.addEventListener('click', function(){controlZoom('out', map)});
+		        // fullScreen.addEventListener('click', app.toggleFullScreen);
+		    };
+
+		    function controlZoom(direction, map) {
+		        currentZoom = map.getZoom();
+		        var mapContainer = map.getDiv();
+
+		        if(direction == 'in') {
+
+		            if(currentZoom < bbcSettings.maxZoom) {
+		                currentZoom++;
+		                map.setZoom(currentZoom);
+		            }
+		        }
+
+		        if(direction == 'out') {
+
+		            if(currentZoom > bbcSettings.minZoom) {
+		                currentZoom--;
+		                map.setZoom(currentZoom);
+		            }
+		        }
+
+		        if(bbcCircleOverlay) {
+		        	bbcCircleOverlay.redraw();
+		        }
+
+		        if(currentZoom == bbcSettings.maxZoom) {
+	                if(mapContainer.className.indexOf(' maxZoom') == -1) {
+	                    mapContainer.className += ' maxZoom';
+	                }
+	            }
+
+	            if(currentZoom == bbcSettings.minZoom) {
+	                if(mapContainer.className.indexOf(' minZoom') == -1) {
+	                    mapContainer.className += ' minZoom';
+	                }
+	            }
+
+	            if(currentZoom < bbcSettings.maxZoom) {
+	                if(mapContainer.className.indexOf(' maxZoom') !== -1) {
+	                    mapContainer.className = mapContainer.className.replace(' maxZoom', '');
+	                }
+	            }
+
+	            if(currentZoom > bbcSettings.minZoom) {
+	                if(mapContainer.className.indexOf(' minZoom') !== -1) {
+	                    mapContainer.className = mapContainer.className.replace(' minZoom', '');
+	                }
+	            }
+		    }
+
+			initialize();
+		};
+	}
+);
+
+
+//Marker parameters - TODO: read JSON obj of markers and render
+// lat, long, type, zoom level visibility, label text, alignment
+

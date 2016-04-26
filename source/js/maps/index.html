@@ -1,0 +1,251 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="Content-Type" content="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="stylesheet" type="text/css" href="maps-embed.css">
+  <style>
+    /* Internationalisation text strings for the interface */
+    .bbcZoomIn:before { content: "Zoom in"; }
+    .bbcZoomOut:before { content: "Zoom out"; }
+    .maxZoom .bbcZoomIn:before { content: "Maximum zoom level reached";}
+    .minZoom .bbcZoomOut:before { content: "Minimum zoom level reached";}
+    .bbcFullScreen:before { content: "Open fullscreen mode";}
+    .isFullScreen .bbcFullScreen:before { content: "Close fullscreen mode"; }
+  </style>
+
+</head>
+<body>
+<style>
+    body {
+      margin: 0;
+    }
+
+    .zoomLevel1 .hideZ1,
+    .zoomLevel2 .hideZ2,
+    .zoomLevel3 .hideZ3,
+    .zoomLevel4 .hideZ4,
+    .zoomLevel5 .hideZ5,
+    .zoomLevel6 .hideZ6,
+    .zoomLevel7 .hideZ7,
+    .zoomLevel8 .hideZ8,
+    .zoomLevel9 .hideZ9,
+    .zoomLevel10 .hideZ10,
+    .zoomLevel11 .hideZ11,
+    .zoomLevel12 .hideZ12,
+    .zoomLevel13 .hideZ13,
+    .zoomLevel14 .hideZ14,
+    .zoomLevel15 .hideZ15,
+    .zoomLevel16 .hideZ16,
+    .zoomLevel17 .hideZ17,
+    .zoomLevel18 .hideZ18,
+    .zoomLevel19 .hideZ19,
+    .zoomLevel20 .hideZ20 {
+        display: none;
+    }
+
+    #newsspec_14121-map-wrapper {
+      margin-top: .5em;
+      border: 1px solid #505050;
+      position: relative;
+      overflow: hidden;
+      max-width: 1040px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    #newsspec_14121-map-wrapper #newsspec_14121-map-canvas {
+        height: 800px;
+    }
+
+    .circle-canvas {
+      outline: 1px solid #f0f;
+    }
+
+    #newsspec_14121-map-wrapper .newsspec_14121--date--display {
+       box-sizing: border-box;
+       min-height: 61px;
+       opacity: 0;
+       transition: opacity 1s;
+       padding: 15px;
+       font: 27px Arial;
+       color: #505050;
+       text-align: center;
+       border-bottom: 1px solid #505050;
+       display: none;
+    }
+    #newsspec_14121-map-wrapper .gm-style-cc {
+        display: none !important;
+        position: absolute !important;
+        bottom: -200px !important;
+    }
+
+    @media screen and (min-width: 700px) {
+        #newsspec_14121-map-wrapper #newsspec_14121-map-canvas {
+          height: 800px;
+        }
+        #newsspec_14121-map-wrapper #newsspec_14121--reset--button {
+          top: 61px;
+          left: 0;
+          width: 130px;
+        }
+    }
+    #newsspec_14121-map-wrapper .bbc-label-city {
+        font-size: 16px;
+        font-weight: normal;
+        color: #222222;
+        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+        margin: -.6125em 0 0 .5em;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-citya {
+        height: 1px;
+        width: 1px;
+        z-index: 2000;
+        background: #f0f;
+        text-indent: -9999em;
+        margin: 0;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-city:before {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 7px;
+        border: 1px solid #000;
+        background-color: #fff;
+        left: -.75em;
+        top: .375em;
+        border-radius: 50%;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-city.padded {
+        background-color: #fffff;
+        background-color: rgba(255,255,255,.8);
+        border-left: 1px solid #000;
+        font-size: 16px;
+        font-weight: bold;
+        color: #222222;
+        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+        margin: -.9125em 0 0 .9375em;
+        padding: .3em .5em;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-country {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #222222;
+        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        text-shadow: 2px 2px 1px #fff,-2px -2px 1px #fff,2px -2px 1px #fff,-2px 2px 1px #fff;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-city.padded:before {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 7px;
+        border: 1px solid #000;
+        background-color: #fff;
+        left: -1.25em;
+        top: .65em;
+        border-radius: 50%;
+    }
+
+    #newsspec_14121-map-wrapper .bbc-label-city.padded:after {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 0.725em;
+        background-color: #222222;
+        left: -0.75em;
+        top: 0.89em;
+    }
+
+    .newsspec_14121--locator {
+        position: absolute;
+        width: auto;
+        z-index: 200;
+        right: 0;
+        width: auto;
+        border: 1px solid #000;
+        border-right: 0;
+        border-top: 0;
+    }
+
+    @media (max-width: 699px) {
+        .newsspec_14121--locator {
+            width: 10em;
+        }
+    }
+
+</style>
+
+<div id="newsspec_14121-map-wrapper">
+    <div class="newsspec_14121--date--display"></div>
+    <div id="newsspec_14121-map-canvas"> </div>
+    <div id="mapSettings"></div>
+</div>
+<script type="text/javascript" src="require-2.1.18.js"></script>
+<script>
+    var textLabels = [
+        {
+            "lat": 39.5416447,
+            "lng": 21.7700136,
+            "text": "Greece",
+            "labelType": "country",
+            "direction": "rtl",
+            "zoomLevels": {
+                "min": 6,
+                "max": 7
+            }
+        },{
+            "lat": 39.2917193,
+            "lng": 27.676603,
+            "text": "Turkey",
+            "labelType": "country"
+        },{
+            "lat": 39.3173691,
+            "lng": 26.6920916,
+            "text": "Ayvalik",
+            "labelType": "placeName"
+        },
+    ];
+</script>
+<script>
+
+//TODO (before production): change API key for correct value and remove cache busting
+var bbcApiKey = "http://maps.google.com/maps/api/js?v=3.22";
+
+require.config({
+    urlArgs: "bust=" + (new Date()).getTime()
+});
+
+require({
+  paths: {
+    "map": "map",
+    "markers": "markers",
+    "points": "points",
+    "bbcSettings": "bbcSettings"
+  }
+});
+
+require([bbcApiKey], function (GoogleMaps) {
+    require(['map'], function (map) {
+        map();
+    });
+});
+
+
+</script>
+</body>
+</html>
