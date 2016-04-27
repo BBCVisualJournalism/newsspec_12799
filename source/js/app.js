@@ -1,11 +1,11 @@
-define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'progressiveEnhancement'],
-    function (wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, progressiveEnhancement) {
+define(['http://maps.google.com/maps/api/js', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'progressiveEnhancement'],
+    function (GoogleMaps, map, wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, progressiveEnhancement) {
 
     // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
 
     var version = '0.1.0';
 
-///* --------------------------------- video stuff ---------------------------- */
+    ///* --------------------------------- video stuff ---------------------------- */
     function initVideo() {
         var videoSelectors = [
             '#bbc-news-vj-video--drone',
@@ -94,8 +94,11 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
 
 //*------------------------------- map stuff ------------------------------- */
 
+    //TODO (before production): change API key for correct value and remove cache busting
     function initMaps() {
         var $map1 = $('#graveyard-map--one__container');
+
+        map();
 
         function removeMap(){
             if (window.innerWidth < 1008){
@@ -105,9 +108,9 @@ define(['wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger',
         }
 
         removeMap();
-        $(window).resize(function() {
-            removeMap();
-        });
+        // $(window).resize(function() {
+        //     removeMap();
+        // });
     }
 
 
