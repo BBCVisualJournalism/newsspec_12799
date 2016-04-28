@@ -22,18 +22,18 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], func
 		    //Maximum zoom level:
 		    maxZoom: 9,
 		    //Initial zoom level:
-		    startingZoom: 5,
+		    startingZoom: 6,
 		    //Initial lat and long:
 		    startingLat: 38.2620323,
 		    startingLng: 24.4855503,
 		    //Display scale on map:
 		    showScale: true,
 		    //Enable/disable zooming of any kind:
-		    zoomable: true,
+		    zoomable: false,
 		    disableDoubleClickZoom: true,
 		    showCustomZoomControl: true,
 		    //Enable/disable panning:
-		    draggable: true,
+		    draggable: false,
 		    //Enable/disable scroll interaction:
 		    scrollwheel: false
 	    },
