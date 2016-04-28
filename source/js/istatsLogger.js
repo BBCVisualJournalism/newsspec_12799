@@ -52,10 +52,6 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#lesbos-map__image'),
             reached: false
         },
-        'boat-image': {
-            element: $('#boat__image'),
-            reached: false
-        },
         'section-five': {
             element: $('#section--five'),
             reached: false

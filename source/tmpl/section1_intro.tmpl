@@ -3,13 +3,16 @@
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
 
             <ul class="meta-list">
-                <li class="meta-list__item meta-list__item--timestamp">
-                    <time datetime="2016-04-01">4th May 2016 <!-- <%= timestamp %>--></time>
-                </li>
-                <li class="meta-list__item meta-list__item--topic">
+                <span class="meta-list__item meta-list__item--author"><%= author_name %></span>
+                <span class="meta-list__item meta-list__item--role"><%= bbc_news %></span>
+                <span class="meta-list__item meta-list__item--timestamp">
+                    <time datetime="2016-04-01"><%= timestamp %></time>
+                </span>
+                <span class="meta-list__item meta-list__item--topic">
                     <a href=" <%= topic_link %> "><%= topic_label %></a>
-                </li>
+                </span>
             </ul>
+            <div class="clearfix"></div>
 
             <p class="intro">
                 <%= intro_para_1 %>
@@ -21,14 +24,11 @@
                 <%= intro_para_3 %>
             </p>
 
-            <p class="hero-stat__title-one">
-                So far this year, <span class="hero-stat__title--stat">8 people</span> a day on average
-                drowned trying to cross the Mediterranean into
-                Europe.
+            <p class="intro--stat">
+                <%= intro_para_4 %>
             </p>
-            <p class="hero-stat__title-two">
-                It is likely that one of them will be buried in an
-                unmarked grave.
+            <p class="intro--stat">
+                <%= intro_para_5 %>
             </p>
 
         </div>

@@ -13,6 +13,11 @@
         width: 100%;
         margin: 0 auto;
         // margin-bottom:50px;
+        // fixes kml warping
+        img {
+            max-width: none;
+        }
+
         &__canvas {
             height:  800px;
             max-width: 1008px;

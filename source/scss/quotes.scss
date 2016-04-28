@@ -1,0 +1,48 @@
+.bbc-news-vj-wrapper .bbcquote {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    @media (min-width: 600px) {
+        margin-top: 2.5em;
+    }
+
+    &:before {
+        content: '\2018\2018';
+        color: black;
+        display: block;
+        font-size: 64px;
+        letter-spacing: -6px;
+        line-height: 24px;
+        margin-top: 48px;
+        margin-bottom: -8px;
+        margin-left: -4px;
+
+        @media (min-width: 600px) {
+            font-size: 90px;
+            margin-top: 48px;
+            margin-bottom: -8px;
+            margin-left: -4px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 90px;
+            margin-top: 48px;
+            margin-bottom: -8px;
+            margin-left: -4px;
+        }
+    }
+
+    &__cite {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: inherit;
+        color: #999;
+        display: block;
+        font-weight: normal;
+        font-style: normal;
+    }
+}

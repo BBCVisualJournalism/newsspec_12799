@@ -1,5 +1,12 @@
 .section--one {
     margin-top:40px;
+    .intro--stat {
+        font-size:1.45em;
+        .red-text {
+            color: #c00;
+            font-weight: bold;
+        }
+    }
 }
 
 .bbc-news-vj-wrapper .meta-list {
@@ -7,23 +14,38 @@
     font-size: 14px;
     margin-bottom: 1.5em;
     padding: 0;
+    &:after {
+        border-bottom: 1px solid #dcdcdc;
+        margin: 10px 0 10px 0;
+    }
 
     &__item {
-        border-right: 1px solid #dcdcdc;
         display: inline-block;
         margin-top: 2px;
         margin-right: 0.2em;
-        margin-bottom: 2px;
+        margin-bottom: 6px;
         padding-right: 0.5em;
         position: relative;
-
         &:last-child {
             border: none;
             margin-right: 0;
             padding-right: 0;
         }
-
+        &--author {
+            color: #a00;
+            font-weight: bold;
+        }
+        &--role {
+            color: #999;
+            display:block;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
         &--timestamp {
+            clear:both;
+            display: block;
+            float:left;
+            padding-left: 1.375em;
             &:before {
                 content: '';
                 display: block;
@@ -34,9 +56,11 @@
                 left: 0;
                 top: 1px;
             }
-            padding-left: 1.375em;
         }
-
+        &--topic {
+            float: left;
+            margin-left: 6px;
+        }
         &--topic a {
             color: #e52020;
             text-decoration: none;
@@ -49,15 +73,25 @@
 
     @media (min-width: 1280px) {
         min-width: 16.4%;
+        border-bottom: none;
         border-right: 1px solid #dcdcdc;
         margin: 0;
+        max-width:170px;
         position: absolute;
         left: 0;
-
         &__item {
             border: none;
-            display: block;
-            padding-left: 1.375em;
+            margin-left:-10px;
+            &--author {
+                display: block;
+                float: none;
+            }
+            &--role {
+                float: none;
+            }
+            &--topic {
+                margin-left: 0;
+            }
         }
     }
 }

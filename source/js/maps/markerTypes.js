@@ -1,4 +1,4 @@
-define(['http://maps.google.com/maps/api/js'], function(GoogleMaps){
+define(['http://maps.google.com/maps/api/js?v=3.22'], function(GoogleMaps){
     markerTypes = {
         'grave': {
             url: 'icons/gravestone.svg',
