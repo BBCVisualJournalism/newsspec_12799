@@ -37,7 +37,7 @@ define(["http://maps.google.com/maps/api/js?v=3.22", "maps/defaultStyles", "maps
                         "https://dl.dropboxusercontent.com/u/7667577/maritime2.kml"
                     ],
                     "markers": markers,
-                    "tileUrlBase": "BBCTerrain/"
+                    "tileUrlBase": "../common/img/BBCTerrain/"
                 }
             );
 
@@ -56,7 +56,7 @@ define(["http://maps.google.com/maps/api/js?v=3.22", "maps/defaultStyles", "maps
                         "https://dl.dropboxusercontent.com/u/7667577/maritime2.kml"
                     ],
                     "markers": markers,
-                    "tileUrlBase": "BBCTerrain/"
+                    "tileUrlBase": "../common/img/BBCTerrain/"
                 }
             );
 
@@ -75,7 +75,7 @@ define(["http://maps.google.com/maps/api/js?v=3.22", "maps/defaultStyles", "maps
                         "https://dl.dropboxusercontent.com/u/7667577/maritime2.kml"
                     ],
                     "markers": markers,
-                    "tileUrlBase": "BBCTerrain/"
+                    "tileUrlBase": "../common/img/BBCTerrain/"
                 }
             );
 
