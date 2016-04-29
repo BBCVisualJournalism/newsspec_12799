@@ -1,5 +1,5 @@
 {
-    "": "Your link here",
+    "": "[Place Jupiter location here]",
     "meta:url": "",
     "meta:type": "",
     "meta:title": "",
@@ -7,6 +7,7 @@
     "meta:site_name": "",
     "meta:locale": "",
     "meta:publisher": "",
+    "meta:author": "",
     "meta:section": "",
     "meta:image": "",
     "meta:twitter:card": "",
@@ -16,6 +17,8 @@
     "meta:twitter:description": "",
     "meta:twitter:image": "",
     "short_url": "",
+    "isite_page_title": "",
+    "isite_meta_description": "",
     "hero_title": "",
     "hero_subtitle": "",
     "timestamp": "",
