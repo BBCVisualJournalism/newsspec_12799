@@ -5,8 +5,26 @@ define({
 		title: 'Standard placename'
 	},
 
+	placeNameBelowRight: {
+		className: 'bbc-label-city below-right',
+		hasText: true,
+		title: 'Standard placename'
+	},
+
+	placeNameOnSea: {
+		className: 'bbc-label-city on-sea',
+		hasText: true,
+		title: 'Standard placename'
+	},
+
+	placeNameOnSeaAboveRight: {
+		className: 'bbc-label-city on-sea above-right',
+		hasText: true,
+		title: 'Standard placename'
+	},
+
 	placeNameWithBackground: {
-		className: 'bbc-label-city bbc-label-city--padded',
+		className: 'bbc-label-city padded',
 		hasText: true,
 		title: 'Standard placename with Background'
 	},
@@ -21,5 +39,17 @@ define({
 		className: 'bbc-label-region',
 		hasText: true,
 		title: 'Region'
+	},
+
+	regionRight: {
+		className: 'bbc-label-region right-aligned',
+		hasText: true,
+		title: 'Region'
+	},
+
+	sea: {
+		className: 'bbc-label-sea',
+		hasText: true,
+		title: 'Sea'
 	}
 });

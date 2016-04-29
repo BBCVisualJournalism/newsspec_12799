@@ -205,148 +205,200 @@
     }
 }
 
-    .newsspec_14121-map-wrapper {
-      margin-top: .5em;
-      border: 1px solid #505050;
-      position: relative;
-      overflow: hidden;
-      max-width: 1040px;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .circle-canvas {
-      outline: 1px solid #f0f;
-    }
+.newsspec_14121-map-wrapper {
+  margin-top: .5em;
+  border: 1px solid #505050;
+  position: relative;
+  overflow: hidden;
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+}
+.circle-canvas {
+  outline: 1px solid #f0f;
+}
 
-    .newsspec_14121-map-wrapper .newsspec_14121--date--display {
-       box-sizing: border-box;
-       min-height: 61px;
-       opacity: 0;
-       transition: opacity 1s;
-       padding: 15px;
-       font: 27px Arial;
-       color: #505050;
-       text-align: center;
-       border-bottom: 1px solid #505050;
-       display: none;
-    }
-    .gm-style-cc {
-        display: none;
-        position: absolute;
-        bottom: -200px;
-        opacity: 0;
-    }
+.newsspec_14121-map-wrapper .newsspec_14121--date--display {
+   box-sizing: border-box;
+   min-height: 61px;
+   opacity: 0;
+   transition: opacity 1s;
+   padding: 15px;
+   font: 27px Arial;
+   color: #505050;
+   text-align: center;
+   border-bottom: 1px solid #505050;
+   display: none;
+}
+.gm-style-cc {
+    display: none;
+    position: absolute;
+    bottom: -200px;
+    opacity: 0;
+}
 
-    @media screen and (min-width: 700px) {
-        .newsspec_14121-map-wrapper .newsspec_14121--reset--button {
-          top: 61px;
-          left: 0;
-          width: 130px;
-        }
+@media screen and (min-width: 700px) {
+    .newsspec_14121-map-wrapper .newsspec_14121--reset--button {
+      top: 61px;
+      left: 0;
+      width: 130px;
     }
-    .newsspec_14121-map-wrapper .bbc-label-city {
-        font-size: 16px;
-        font-weight: normal;
-        color: #222222;
-        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-        margin: -.6125em 0 0 .5em;
-    }
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-citya {
-        height: 1px;
-        width: 1px;
-        z-index: 2000;
-        background: #f0f;
-        text-indent: -9999em;
-        margin: 0;
-    }
+.newsspec_14121-map-wrapper p {
+    margin: 0;
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-city:before {
-        display: block;
-        content: "";
-        position: absolute;
-        height: 7px;
-        width: 7px;
-        border: 1px solid #000;
-        background-color: #fff;
-        left: -.75em;
-        top: .375em;
-        border-radius: 50%;
-    }
+.newsspec_14121-map-wrapper .bbc-label-city {
+    font-size: 16px;
+    font-weight: normal;
+    color: #222222;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    margin: -.6125em 0 0 .5em;
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-city--padded {
-        background-color: #fffff;
-        background-color: rgba(255,255,255,.8);
-        border-left: 1px solid #000;
-        font-size: 16px;
-        font-weight: bold;
-        color: #222222;
-        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-        margin: -.9125em 0 0 .9375em;
-        padding: .3em .5em;
-    }
+.newsspec_14121-map-wrapper .bbc-label-city.below-right {
+    margin: 0.5875em 0 0 -0.3em;
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-country {
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #222222;
-        font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-        -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-        text-shadow: 2px 2px 1px #fff,-2px -2px 1px #fff,2px -2px 1px #fff,-2px 2px 1px #fff;
-    }
+.newsspec_14121-map-wrapper .bbc-label-city.below-right:before {
+    left: 0.05em;
+    top: -0.83em;
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-city--padded:before {
-        display: block;
-        content: "";
-        position: absolute;
-        height: 7px;
-        width: 7px;
-        border: 1px solid #000;
-        background-color: #fff;
-        left: -1.25em;
-        top: .65em;
-        border-radius: 50%;
-    }
+.newsspec_14121-map-wrapper .bbc-label-city:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #000;
+    background-color: #fff;
+    left: -.75em;
+    top: .375em;
+    border-radius: 50%;
+}
 
-    .newsspec_14121-map-wrapper .bbc-label-city--padded:after {
-        display: block;
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 0.725em;
-        background-color: #222222;
-        left: -0.75em;
-        top: 0.89em;
-    }
+.newsspec_14121-map-wrapper .bbc-label-city.padded {
+    background-color: #fffff;
+    background-color: rgba(255,255,255,.8);
+    border-left: 1px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    margin: -.9125em 0 0 .9375em;
+    padding: .3em .5em;
+}
 
+.newsspec_14121-map-wrapper .bbc-label-country {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-shadow: 2px 2px 1px #fff,-2px -2px 1px #fff,2px -2px 1px #fff,-2px 2px 1px #fff;
+}
+
+.newsspec_14121-map-wrapper .bbc-label-region {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-shadow: 2px 2px 1px #fff,-2px -2px 1px #fff,2px -2px 1px #fff,-2px 2px 1px #fff;
+}
+
+.newsspec_14121-map-wrapper .bbc-label-sea {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    color: #3c5d75;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.newsspec_14121-map-wrapper .bbc-label-city.padded:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #000;
+    background-color: #fff;
+    left: -1.25em;
+    top: .65em;
+    border-radius: 50%;
+}
+
+.newsspec_14121-map-wrapper .bbc-label-city.padded:after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0.725em;
+    background-color: #222222;
+    left: -0.75em;
+    top: 0.89em;
+}
+
+.newsspec_14121-map-wrapper .on-sea {
+    text-shadow: 2px 2px 1px #bfdad9,-2px -2px 1px #bfdad9,2px -2px 1px #bfdad9,-2px 2px 1px #bfdad9;
+}
+
+.newsspec_14121-map-wrapper .right-aligned {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.newsspec_14121-map-wrapper .above-right {
+    margin-top: -1.3125em;
+}
+
+.newsspec_14121-map-wrapper .above-right:before {
+    left: -.75em;
+    top: 0.875em;
+}
+.newsspec_14121--locator {
+    position: absolute;
+    width: auto;
+    z-index: 200;
+    right: 0;
+    border: 1px solid #000;
+    border-right: 0;
+    border-top: 0;
+}
+
+@media (max-width: 699px) {
     .newsspec_14121--locator {
-        position: absolute;
-        width: auto;
-        z-index: 200;
-        right: 0;
-        border: 1px solid #000;
-        border-right: 0;
-        border-top: 0;
+        width: 10em;
     }
+}
 
-    @media (max-width: 699px) {
-        .newsspec_14121--locator {
-            width: 10em;
-        }
-    }
-
-    /* Internationalisation text strings for the interface */
-    .bbcZoomIn:before { content: "Zoom in"; }
-    .bbcZoomOut:before { content: "Zoom out"; }
-    .maxZoom .bbcZoomIn:before { content: "Maximum zoom level reached";}
-    .minZoom .bbcZoomOut:before { content: "Minimum zoom level reached";}
-    .bbcFullScreen:before { content: "Open fullscreen mode";}
-    .isFullScreen .bbcFullScreen:before { content: "Close fullscreen mode"; }
+/* Internationalisation text strings for the interface */
+.bbcZoomIn:before { content: "Zoom in"; }
+.bbcZoomOut:before { content: "Zoom out"; }
+.maxZoom .bbcZoomIn:before { content: "Maximum zoom level reached";}
+.minZoom .bbcZoomOut:before { content: "Minimum zoom level reached";}
+.bbcFullScreen:before { content: "Open fullscreen mode";}
+.isFullScreen .bbcFullScreen:before { content: "Close fullscreen mode"; }
 
 
 
