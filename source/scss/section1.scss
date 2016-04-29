@@ -15,9 +15,13 @@
     font-size: 14px;
     margin-bottom: 1.5em;
     padding: 0;
-    &:after {
+    &__border {
         border-bottom: 1px solid #dcdcdc;
-        margin: 10px 0 10px 0;
+        padding-top: 8px;
+        @media (min-width: 1280px){
+            border: none;
+            padding:0;
+        }
     }
 
     &__item {
