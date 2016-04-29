@@ -131,14 +131,18 @@
 .bbc-news-vj-direction--rtl {
     .meta-list__item--timestamp {
         float: right;
+        padding-left: 8px;
+        padding-right: 22px;
     }
-
+    .meta-list__item--timestamp::before {
+        left:auto;
+        right:0;
+    }
     .meta-list__item--topic {
         float: right;
     }
 
     .meta-list__item--topic a {
         display: block;
-        padding-right: 10px;
     }
 }
