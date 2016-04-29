@@ -22,10 +22,7 @@
 @import "credits";
 
 .bbc-news-vj-wrapper--js-enabled {
-    // @media (min-width: 1008px) {
-    //     padding-top:60%;
-    // }
-    // .bbc-news-vj-video-wrapper--hero {
-    //     display: inherit;
-    // }
+    .bbc-news-vj-video__overlay {
+        display:inherit;
+    }
 }

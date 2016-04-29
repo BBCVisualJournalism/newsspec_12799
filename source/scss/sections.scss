@@ -51,6 +51,7 @@
         }
 
         &__overlay {
+            display:none;
             background-color:#000;
             bottom: -64px;
             height: 64px;

@@ -42,13 +42,19 @@
             width:125px;
         }
         &--one {
-
+            background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &--two {
-
+            background-image: url('http://toomanyadapters.com/wp-content/uploads/2014/10/London-Google-Maps.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &--three {
-
+            background-image: url('http://www.maps-of-europe.net/maps/maps-of-greece/political-map-of-greece-with-relief-and-cities.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &__source {
             display: none;
