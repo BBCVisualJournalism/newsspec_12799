@@ -75,12 +75,11 @@
         &__subtitle {
         }
         &__stats {
-            float: left;
-            font-size: 0.8em;
             line-height:0.75em;
-            margin-right: 20px;
-            @media (min-width: 600px) {
+            @media (min-width: 485px) {
+                float: left;
                 font-size: 1em;
+                margin-right: 20px;
             }
             &__number {
                 font-size:1.5em;

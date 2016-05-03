@@ -31,12 +31,12 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
             },{
                 'lat': 38.5770502,
                 'lng': 29.06603,
-                'text': vocabs.map1_label_5,
+                'text': vocabs.map1_label_6,
                 'labelType': 'country'
             },{
                 'lat': 39.1388697,
                 'lng': 26.064447,
-                'text': vocabs.map1_label_6,
+                'text': vocabs.map1_label_7,
                 'labelType': 'regionRight',
                 'zoomLevels': {
                     'min': 6,
