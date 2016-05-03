@@ -86,6 +86,9 @@
                 float: left;
                 font-size: 1em;
                 margin-right: 20px;
+                p {
+                    line-height:1.2em;
+                }
             }
             &__number {
                 font-size:1.5em;
