@@ -75,7 +75,13 @@
         &__subtitle {
         }
         &__stats {
+            font-size: 1.2em;
             line-height:0.75em;
+            margin-top:28px;
+            padding-left:6px;
+            p {
+                line-height:1em;
+            }
             @media (min-width: 485px) {
                 float: left;
                 font-size: 1em;

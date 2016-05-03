@@ -1,5 +1,5 @@
-define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'progressiveEnhancement'],
-    function (GoogleMaps, map, wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, progressiveEnhancement) {
+define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'vocabs', 'progressiveEnhancement'],
+    function (GoogleMaps, map, wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, vocabs, progressiveEnhancement) {
 
     // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
 
@@ -14,9 +14,9 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
         ];
 
         var videoPids = [
-            'p03lsq25',
-            'p03lsq25',
-            'p03lsq25'
+            vocabs.video_1_id,
+            vocabs.video_2_id,
+            vocabs.video_3_id
         ];
 
         var videoHoldingImgs = [
