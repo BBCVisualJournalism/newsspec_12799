@@ -5,3 +5,4 @@
 <%= include("section4_finding-relatives.tmpl") %>
 <%= include("section5_charts.tmpl") %>
 <%= include("credits.tmpl") %>
+<%= include("vocabs.tmpl") %>

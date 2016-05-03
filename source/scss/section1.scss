@@ -14,9 +14,13 @@
     font-size: 14px;
     margin-bottom: 1.5em;
     padding: 0;
-    &:after {
+    &__border {
         border-bottom: 1px solid #dcdcdc;
-        margin: 10px 0 10px 0;
+        padding-top: 8px;
+        @media (min-width: 1280px){
+            border: none;
+            padding:0;
+        }
     }
 
     &__item {
@@ -120,5 +124,25 @@
     }
     &__title--stat {
         font-weight: 800;
+    }
+}
+
+
+.bbc-news-vj-direction--rtl {
+    .meta-list__item--timestamp {
+        float: right;
+        padding-left: 8px;
+        padding-right: 22px;
+    }
+    .meta-list__item--timestamp::before {
+        left:auto;
+        right:0;
+    }
+    .meta-list__item--topic {
+        float: right;
+    }
+
+    .meta-list__item--topic a {
+        display: block;
     }
 }

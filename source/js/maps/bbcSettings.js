@@ -12,11 +12,11 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], func
 		    // ROADMAP, SATELLITE, HYBRID, TERRAIN
 		    mapType: google.maps.MapTypeId.ROADMAP,
 		    //TODO: Define px breakpoints (mob first) that map changes zoom level and re-centers:
-		    responsiveZoomLevels: {
-		    	'0': {'zoom': 5, 'lat': 38.2620323, 'lng': 24.85908545625002},
-		        '460': {'zoom': 6, 'lat': 38.2620323, 'lng': 24.4855503},
-		        '850': {'zoom': 6, 'lat': 38.2620323, 'lng': 24.89753760468752}
-		    },
+			responsiveZoomLevels: {
+			    '0': {'zoom': 4, 'lat': 38.2620323, 'lng': 24.85908545625002},
+			    '460': {'zoom': 5, 'lat': 38.33101008360811, 'lng': 21.45332373750002},
+			    '870': {'zoom': 6, 'lat': 37.56865534132693, 'lng': 20.360184089062482}
+			},
 		    //Minimum zoom level:
 		    minZoom: 5,
 		    //Maximum zoom level:
@@ -46,10 +46,11 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], func
 		    mapType: google.maps.MapTypeId.ROADMAP,
 		    //TODO: Define px breakpoints (mob first) that map changes zoom level and re-centers:
 		    responsiveZoomLevels: {
-		    	'0': {'zoom': 5, 'lat': 38.2620323, 'lng': 24.85908545625002},
-		        '460': {'zoom': 6, 'lat': 38.2620323, 'lng': 24.4855503},
-		        '850': {'zoom': 8, 'lat': 38.1990323, 'lng': 24.64453760468752}
-		    },
+			    '0': {'zoom': 5, 'lat': 35.485405155332266, 'lng': 14.861526862500023},
+			    '319': {'zoom': 6, 'lat': 35.485405155332266, 'lng': 14.553909675000023},
+			    '460': {'zoom': 6, 'lat': 36.569346732773106, 'lng': 14.630813971875023},
+			    '850': {'zoom': 7, 'lat': 36.10916312113808, 'lng': 14.559402839062482}
+			},
 		    //Minimum zoom level:
 		    minZoom: 5,
 		    //Maximum zoom level:
@@ -79,9 +80,9 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], func
 		    mapType: google.maps.MapTypeId.ROADMAP,
 		    //TODO: Define px breakpoints (mob first) that map changes zoom level and re-centers:
 		    responsiveZoomLevels: {
-		    	'0': {'zoom': 6, 'lat': 38.2620323, 'lng': 24.85908545625002},
-		        '460': {'zoom': 8, 'lat': 38.2620323, 'lng': 24.4855503},
-		        '850': {'zoom': 6, 'lat': 37.8620323, 'lng': 24.19753760468752}
+		    	'0': {'zoom': 5, 'lat': 38.2620323, 'lng': 24.85908545625002},
+			    '460': {'zoom': 6, 'lat': 38.2275188226067, 'lng': 24.62788428437499},
+			    '870': {'zoom': 7, 'lat': 38.2620323, 'lng': 25.17768897187502}
 		    },
 		    //Minimum zoom level:
 		    minZoom: 5,

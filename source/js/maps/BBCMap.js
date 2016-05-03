@@ -45,7 +45,7 @@ define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/markerTypes', 'ma
         this.addKMLLayers(this.kmlLayers);
 
         //Add KML Layers to the map
-        this.addCircleLayers(this.circleOverlays);
+        // this.addCircleLayers(this.circleOverlays);
 
         //Add text labels to the map
         this.addTextLabels(this.textLabels);

@@ -53,6 +53,7 @@ module.exports = function (grunt) {
             'unique-headings'               : false,
             'unqualified-attributes'        : false,
             'vendor-prefix'                 : false,
+            'adjoining-classes'             : false,
             'universal-selector'            : false,
             'force'                         : true
         },
