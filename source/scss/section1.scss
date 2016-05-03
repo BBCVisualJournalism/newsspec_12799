@@ -36,7 +36,6 @@
             padding-right: 0;
         }
         &--author {
-            color: #a00;
             font-weight: bold;
         }
         &--role {
@@ -46,6 +45,7 @@
             word-break: break-word;
         }
         &--timestamp {
+            border-right: 1px solid #dcdcdc;
             clear:both;
             display: block;
             float:left;
@@ -66,11 +66,11 @@
             margin-left: 6px;
         }
         &--topic a {
-            color: #e52020;
+            color: #c00;
             text-decoration: none;
             border: none;
             &:active, &:focus, &:hover {
-                color: #a00;
+                color: #c00;
             }
         }
     }
@@ -84,8 +84,11 @@
         position: absolute;
         left: 0;
         &__item {
-            border: none;
             margin-left:-10px;
+            &--timestamp {
+                border-right: 1px solid #dcdcdc;
+                margin-right: 6px;
+            }
             &--author {
                 display: block;
                 float: none;
@@ -130,12 +133,16 @@
 
 .bbc-news-vj-direction--rtl {
     .meta-list__item--timestamp {
+        border-right: none;
+        border-left: 1px solid #dcdcdc;
+        margin-left: 6px;
         float: right;
         padding-right: 20px;
-        padding-left: 16px;
+        padding-left: 12px;
         @media (min-width: 1280px){
-        padding-right: 24px;
-        padding-left: 20px;
+            border: none;
+            padding-right: 24px;
+            padding-left: 20px;
         }
     }
     .meta-list__item--timestamp::before {
@@ -151,5 +158,6 @@
 
     .meta-list__item--topic a {
         display: block;
+        padding-right: 8px;
     }
 }
