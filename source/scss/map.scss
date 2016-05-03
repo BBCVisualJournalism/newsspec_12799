@@ -57,11 +57,14 @@
             background-size: cover;
         }
         &__source {
-            display: none;
-            font-weight: bold;
-            position: absolute;
-            margin-top:-24px;
-            margin-left:4px;
+            // display: none;
+            font-size: 0.75em;
+            font-weight: normal;
+            padding: 0;
+            padding-bottom:6px;
+            // position: absolute;
+            // margin-top:-24px;
+            // margin-left:4px;
         }
         &__title {
             &__text{
