@@ -1,26 +1,33 @@
 .hero {
     background-color: #ccc;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 -70px;
     background-size: cover;
-    background-image: url('http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg');
+    background-image: url('../img/intro_image_1400.jpg');
     height: 0;
-    padding-bottom: 45%;
+    padding-bottom: 55%;
     position: relative;
    @media (max-aspect-ratio: 1/1) {
         padding-bottom: 100%;
     }
 
     @media (min-width: 320px) and (max-aspect-ratio: 8/10) {
+        background-position: 0;
         padding-bottom: 67%;
     }
 
     @media (min-width: 480px) and (max-aspect-ratio: 1/1) {
-        padding-bottom: 67%;
+        padding-bottom: 52%;
+        background-position: 0 -40px;
     }
 
     @media (min-width: 1008px) {
-        padding-bottom: 35%;
+        padding-bottom: 40%;
+    }
+
+    @media (min-width: 1280px) {
+        background-position: 0 -115px;
+        padding-bottom: 40%;
     }
 
     .bbc-news-vj-grid-wrapper {

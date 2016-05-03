@@ -56,14 +56,6 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#section--five'),
             reached: false
         },
-        'undertaker-video': {
-            element: $('#bbc-news-vj-video--undertaker'),
-            reached: false
-        },
-        'charts': {
-            element: $('#chart__container'),
-            reached: false
-        },
         'section-footer': {
             element: $('#section--footer'),
             reached: false

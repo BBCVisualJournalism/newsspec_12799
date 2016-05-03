@@ -21,11 +21,11 @@
         background-size: cover;
 
         &--drone {
-            background-image: url('http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg');
+            background-image: url('../img/arrival_image_1040.jpg');
         }
 
         &--lesbos {
-            background-image: url('http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg');
+            background-image: url('../img/kato_tritos_poster_image_1040.jpg');
             margin-bottom: 80px;
             @media (min-width: 800px) {
                 margin-bottom: 0;
@@ -33,7 +33,7 @@
         }
 
         &--undertaker {
-            background-image: url('http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg');
+            background-image: url('../img/kato_tritos_poster_image_1040.jpg');
             margin-bottom: 80px;
             @media (min-width: 800px) {
                 margin-bottom: 0;
