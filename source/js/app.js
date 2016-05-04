@@ -12,8 +12,6 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
             '#bbc-news-vj-video--lesbos'
         ];
 
-        console.log(vocabs);
-
         var videoPids = [
             vocabs.video_1_id,
             vocabs.video_2_id
