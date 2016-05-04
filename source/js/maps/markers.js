@@ -1,42 +1,79 @@
 define(function() {
     var markers = {
-        'type': 'FeatureCollection',
-        'features': [
-            {
-                'type': 'Feature',
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [25,40]
-                },
-                'properties': {
-                    'title': 'Test',
-                    'icon': 'grave'
-                }
-            },
-            {
-                'type': 'Feature',
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [22,39]
-                },
-                'properties': {
-                    'title': 'Test',
-                    'icon': 'grave'
-                }
-            },
-            {
-                'type': 'Feature',
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [23,41]
-                },
-                'properties': {
-                    'title': 'Test',
-                    'icon': 'grave'
-                }
-            }
-        ]
-    };
+    "type": "FeatureCollection",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 41.232839, "Longitude": 29.039678 }, "geometry": { "type": "Point", "coordinates": [ 29.039678, 41.232839 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.501565, "Longitude": 27.150637 }, "geometry": { "type": "Point", "coordinates": [ 27.150637, 38.501565 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.206911, "Longitude": 28.335300 }, "geometry": { "type": "Point", "coordinates": [ 28.3353, 37.206911 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 40.257361, "Longitude": 28.985357 }, "geometry": { "type": "Point", "coordinates": [ 28.985357, 40.257361 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 40.198485, "Longitude": 29.180710 }, "geometry": { "type": "Point", "coordinates": [ 29.18071, 40.198485 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.038422, "Longitude": 27.415980 }, "geometry": { "type": "Point", "coordinates": [ 27.41598, 37.038422 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.229428, "Longitude": 27.857137 }, "geometry": { "type": "Point", "coordinates": [ 27.8571368, 36.2294279 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.411509, "Longitude": 28.155678 }, "geometry": { "type": "Point", "coordinates": [ 28.1556783, 36.411509 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.885814, "Longitude": 27.273541 }, "geometry": { "type": "Point", "coordinates": [ 27.273541, 36.885814 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 39.090990, "Longitude": 26.437980 }, "geometry": { "type": "Point", "coordinates": [ 26.43798, 39.09099 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 39.102426, "Longitude": 26.547163 }, "geometry": { "type": "Point", "coordinates": [ 26.547163, 39.102426 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.755086, "Longitude": 26.980141 }, "geometry": { "type": "Point", "coordinates": [ 26.9801407, 37.7550862 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.664610, "Longitude": 26.877665 }, "geometry": { "type": "Point", "coordinates": [ 26.8776646, 37.66461 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.430077, "Longitude": 26.132549 }, "geometry": { "type": "Point", "coordinates": [ 26.1325488, 38.4300768 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.560178, "Longitude": 13.464617 }, "geometry": { "type": "Point", "coordinates": [ 13.464617, 37.560178 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.396374, "Longitude": 13.617452 }, "geometry": { "type": "Point", "coordinates": [ 13.617452, 37.396374 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.594962, "Longitude": 13.289079 }, "geometry": { "type": "Point", "coordinates": [ 13.289079, 37.594962 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.368487, "Longitude": 13.850958 }, "geometry": { "type": "Point", "coordinates": [ 13.850958, 37.368487 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.521368, "Longitude": 13.433376 }, "geometry": { "type": "Point", "coordinates": [ 13.433376, 37.521368 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.632171, "Longitude": 13.644462 }, "geometry": { "type": "Point", "coordinates": [ 13.644462, 37.632171 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.409590, "Longitude": 13.645820 }, "geometry": { "type": "Point", "coordinates": [ 13.64582, 37.40959 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.326480, "Longitude": 13.661060 }, "geometry": { "type": "Point", "coordinates": [ 13.66106, 37.32648 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.399302, "Longitude": 13.694523 }, "geometry": { "type": "Point", "coordinates": [ 13.694523, 37.399302 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.391710, "Longitude": 13.558583 }, "geometry": { "type": "Point", "coordinates": [ 13.558583, 37.39171 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.392766, "Longitude": 13.351829 }, "geometry": { "type": "Point", "coordinates": [ 13.351829, 37.392766 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.188650, "Longitude": 13.767604 }, "geometry": { "type": "Point", "coordinates": [ 13.767604, 37.18865 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.289554, "Longitude": 13.526517 }, "geometry": { "type": "Point", "coordinates": [ 13.526517, 37.289554 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.491599, "Longitude": 15.071115 }, "geometry": { "type": "Point", "coordinates": [ 15.071115, 37.491599 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.161130, "Longitude": 13.368313 }, "geometry": { "type": "Point", "coordinates": [ 13.368313, 38.16113 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.576717, "Longitude": 13.742080 }, "geometry": { "type": "Point", "coordinates": [ 13.74208, 37.576717 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.826058, "Longitude": 14.942571 }, "geometry": { "type": "Point", "coordinates": [ 14.942571, 36.826058 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.024362, "Longitude": 12.888506 }, "geometry": { "type": "Point", "coordinates": [ 12.888506, 38.024362 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.171554, "Longitude": 15.522591 }, "geometry": { "type": "Point", "coordinates": [ 15.522591, 38.171554 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.941498, "Longitude": 15.297793 }, "geometry": { "type": "Point", "coordinates": [ 15.2977929, 37.941498 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.502993, "Longitude": 13.266427 }, "geometry": { "type": "Point", "coordinates": [ 13.266427, 37.502993 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.485881, "Longitude": 13.974657 }, "geometry": { "type": "Point", "coordinates": [ 13.9746573, 37.4858808 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.507589, "Longitude": 13.529891 }, "geometry": { "type": "Point", "coordinates": [ 13.529891, 37.507589 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.691121, "Longitude": 13.023716 }, "geometry": { "type": "Point", "coordinates": [ 13.023716, 37.691121 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.431329, "Longitude": 13.553013 }, "geometry": { "type": "Point", "coordinates": [ 13.553013, 37.431329 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.626586, "Longitude": 13.487880 }, "geometry": { "type": "Point", "coordinates": [ 13.48788, 37.626586 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.508885, "Longitude": 13.079802 }, "geometry": { "type": "Point", "coordinates": [ 13.079802, 37.508885 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.653381, "Longitude": 14.833308 }, "geometry": { "type": "Point", "coordinates": [ 14.833308, 37.653381 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.297866, "Longitude": 14.844894 }, "geometry": { "type": "Point", "coordinates": [ 14.844894, 37.297866 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.144844, "Longitude": 14.960870 }, "geometry": { "type": "Point", "coordinates": [ 14.96087, 38.144844 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.231497, "Longitude": 15.247907 }, "geometry": { "type": "Point", "coordinates": [ 15.247907, 38.231497 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.027623, "Longitude": 14.707335 }, "geometry": { "type": "Point", "coordinates": [ 14.707335, 37.027623 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.918102, "Longitude": 14.744219 }, "geometry": { "type": "Point", "coordinates": [ 14.744219, 36.918102 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.798827, "Longitude": 14.702849 }, "geometry": { "type": "Point", "coordinates": [ 14.702849, 36.798827 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 36.943813, "Longitude": 14.534174 }, "geometry": { "type": "Point", "coordinates": [ 14.534174, 36.943813 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.820994, "Longitude": 13.888675 }, "geometry": { "type": "Point", "coordinates": [ 13.8886746, 37.820994 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.939695, "Longitude": 14.094816 }, "geometry": { "type": "Point", "coordinates": [ 14.094816, 37.939695 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.816037, "Longitude": 13.293731 }, "geometry": { "type": "Point", "coordinates": [ 13.293731, 37.816037 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.944381, "Longitude": 14.005942 }, "geometry": { "type": "Point", "coordinates": [ 14.005942, 37.944381 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.747743, "Longitude": 13.592424 }, "geometry": { "type": "Point", "coordinates": [ 13.592424, 37.747743 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.037831, "Longitude": 13.440386 }, "geometry": { "type": "Point", "coordinates": [ 13.440386, 38.037831 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.090814, "Longitude": 13.182093 }, "geometry": { "type": "Point", "coordinates": [ 13.182093, 38.090814 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.680055, "Longitude": 13.377303 }, "geometry": { "type": "Point", "coordinates": [ 13.377303, 37.680055 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.806601, "Longitude": 14.087602 }, "geometry": { "type": "Point", "coordinates": [ 14.087602, 37.806601 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.813125, "Longitude": 14.000964 }, "geometry": { "type": "Point", "coordinates": [ 14.000964, 37.813125 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.993708, "Longitude": 14.138205 }, "geometry": { "type": "Point", "coordinates": [ 14.138205, 37.993708 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.988330, "Longitude": 13.688460 }, "geometry": { "type": "Point", "coordinates": [ 13.68846, 37.98833 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 38.075244, "Longitude": 13.441782 }, "geometry": { "type": "Point", "coordinates": [ 13.441782, 38.075244 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.509508, "Longitude": 13.714229 }, "geometry": { "type": "Point", "coordinates": [ 13.714229, 37.509508 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.362237, "Longitude": 13.933191 }, "geometry": { "type": "Point", "coordinates": [ 13.933191, 37.362237 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.596547, "Longitude": 13.914362 }, "geometry": { "type": "Point", "coordinates": [ 13.914362, 37.596547 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.296706, "Longitude": 14.209042 }, "geometry": { "type": "Point", "coordinates": [ 14.209042, 37.296706 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.455349, "Longitude": 13.877078 }, "geometry": { "type": "Point", "coordinates": [ 13.877078, 37.455349 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.039516, "Longitude": 15.061624 }, "geometry": { "type": "Point", "coordinates": [ 15.061624, 37.039516 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.161797, "Longitude": 15.182416 }, "geometry": { "type": "Point", "coordinates": [ 15.182416, 37.161797 ] } },
+        { "type": "Feature", "properties": { "title": "test", "icon":"grave", "Latitude": 37.074648, "Longitude": 15.263843 }, "geometry": { "type": "Point", "coordinates": [ 15.263843, 37.074648 ] } }
+    ]};
 
     return markers;
 });
