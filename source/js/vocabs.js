@@ -26,9 +26,12 @@ define(['jquery'], function ($) {
         map3_label_4:   $('.vocabs__map3_label_4').text(),
         map3_label_5:   $('.vocabs__map3_label_5').text(),
         map3_label_6:   $('.vocabs__map3_label_6').text(),
+
         video_id_1:     $('.vocabs__video_id_1').text(),
         video_id_2:     $('.vocabs__video_id_2').text(),
-        video_id_3:     $('.vocabs__video_id_3').text()
+        video_id_3:     $('.vocabs__video_id_3').text(),
+
+        share_title:    $('.vocabs__share_title').text()
 
         // share: {
         //     label:   $('.vocabs__share_label').text(),

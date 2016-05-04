@@ -9,8 +9,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
     function initVideo() {
         var videoSelectors = [
             '#bbc-news-vj-video--drone',
-            '#bbc-news-vj-video--lesbos',
-            '#bbc-news-vj-video--undertaker'
+            '#bbc-news-vj-video--lesbos'
         ];
 
         var videoPids = [
@@ -50,11 +49,11 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
 //*------------------------------- share stuff ------------------------------- */
     function initShareTools() {
-        var shareTitle   = 'Share this content',       //vocabs here
+        var shareTitle   = vocabs.share_title,
             shareMessage = 'This is my share message', //vocabs here
             config = {
                 holderEl: '.share__holder',
-                label: 'Share this page',
+                label: shareTitle,
                 shareUrl: wrapper.url().hostUrl,
                 messages: {
                     twitter: shareMessage,

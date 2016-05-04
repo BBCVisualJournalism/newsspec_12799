@@ -6,7 +6,8 @@
             <h2><%= credits_title %></h2>
             <p><%= credits %></p>
 
-            <div class="share__holder"><%= share_title %></div>
+            <div class="share__holder"></div>
+            <p style="clear:both;"><a href="<%= about_sharing_link %>"><%= about_sharing_label %></a></p>
 
             <div class="ns_onward-journeys">
                 <div class="ns_creditsLineThick"></div>
@@ -17,24 +18,25 @@
                     <ul>
                         <li>
                             <a href="<%= onward_journey_url_1 %>">
+                                <img src="<%= onward_journey_img_url_1 %>" alt="<%= onward_journey_text_1 %>">
                                 <span><%= onward_journey_text_1 %></span>
                             </a>
                         </li>
                         <li>
                             <a href="<%= onward_journey_url_2 %>">
+                                <img src="<%= onward_journey_img_url_2 %>" alt="<%= onward_journey_text_2 %>">
                                 <span><%= onward_journey_text_2 %></span>
                             </a>
                         </li>
                         <li>
                             <a href="<%= onward_journey_url_3 %>">
+                                <img src="<%= onward_journey_img_url_3 %>" alt="<%= onward_journey_text_3 %>">
                                 <span><%= onward_journey_text_3 %></span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <p style="clear:both;">The BBC is not responsible for the content of external Internet sites</p>
-            <p style="clear:both;"><a href="<%= about_sharing_link %>"><%= about_sharing_label %></a></p>
         </div>
     </div>
 
