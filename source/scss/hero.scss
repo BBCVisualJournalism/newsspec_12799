@@ -1,9 +1,9 @@
 .hero {
     background-color: #ccc;
     background-repeat: no-repeat;
-    background-position: 0 -70px;
+    background-position: -75px 0;
     background-size: cover;
-    background-image: url('../img/intro_image_v2_1400.jpg');
+    background-image: url('../img/italy_graves_intro_1400.jpg');
     height: 0;
     padding-bottom: 55%;
     position: relative;
@@ -18,15 +18,19 @@
 
     @media (min-width: 480px) and (max-aspect-ratio: 1/1) {
         padding-bottom: 52%;
-        background-position: 0 -40px;
+        background-position: 0 -67px;
+    }
+
+    @media (min-width: 800px) {
+        background-position: 0 0;
     }
 
     @media (min-width: 1008px) {
-        padding-bottom: 40%;
+        padding-bottom: 52%;
     }
 
     @media (min-width: 1280px) {
-        background-position: 0 -115px;
+        background-position: 0 -240px;
         padding-bottom: 40%;
     }
 

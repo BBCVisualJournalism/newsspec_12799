@@ -18,8 +18,8 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
         ];
 
         var videoHoldingImgs = [
-            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/arrival_image_1040.jpg' + '?v=' + version,
-            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/kato_tritos_poster_image_1040.jpg' + '?v=' + version
+            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/kato_tritos_poster_image_1040.jpg' + '?v=' + version,
+            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/arrival_image_1040.jpg' + '?v=' + version
         ];
 
         //                  videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled

@@ -22,6 +22,11 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
 
     Video.prototype = {
         init: function () {
+            if (this.vpid === ''){
+                //video not present, remove video container element
+                this.$videoContainer.remove();
+                return;
+            }
             var playerSettings = {
                 product: 'news',
                 mediator: {
@@ -31,7 +36,8 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                 playlistObject: {
                     embedRights: 'allowed',
                     items : [{
-                        vpid : this.vpid
+                        vpid : this.vpid,
+                        kind: 'programme'
                     }],
                     holdingImageURL: this.holdingImage
                 },
