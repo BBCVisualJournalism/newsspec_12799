@@ -12,6 +12,8 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
             '#bbc-news-vj-video--lesbos'
         ];
 
+        console.log(vocabs);
+
         var videoPids = [
             vocabs.video_1_id,
             vocabs.video_2_id
@@ -49,8 +51,11 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
 //*------------------------------- share stuff ------------------------------- */
     function initShareTools() {
-        var shareTitle   = vocabs.share_title,
-            shareMessage = 'This is my share message', //vocabs here
+        var shareTitle   = vocabs.share_title;
+        if (shareTitle === ''){
+            shareTitle = 'Share this Page';
+        }
+        var shareMessage = 'This is my share message', //vocabs here
             config = {
                 holderEl: '.share__holder',
                 label: shareTitle,

@@ -29,9 +29,6 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             }
             var playerSettings = {
                 product: 'news',
-                mediator: {
-                   host: 'open.live.bbc.co.uk'
-                },
                 externalEmbedUrl: this.embedURL,
                 playlistObject: {
                     embedRights: 'allowed',
