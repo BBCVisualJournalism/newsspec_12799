@@ -1,4 +1,4 @@
-define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/markerTypes', 'maps/textLabelTypes'], function(BBCLabelOverlay, BBCCircleOverlay, markerTypes, textLabelTypes) {
+define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/markerTypes', 'maps/textLabelTypes'], function(BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, markerTypes, textLabelTypes) {
 
     var BBCMap = function (config) {
         this.map = null;
@@ -6,6 +6,7 @@ define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/markerTypes', 'ma
         this.mapElementId = config.elementId; //String (map element id)
         this.mapSettings = config.mapSettings;
         this.circleOverlays = config.circleOverlays; //Array of objects
+        this.imageOverlays = config.imageOverlays;
         this.textLabels = config.textLabels; //Array of objects
         this.kmlLayers = config.kmlLayers; //Array of KML file URLs
         this.markers = config.markers;
@@ -46,6 +47,8 @@ define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/markerTypes', 'ma
 
         //Add KML Layers to the map
         // this.addCircleLayers(this.circleOverlays);
+
+        this.addImageOverlays(this.imageOverlays);
 
         //Add text labels to the map
         this.addTextLabels(this.textLabels);
@@ -128,6 +131,12 @@ define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/markerTypes', 'ma
         for(var i = 0; i < layers.length; i++) {
             var circleOverlay = new BBCCircleOverlay(this.map, layers[i].dataset, layers[i].valueProperty);
             this.renderedCircleOverlays.push(circleOverlay);
+        }
+    };
+
+    BBCMap.prototype.addImageOverlays = function(overlays) {
+        for(var i = 0; i < overlays.length; i++) {
+            var imageOverlay = new BBCImageOverlay(overlays[i].bounds, overlays[i].image, this.map);
         }
     };
 

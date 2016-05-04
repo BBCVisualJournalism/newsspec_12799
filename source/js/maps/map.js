@@ -1,5 +1,5 @@
-define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps/textLabelTypes', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/geojson', 'vocabs'],
-    function (GoogleMaps, defaultStyles, textLabelTypes, markerTypes, bbcSettings, markers, BBCMap, BBCLabelOverlay, BBCCircleOverlay, toll, vocabs) {
+define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps/textLabelTypes', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/geojson', 'vocabs'],
+    function (GoogleMaps, defaultStyles, textLabelTypes, markerTypes, bbcSettings, markers, BBCMap, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, toll, vocabs) {
         return function () {
 
         var textLabels_map1 = [
@@ -178,6 +178,15 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                             'valueProperty': 'toll'
                         }
                     ],
+                    'imageOverlays': [
+                        {
+                            'bounds': new google.maps.LatLngBounds(
+                                new google.maps.LatLng(25.7597533, 2.0647545),
+                                new google.maps.LatLng(47.5702063, 41.037531)
+                            ),
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/testcircles.png'
+                        }
+                    ],
                     'textLabels': textLabels_map1,
                     'kmlLayers': [
                         'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml'
@@ -197,6 +206,15 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                             'valueProperty': 'toll'
                         }
                     ],
+                    'imageOverlays': [
+                        {
+                            'bounds': new google.maps.LatLngBounds(
+                                new google.maps.LatLng(25.7597533, 2.0647545),
+                                new google.maps.LatLng(47.5702063, 41.037531)
+                            ),
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/testcircles.png'
+                        }
+                    ],
                     'textLabels': textLabels_map2,
                     'kmlLayers': [
                         'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml'
@@ -214,6 +232,15 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                         {
                             'dataset': toll.features,
                             'valueProperty': 'toll'
+                        }
+                    ],
+                    'imageOverlays': [
+                        {
+                            'bounds': new google.maps.LatLngBounds(
+                                new google.maps.LatLng(25.7597533, 2.0647545),
+                                new google.maps.LatLng(47.5702063, 41.037531)
+                            ),
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/testcircles.png'
                         }
                     ],
                     'textLabels': textLabels_map3,
