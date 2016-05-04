@@ -108,12 +108,12 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
 //*------------------------------- init ------------------------------- */
     function init(){
-        wrapper.markPageAsLoaded();
         progressiveEnhancement.init();
         initVideo();
         initShareTools();
         initMaps();
         istatsLogger.init();
+        wrapper.markPageAsLoaded();
     }
 
     init();
