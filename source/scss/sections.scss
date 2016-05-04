@@ -52,7 +52,6 @@
         }
 
         &__overlay {
-            display:none;
             background-color:#000;
             bottom: -64px;
             height: 64px;
@@ -60,6 +59,9 @@
             width:100%;
             z-index: 20;
             position: absolute;
+            &--hidden {
+                display:none;
+            }
             &:hover {
                 cursor: pointer;
                 .bbc-news-vj-video__overlay__play {

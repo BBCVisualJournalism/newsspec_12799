@@ -104,51 +104,17 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
         }
 
         removeMap();
-        // $(window).resize(function() {
-        //     removeMap();
-        // });
     }
-
-
-//*------------------------------- other stuff ------------------------------- */
-    // wrapper.onOptimizedScroll(function (scrollTop) {
-    //     console.log('Optimized scroll.', scrollTop);
-    // });
-
-    // wrapper.onRawScroll(function (scrollTop) {
-    //     console.log('Raw scroll.', scrollTop);
-    // });
-
-    // setTimeout(function () {
-    //     wrapper.callIstats({
-    //         actionType: 'panel-clicked',
-    //         actionName: 'newsspec-interaction',
-    //         viewLabel:  3
-    //     });
-    // }, 500);
-
-    // setTimeout(function () {
-    //     wrapper.callIstats({
-    //         actionType: 'app loaded',
-    //         actionName: 'newsspec-nonuser',
-    //         viewLabel:  true
-    //     });
-    // }, 2000);
-
-
 
 //*------------------------------- init ------------------------------- */
     function init(){
+        wrapper.markPageAsLoaded();
+        progressiveEnhancement.init();
         initVideo();
         initShareTools();
         initMaps();
+        istatsLogger.init();
     }
-
-    istatsLogger.init();
-
-    wrapper.markPageAsLoaded();
-
-    progressiveEnhancement.init();
 
     init();
 
