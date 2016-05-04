@@ -189,7 +189,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                     ],
                     'textLabels': textLabels_map1,
                     'kmlLayers': [
-                        'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml'
+                        'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
                     'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
@@ -217,7 +217,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                     ],
                     'textLabels': textLabels_map2,
                     'kmlLayers': [
-                        'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml'
+                        'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
                     'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
@@ -245,7 +245,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                     ],
                     'textLabels': textLabels_map3,
                     'kmlLayers': [
-                        'https://dl.dropboxusercontent.com/u/7667577/maritime2.kml'
+                        'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
                     'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
