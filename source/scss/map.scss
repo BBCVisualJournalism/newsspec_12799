@@ -197,7 +197,7 @@
             &__grave-marker {
                 display:block;
                 padding-top:8px;
-                @media (min-width:440px){
+                @media (min-width:515px){
                     display:inline-block;
                     height: 30px;
                     margin-left: 50px;
@@ -548,8 +548,16 @@
     .graveyard-map__footer {
         direction: rtl;
         &__title {
-            width: none;
-            left: 22%;
+            right:6px;
+            @media (min-width: 320px){
+                left: 35%;
+            }
+            @media (min-width: 490px){
+                left: 26%;
+            }
+            @media (min-width:515px){
+                right:inherit;
+            }
         }
         &__scale__container {
             margin-left: 20px;
@@ -557,8 +565,14 @@
         &__scale--one {
             margin-left: 0;
         }
+        &__scale--three {
+            left:9px;
+        }
         &__grave-marker {
-            right: 40px;
+            right: 8px;
+            &:before {
+                margin-left:6px;
+            }
         }
     }
 }
