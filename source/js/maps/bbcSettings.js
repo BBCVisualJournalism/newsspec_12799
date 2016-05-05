@@ -80,10 +80,10 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], func
 		    mapType: google.maps.MapTypeId.ROADMAP,
 		    //TODO: Define px breakpoints (mob first) that map changes zoom level and re-centers:
 		    responsiveZoomLevels: {
-		    	'0': {'zoom': 5, 'lat': 38.2620323, 'lng': 24.85908545625002},
-			    '460': {'zoom': 6, 'lat': 38.2275188226067, 'lng': 24.62788428437499},
-			    '870': {'zoom': 7, 'lat': 38.2620323, 'lng': 25.17768897187502}
-		    },
+	            '0': {'zoom': 6, 'lat': 37.46408582680634, 'lng': 26.80366553437502},
+	            '460': {'zoom': 6, 'lat': 38.2275188226067, 'lng': 24.62788428437499},
+	            '870': {'zoom': 7, 'lat': 38.2620323, 'lng': 25.17768897187502}
+	        },
 		    //Minimum zoom level:
 		    minZoom: 5,
 		    //Maximum zoom level:
