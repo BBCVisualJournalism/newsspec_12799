@@ -4,20 +4,27 @@
         max-width: 1008px;
         margin-left: auto;
         margin-right: auto;
-        // border: 1px solid #505050;
         text-align:center;
-        // padding-top:56.25%;
         position: relative;
         overflow: hidden;
-        // max-width: 1040px;
         width: 100%;
         margin: 0 auto;
-        // margin-bottom:50px;
         // fixes kml warping
         img {
             max-width: none;
         }
-
+        @media (min-width:300px){
+            height: 400px
+        }
+        @media (min-width:485px){
+            height: 500px
+        }
+        @media (min-width:800px){
+            height: 600px
+        }
+        @media (min-width:1280px){
+            height: 800px
+        }
         &__canvas {
             height:  800px;
             max-width: 1008px;
