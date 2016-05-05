@@ -3,6 +3,6 @@
 <%= include("section2_drone-maps.tmpl") %>
 <%= include("section3_case-study.tmpl") %>
 <%= include("section4_finding-relatives.tmpl") %>
-<%= include("section5_responsive-images.tmpl") %>
+<%= include("section5.tmpl") %>
 <%= include("credits.tmpl") %>
 <%= include("vocabs.tmpl") %>

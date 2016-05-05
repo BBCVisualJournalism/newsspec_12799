@@ -44,10 +44,10 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#section--four'),
             reached: false
         },
-        'lesbos-map-image': {
-            element: $('#lesbos-map__image'),
-            reached: false
-        },
+        // 'lesbos-map-image': {
+        //     element: $('#lesbos-map__image'),
+        //     reached: false
+        // },
         'section-five': {
             element: $('#section--five'),
             reached: false

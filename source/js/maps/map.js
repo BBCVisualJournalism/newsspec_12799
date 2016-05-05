@@ -192,7 +192,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                         'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
-                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
+                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbchillshade/'
                 }
             );
 
@@ -220,7 +220,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                         'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
-                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
+                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbchillshade/'
                 }
             );
 
@@ -248,7 +248,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                         'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/maritime_borders.kml'
                     ],
                     'markers': markers,
-                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbcterrain/'
+                    'tileUrlBase': '/news/special/2016/newsspec_12799/content/full-width/common/img/bbchillshade/'
                 }
             );
 
