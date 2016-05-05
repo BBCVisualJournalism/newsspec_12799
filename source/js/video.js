@@ -73,10 +73,13 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             });
             wrapper.onRawScroll(function (scrollTop){
                 if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--drone'){
+                    if (!utils.isElementInViewport(self.$videoContainer) && scrollTop > 920) {
+                        self.mp.pause();
+                    }
+                }
+                if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--lesbos'){
                     if (!utils.isElementInViewport(self.$videoContainer)) {
                         self.mp.pause();
-                    // } else {
-                    //     self.playVideo();
                     }
                 }
             });
@@ -109,9 +112,6 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                 };
                 // console.log(istatsInfo);
                 wrapper.callIstats(istatsInfo);
-                if (this.$videoContainer.attr('id') === 'bbc-news-vj-video--drone' && !utils.isElementInViewport(this.$videoContainer)) {
-                    this.mp.pause();
-                }
             }
         },
 
