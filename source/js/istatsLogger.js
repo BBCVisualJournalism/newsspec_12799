@@ -44,10 +44,6 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#section--four'),
             reached: false
         },
-        'lost-relatives-flowchart': {
-            element: $('#finding-lost-relatives__flowchart'),
-            reached: false
-        },
         'lesbos-map-image': {
             element: $('#lesbos-map__image'),
             reached: false
