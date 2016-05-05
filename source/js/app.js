@@ -53,7 +53,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
         if (shareTitle === ''){
             shareTitle = 'Share this Page';
         }
-        var shareMessage = 'This is my share message', //vocabs here
+        var shareMessage = vocabs.share_message,
             config = {
                 holderEl: '.share__holder',
                 label: shareTitle,

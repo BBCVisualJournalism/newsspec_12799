@@ -30,13 +30,8 @@ define(['jquery'], function ($) {
         video_1_id:     $('.vocabs__video_1_id').text(),
         video_2_id:     $('.vocabs__video_2_id').text(),
 
-        share_title:    $('.vocabs__share_title').text()
-
-        // share: {
-        //     label:   $('.vocabs__share_label').text(),
-        //     title:   $('.vocabs__share_title').text(),
-        //     message: $('.vocabs__share_message').text()
-        // }
+        share_title:    $('.vocabs__share_title').text(),
+        share_message:  $('.vocabs__share_message').text()
 
     };
 
