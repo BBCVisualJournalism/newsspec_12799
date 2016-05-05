@@ -50,11 +50,10 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 //*------------------------------- share stuff ------------------------------- */
     function initShareTools() {
         var shareTitle   = vocabs.share_title;
-        if (shareTitle === ''){
-            shareTitle = 'Share this Page';
-        }
-        var shareMessage = vocabs.share_message,
-            config = {
+        var shareMessage = vocabs.share_message;
+        if (shareTitle   === ''){ shareTitle = 'Share this Page'; }
+        if (shareMessage === ''){ shareMessage = vocabs.isite_meta_description; }
+        var config = {
                 holderEl: '.share__holder',
                 label: shareTitle,
                 shareUrl: wrapper.url().hostUrl,
