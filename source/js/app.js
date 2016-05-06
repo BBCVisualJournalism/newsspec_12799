@@ -9,23 +9,27 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
     function initVideo() {
         var videoSelectors = [
             '#bbc-news-vj-video--drone',
-            '#bbc-news-vj-video--lesbos'
+            '#bbc-news-vj-video--lesbos',
+            '#bbc-news-vj-video--voices'
         ];
 
         var videoPids = [
             vocabs.video_1_id,
-            vocabs.video_2_id
+            vocabs.video_2_id,
+            vocabs.video_3_id
         ];
 
         var videoHoldingImgs = [
             'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/drone_video_poster_1040.jpg' + '?v=' + version,
+            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/arrival_image_1040.jpg' + '?v=' + version,
             'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/arrival_image_1040.jpg' + '?v=' + version
         ];
 
         //                  videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled
         var videoPlayers = [
             new VideoPlayer(videoSelectors[0], videoPids[0], videoHoldingImgs[0], false, '', true, true),
-            new VideoPlayer(videoSelectors[1], videoPids[1], videoHoldingImgs[1], false, '', true, true)
+            new VideoPlayer(videoSelectors[1], videoPids[1], videoHoldingImgs[1], false, '', true, true),
+            new VideoPlayer(videoSelectors[2], videoPids[2], videoHoldingImgs[2], false, '', true, true)
         ];
 
         function pauseVideo(index) {

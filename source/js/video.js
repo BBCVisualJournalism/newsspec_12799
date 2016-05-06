@@ -85,6 +85,11 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
                         self.mp.pause();
                     }
                 }
+                if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--voices'){
+                    if (!utils.isElementInViewport(self.$videoContainer)) {
+                        self.mp.pause();
+                    }
+                }
             });
         },
 
