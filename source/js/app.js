@@ -24,7 +24,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
         //                  videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled
         var videoPlayers = [
-            new VideoPlayer(videoSelectors[0], videoPids[0], videoHoldingImgs[0], true, '', true, true),
+            new VideoPlayer(videoSelectors[0], videoPids[0], videoHoldingImgs[0], false, '', true, true),
             new VideoPlayer(videoSelectors[1], videoPids[1], videoHoldingImgs[1], false, '', true, true)
         ];
 

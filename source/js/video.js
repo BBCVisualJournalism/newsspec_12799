@@ -53,7 +53,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             this.setSmpCta(this.ctaEnabled);
             this.setSmpControls(this.controlsEnabled);
 
-            if (this.getWindowWidth() >= this.ctaBreakpoint) {
+            if (this.getWindowWidth() >= this.ctaBreakpoint && this.$videoContainer.attr('id') !== 'bbc-news-vj-video--drone') {
                 this.setSmpCta(false);
             }
         },
@@ -73,6 +73,9 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             });
             wrapper.onRawScroll(function (scrollTop){
                 if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--drone'){
+                    if (utils.isElementInViewport(self.$videoContainer) && self.firstEnded) {
+                        self.mp.play();
+                    }
                     if (!utils.isElementInViewport(self.$videoContainer) && scrollTop > 920) {
                         self.mp.pause();
                     }
