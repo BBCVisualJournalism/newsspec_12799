@@ -73,8 +73,7 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
             });
             wrapper.onRawScroll(function (scrollTop){
                 if (self.$videoContainer.attr('id') === 'bbc-news-vj-video--drone'){
-                    console.log(window.innerWidth, self.fullFeatureWidth);
-                    if (utils.isElementInViewport(self.$videoContainer) && self.firstEnded) {
+                    if (utils.isElementInViewport(self.$videoContainer) && self.firstEnded && window.innerWidth > self.fullFeatureWidth) {
                         self.mp.play();
                     }
                     if (!utils.isElementInViewport(self.$videoContainer) && scrollTop > 920) {
