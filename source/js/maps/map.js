@@ -25,7 +25,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                 'labelType': 'country'
             },{
                 'lat': 38.5770502,
-                'lng': 21.7531886,
+                'lng': 22.1531886,
                 'text': vocabs.map1_label_5,
                 'labelType': 'country'
             },{
@@ -43,9 +43,9 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                     'max': 6
                 }
             },{
-                'lat': 34.6828503,
-                'lng': 21.5967522,
-                'text': 'Mediterranean Sea',
+                'lat': 34.8828503,
+                'lng': 20.5967522,
+                'text': vocabs.map1_label_8,
                 'labelType': 'sea'
             }
         ];
@@ -58,7 +58,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                 'labelType': 'country'
             },{
                 'lat': 36.1505775,
-                'lng': 14.4411156,
+                'lng': 14.7211156,
                 'text': vocabs.map2_label_2,
                 'labelType': 'country',
                 'zoomLevels': {
@@ -66,17 +66,17 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps
                     'max': 7
                 }
             },{
-                'lat': 31.71465,
+                'lat': 32.31465,
                 'lng': 13.2981406,
                 'text': vocabs.map2_label_3,
                 'labelType': 'country'
             },{
-                'lat': 39.5963567,
-                'lng': 13.6524025,
+                'lat': 37.0963567,
+                'lng': 17.0524025,
                 'text': vocabs.map2_label_4,
                 'labelType': 'sea',
                 'zoomLevels': {
-                    'min': 6,
+                    'min': 7,
                     'max': 7
                 }
             },{

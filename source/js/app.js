@@ -92,20 +92,9 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
 //*------------------------------- map stuff ------------------------------- */
 
-    //TODO (before production): change API key for correct value and remove cache busting
     function initMaps() {
         var $map1 = $('#graveyard-map--one__container');
-
         map();
-
-        function removeMap(){
-            if (window.innerWidth < 1008){
-                $map1.empty();
-                $map1.remove();
-            }
-        }
-
-        removeMap();
     }
 
 //*------------------------------- init ------------------------------- */
