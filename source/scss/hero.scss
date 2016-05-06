@@ -1,12 +1,13 @@
 .hero {
     background-color: #ccc;
     background-repeat: no-repeat;
-    background-position: -75px 0;
+    background-position: 0 0;
     background-size: cover;
     background-image: url('../img/italy_graves_intro_1400.jpg');
     height: 0;
     padding-bottom: 55%;
     position: relative;
+    text-align: center;
    @media (max-aspect-ratio: 1/1) {
         padding-bottom: 100%;
     }
@@ -43,67 +44,47 @@
         bottom:0;
         color: #000;
         // text-shadow: 0.0625em 0.0625em 0.25em #000;
-        font-size: 0.9em;
-        left: 15px;
-        right: 15px;
+        left: 8px;
+        right: 8px;
         margin:0 auto;
         padding:18px;
         padding-bottom:0;
         position:absolute;
-        @media (min-width: 280px) {
-            max-width:290px;
+        text-align: initial;
+        @media (min-width: 400px) {
+            left:  16px;
+            right: 16px;
         }
-        @media (min-width: 350px) {
-            max-width:375px;
-        }
-        @media (min-width: 415px) {
-            max-width:385px;
-        }
-        @media (min-width: 545px) {
-            max-width:515px;
-        }
-        @media (min-width: 600px) {
-            max-width:560px;
-        }
-        @media (min-width: 700px) {
-            font-size: 1em;
-            max-width:600px;
-            padding:22px;
-        }
-        @media (min-width: 1008px) {
-            max-width:630px;
-        }
-        @media (min-width: 1280px) {
-            max-width:705px;
-        }
+                                            // to do
+                                            @media (min-width: 600px) {
+                                                left:  16px;
+                                                right: 16px;
+                                            }
+                                            @media (min-width: 1008px) {
+                                                padding:16px;
+                                            }
+                                            @media (min-width: 1280px) {
+                                            }
     }
 
     &__heading {
-        font-size: 1.9em;
+        font-size: 2em;
         line-height: 1;
         margin: 0;
 
-        @media (min-width: 545px) {
-            font-size: 2.5em;
-        }
-
-        @media (min-width: 1008px) {
-            font-size: 3em;
+        @media (min-width: 600px) {
+            font-size: 2.889em;
         }
     }
 
     .hero__subheading {
-        font-size: 1.25em;
+        font-size: 1.125em;
         line-height: 1;
         margin: 0;
         margin-top: 0.5em;
 
         @media (min-width: 600px) {
-            // font-size: 1.25em;
-        }
-
-        @media (min-width: 1280px) {
-            // font-size: 1.5em;
+            font-size: 1.44444em;
         }
     }
 }

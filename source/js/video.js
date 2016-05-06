@@ -130,7 +130,9 @@ define(['jquery', 'bump-3', 'wrapper', 'utils'], function ($, bump, wrapper, uti
         },
 
         hideOverlay: function () {
-            this.$overlay.addClass('bbc-news-vj-video__overlay--hidden');
+            if (window.innerWidth > this.fullFeatureWidth) {
+                this.$overlay.addClass('bbc-news-vj-video__overlay--hidden');
+            }
         },
 
         hideBgImg: function () {

@@ -2,6 +2,12 @@
     margin-top:40px;
     .intro--stat {
         font-size:1.45em;
+        &--one {
+            margin-bottom:0.25em;
+        }
+        &--two {
+            margin-top:0;
+        }
         .red-text {
             color: #c00;
             font-weight: bold;
@@ -36,7 +42,7 @@
             padding-right: 0;
         }
         &--author {
-            font-weight: bold;
+            font-weight: normal;
         }
         &--role {
             color: #999;
@@ -68,6 +74,7 @@
         &--topic a {
             color: #c00;
             text-decoration: none;
+            font-weight: normal;
             border: none;
             &:active, &:focus, &:hover {
                 color: #c00;
