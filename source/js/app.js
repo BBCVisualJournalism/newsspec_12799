@@ -62,7 +62,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
                     facebook: {
                         title:       shareTitle,
                         description: shareMessage,
-                        image:       'http://www.stage.bbc.co.uk/news/special/2016/newsspec_13606/content/iframe/common/img/promo.jpg' // optional
+                        image:       'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/italy_graves_intro_1400.jpg' // optional
                     },
                     email: {
                         subject: shareTitle,

@@ -52,6 +52,10 @@ define(['wrapper', 'jquery', 'utils'], function (wrapper, $, utils) {
             element: $('#section--five'),
             reached: false
         },
+        'section-method': {
+            element: $('#section--method'),
+            reached: false
+        },
         'section-footer': {
             element: $('#section--footer'),
             reached: false
