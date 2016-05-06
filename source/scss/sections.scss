@@ -12,16 +12,12 @@
     }
 
     .bbc-news-vj-video {
-        height: 0;
-        padding-bottom: 56.25%;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         margin-top:2.5em;
-        @media( min-width:800px){
-            margin-bottom:2.5em;
-        }
+        margin-bottom:2.5em;
 
         &--drone {
             background-image: url('../img/drone_video_poster_1040.jpg');
@@ -30,7 +26,6 @@
 
         &--lesbos {
             background-image: url('../img/arrival_image_1040.jpg');
-            margin-bottom: 104px;
             @media (min-width: 800px) {
                 margin-bottom: 0;
             }
@@ -38,7 +33,6 @@
 
         &--voices {
             background-image: url('../img/kato_tritos_poster_image_1040.jpg');
-            margin-bottom: 104px;
             @media (min-width: 800px) {
                 margin-bottom: 0;
             }
@@ -51,19 +45,21 @@
             height: 100%;
             z-index: 0;
             background-size: cover;
-            position: absolute;
-            padding: 0;
+            position: relative;
+            padding: 0 0 56.25%;
+            > div {
+                position:absolute !important;
+            }
         }
 
         &__overlay {
             background-color:#000;
-            bottom: -80px;
             font-size:18px;
             min-height: 80px;
             overflow: hidden;
             width:100%;
             z-index: 20;
-            position: absolute;
+            position: relative;
             @media (min-width: 600px){
                 font-size: 21px;
             }
