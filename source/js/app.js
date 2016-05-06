@@ -56,7 +56,8 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
         var config = {
                 holderEl: '.share__holder',
                 label: shareTitle,
-                shareUrl: wrapper.url().hostUrl,
+                // shareUrl: wrapper.url().hostUrl,
+                shareUrl: vocabs.share_url,
                 messages: {
                     twitter: shareMessage,
                     facebook: {
