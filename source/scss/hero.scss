@@ -8,7 +8,10 @@
     padding-bottom: 55%;
     position: relative;
     text-align: center;
-   @media (max-aspect-ratio: 1/1) {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+       @media (max-aspect-ratio: 1/1) {
         padding-bottom: 100%;
     }
 
@@ -50,7 +53,7 @@
         padding:18px;
         padding-bottom:0;
         position:absolute;
-        text-align: initial;
+        text-align: left;
         @media (min-width: 400px) {
             left:  16px;
             right: 16px;
@@ -69,36 +72,39 @@
 
 
         @media (min-width: 280px) {
-            max-width:290px
+            max-width:290px;
         }
 
         @media (min-width: 350px) {
-            max-width:375px
+            max-width:375px;
         }
 
         @media (min-width: 415px) {
-            max-width:385px
+            max-width:385px;
         }
 
         @media (min-width: 545px) {
-            max-width:515px
+            max-width:515px;
         }
 
         @media (min-width: 600px) {
-            max-width:560px
+            max-width:560px;
         }
 
         @media (min-width: 700px) {
             max-width:600px;
-                padding: 22px
+            width:600px;
+            padding: 22px;
         }
 
         @media (min-width: 1008px) {
-            max-width:630px
+            max-width:630px;
+            width:630px;
         }
 
         @media (min-width: 1280px) {
-            max-width:705px
+            max-width:705px;
+            width:705px
         }
 
     }
@@ -122,5 +128,12 @@
         @media (min-width: 600px) {
             font-size: 1.44444em;
         }
+    }
+}
+
+.bbc-news-vj-direction--rtl {
+    .hero__titles {
+        direction:rtl;
+        text-align:right;
     }
 }
