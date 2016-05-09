@@ -2,7 +2,7 @@
 
 //TODO: Add in bounding box settings?
 
-define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles'], function(GoogleMaps, defaultStyles){
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&sensor=true&channel=mtk-v3-schoolreport-2014', 'maps/defaultStyles'], function(GoogleMaps, defaultStyles){
 	var bbcSettings = {
 		one: {
 		    //Map style:

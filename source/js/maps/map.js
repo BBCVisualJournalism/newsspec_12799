@@ -1,4 +1,4 @@
-define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/defaultStyles', 'maps/textLabelTypes', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/geojson', 'vocabs'],
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&sensor=true&channel=mtk-v3-schoolreport-2014', 'maps/defaultStyles', 'maps/textLabelTypes', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/geojson', 'vocabs'],
     function (GoogleMaps, defaultStyles, textLabelTypes, markerTypes, bbcSettings, markers, BBCMap, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, toll, vocabs) {
         return function () {
 

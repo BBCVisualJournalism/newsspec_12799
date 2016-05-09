@@ -1,4 +1,4 @@
-define(['http://maps.google.com/maps/api/js?v=3.22'], function(GoogleMaps){
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&sensor=true&channel=mtk-v3-schoolreport-2014'], function(GoogleMaps){
 
     // This example creates a custom overlay called BBCCircleOverlay,
     // for adding BBC styled text labels to maps

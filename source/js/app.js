@@ -1,4 +1,4 @@
-define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'vocabs', 'progressiveEnhancement'],
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&sensor=true&channel=mtk-v3-schoolreport-2014', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'vocabs', 'progressiveEnhancement'],
     function (GoogleMaps, map, wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, vocabs, progressiveEnhancement) {
 
     // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
@@ -104,12 +104,12 @@ define(['http://maps.google.com/maps/api/js?v=3.22', 'maps/map', 'wrapper', 'jqu
 
 //*------------------------------- init ------------------------------- */
     function init(){
-        progressiveEnhancement.init();
+        initMaps();
         initVideo();
         initShareTools();
-        initMaps();
         istatsLogger.init();
         wrapper.markPageAsLoaded();
+        progressiveEnhancement.init();
     }
 
     init();
