@@ -23,15 +23,15 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
             holdingImg3='';
 
         if(pageIsEnglish){
-            holdingImg3 = 'voices_of_lesbos_cover_1040_3.jpg';
+            holdingImg3 = $('#voices_poster--english').text();
         } else {
-            holdingImg3 = 'voices_of_lesbos_cover_1040.jpg';
+            holdingImg3 = $('#voices_poster--other').text();
         }
 
         var videoHoldingImgs = [
-            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/drone_video_poster_1040.jpg' + '?v=' + version,
-            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/arrival_image_1040.jpg' + '?v=' + version,
-            'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/' + holdingImg3 + '?v=' + version
+            $('#drone_poster').text(),
+            $('#lesbos_poster').text(),
+            holdingImg3
         ];
 
         //                  videoContainerSelector, vpid, holdingImage, autoplay, embedURL, ctaEnabled, controlsEnabled
