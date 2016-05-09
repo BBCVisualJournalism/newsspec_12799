@@ -79,7 +79,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                     facebook: {
                         title:       vocabs.share_fb_title,
                         description: vocabs.share_fb_message,
-                        image:       'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/italy_graves_intro_1400.jpg' // optional
+                        image:       $('#fb_share_img').text()
                     },
                     email: {
                         subject: shareHeader,
