@@ -31,6 +31,7 @@ define(['jquery'], function ($) {
         video_2_id:     $('.vocabs__video_2_id').text(),
         video_3_id:     $('.vocabs__video_3_id').text(),
 
+        share_header:   $('.vocabs__share_header').text(),
         share_title:    $('.vocabs__share_title').text(),
         share_message:  $('.vocabs__share_message').text(),
         share_url:  $('.vocabs__share_url').text(),

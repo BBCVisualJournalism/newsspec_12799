@@ -62,13 +62,14 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
 
 //*------------------------------- share stuff ------------------------------- */
     function initShareTools() {
+        var shareHeader   = vocabs.share_header;
         var shareTitle   = vocabs.share_title;
         var shareMessage = vocabs.share_message;
-        if (shareTitle   === ''){ shareTitle = 'Share this Page'; }
+        if (shareHeader   === ''){ shareHeader = 'Share this Page'; }
         if (shareMessage === ''){ shareMessage = vocabs.isite_meta_description; }
         var config = {
                 holderEl: '.share__holder',
-                label: shareTitle,
+                label: shareHeader,
                 shareUrl: wrapper.url().hostUrl,
                 // shareUrl: vocabs.share_url,
                 messages: {
@@ -79,14 +80,14 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                         image:       'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/italy_graves_intro_1400.jpg' // optional
                     },
                     email: {
-                        subject: shareTitle,
+                        subject: shareHeader,
                         message: shareMessage
                     },
                     app: {
                         shareEndpoint: 'bbcnewsapp://visualjournalism/share',
                         popup: false,
                         properties: {
-                            title: shareTitle,
+                            title: shareHeader,
                             text: shareMessage
                         }
                     }

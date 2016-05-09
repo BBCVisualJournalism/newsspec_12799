@@ -72,6 +72,10 @@
             left:  16px;
             right: 16px;
         }
+
+        @media (min-width: 700px) {
+            padding-bottom: 0;
+        }
         @media (min-width: 1008px) {
             padding:16px;
         }
