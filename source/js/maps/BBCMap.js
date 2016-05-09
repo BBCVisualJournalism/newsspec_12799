@@ -1,4 +1,4 @@
-define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/markerTypes', 'maps/textLabelTypes'], function(BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, markerTypes, textLabelTypes) {
+define(['jquery', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/markerTypes', 'maps/textLabelTypes'], function($, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, markerTypes, textLabelTypes) {
 
     var BBCMap = function (config) {
         this.map = null;
@@ -61,6 +61,8 @@ define(['maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay',
 
         //Setup event handlers
         this.setupListeners();
+
+        $('.bbc-news-vj-wrapper').addClass('bbc-news-vj-wrapper--map-enabled');
     };
 
     BBCMap.prototype.resizeAndRecenter = function() {

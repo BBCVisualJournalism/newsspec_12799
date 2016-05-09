@@ -21,11 +21,19 @@
 @import "charts";
 @import "credits";
 
-.bbc-news-vj-wrapper--js-enabled {
+.bbc-news-vj-wrapper--js-enabled {}
+
+.bbc-news-vj-wrapper--map-enabled {
 
     .graveyard-map__overlay,
     .graveyard-map__footer {
         display: block;
+    }
+
+    .section .graveyard-map--one,
+    .section .graveyard-map--two,
+    .section .graveyard-map--three {
+        background-image: none;
     }
 
 }
