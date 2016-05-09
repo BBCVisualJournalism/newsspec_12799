@@ -24,12 +24,11 @@
         }
         &__overlay{
             display:none;
-            background-color:#aa0000;
-            height:125px;
+            height:178px;
             position: absolute;
             top:0;
             left:0;
-            width:125px;
+            width:123px;
         }
         &--one {
             background-image: url('../img/map_fallback_1.png');
@@ -37,6 +36,12 @@
             background-size:contain;
             background-position:center;
             padding-bottom:93.68%;
+            &__overlay {
+                background-image: url('../img/map1_small.png');
+                @media (min-width: 870px){
+                    background-image: url('../img/map1_large.png');
+                }
+            }
         }
         &--two {
             background-image: url('../img/map_fallback_2.png');
@@ -44,6 +49,12 @@
             background-size:contain;
             background-position:center;
             padding-bottom:110.9%;
+            &__overlay {
+                background-image: url('../img/map2_small.png');
+                @media (min-width: 850px){
+                    background-image: url('../img/map2_large.png');
+                }
+            }
         }
         &--three {
             background-image: url('../img/map_fallback_3.png');
@@ -51,6 +62,12 @@
             background-size:contain;
             background-position:center;
             padding-bottom:96.17%;
+            &__overlay {
+                background-image: url('../img/map3_small.png');
+                @media (min-width: 870px){
+                    background-image: url('../img/map3_large.png');
+                }
+            }
         }
         &__source {
             // display: none;
