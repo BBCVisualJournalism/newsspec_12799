@@ -25,15 +25,43 @@
 
 .bbc-news-vj-wrapper--map-enabled {
 
-    .graveyard-map__overlay,
-    .graveyard-map__footer {
+    .section .graveyard-map__overlay,
+    .section .graveyard-map__footer {
         display: block;
+    }
+
+    .section .graveyard-map,
+    .section .graveyard-map__canvas {
+        height:800px;
     }
 
     .section .graveyard-map--one,
     .section .graveyard-map--two,
     .section .graveyard-map--three {
         background-image: none;
+    }
+
+    // added responsive sizing of map containers
+    .section .graveyard-map--one,
+    .section .graveyard-map--one__container { display: none; }
+
+    .section .graveyard-map--two { height: 290px; }
+    .section .graveyard-map--three { height: 460px; }
+    @media (min-width: 320px) {
+        .section .graveyard-map--two { height: 590px; }
+    }
+    @media (min-width: 460px) {
+        .section .graveyard-map--one__container { display: block; }
+        .section .graveyard-map--one { display: block; height: 460px; }
+        .section .graveyard-map--two { height: 460px; }
+        .section .graveyard-map--three { height: 360px; }
+    }
+    @media (min-width: 850px) {
+        .section .graveyard-map--two { height: 800px; }
+    }
+    @media (min-width: 870px) {
+        .section .graveyard-map--one { height: 640px; }
+        .section .graveyard-map--three { height: 660px; }
     }
 
 }
