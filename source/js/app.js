@@ -62,11 +62,13 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
 
 //*------------------------------- share stuff ------------------------------- */
     function initShareTools() {
-        var shareHeader   = vocabs.share_header;
-        var shareTitle   = vocabs.share_title;
-        var shareMessage = vocabs.share_message;
+        var shareHeader  = vocabs.share_header,
+            shareTitle   = vocabs.share_title,
+            shareMessage = vocabs.share_message;
+
         if (shareHeader   === ''){ shareHeader = 'Share this Page'; }
-        if (shareMessage === ''){ shareMessage = vocabs.isite_meta_description; }
+        if (shareMessage  === ''){ shareMessage = vocabs.isite_meta_description; }
+
         var config = {
                 holderEl: '.share__holder',
                 label: shareHeader,
@@ -75,8 +77,8 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                 messages: {
                     twitter: shareMessage,
                     facebook: {
-                        title:       shareTitle,
-                        description: shareMessage,
+                        title:       vocabs.share_fb_title,
+                        description: vocabs.share_fb_message,
                         image:       'http://www.stage.bbc.co.uk/news/special/2016/newsspec_12799/content/full-width/common/img/italy_graves_intro_1400.jpg' // optional
                     },
                     email: {
