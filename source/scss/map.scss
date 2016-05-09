@@ -25,6 +25,7 @@
             margin: 0 auto;
         }
         &__overlay{
+            display:none;
             background-color:#aa0000;
             height:125px;
             position: absolute;
@@ -103,6 +104,7 @@
             }
         }
         &__footer {
+            display: none;
             direction: ltr;
             margin-top:6em;
             padding:6px;

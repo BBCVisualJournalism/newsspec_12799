@@ -22,4 +22,10 @@
 @import "credits";
 
 .bbc-news-vj-wrapper--js-enabled {
+
+    .graveyard-map__overlay,
+    .graveyard-map__footer {
+        display: block;
+    }
+
 }
