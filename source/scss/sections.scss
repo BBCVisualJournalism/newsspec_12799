@@ -32,7 +32,7 @@
         }
 
         &--voices {
-            background-image: url('../img/kato_tritos_poster_image_1040.jpg');
+            background-image: url('../img/voices_of_lesbos_cover_1040.jpg');
             @media (min-width: 800px) {
                 margin-bottom: 0;
             }
@@ -60,19 +60,6 @@
             width:100%;
             z-index: 20;
             position: relative;
-            @media (min-width: 600px){
-                font-size: 21px;
-            }
-            &--hidden {
-                display:none;
-            }
-            &:hover {
-                cursor: pointer;
-                .bbc-news-vj-video__overlay__play {
-                    background-color: darkred;
-                }
-            }
-
             &__play {
                 width: 80px;
                 height: 80px;
@@ -91,7 +78,31 @@
                     background-color: darkred;
                 }
             }
+            @media (min-width: 600px){
+                font-size: 21px;
+            }
+            @media (min-width: 800px) {
+                background-color: #000;
+                bottom: 0;
+                height: 80px;
+                overflow: hidden;
+                position: absolute;
+                width: 65%;
+                z-index: 20;
 
+                &__play {
+                    display: block;
+                }
+            }
+            &--hidden {
+                display:none;
+            }
+            &:hover {
+                cursor: pointer;
+                .bbc-news-vj-video__overlay__play {
+                    background-color: darkred;
+                }
+            }
             &__text {
                 color: #fff;
                 padding: 16px;
@@ -108,24 +119,9 @@
                     font-weight: normal;
                 }
             }
-
             &--hidden {
                  @media (min-width: 800px) {
                     display: none;
-                }
-            }
-
-            @media (min-width: 800px) {
-                background-color: #000;
-                bottom: 0;
-                height: 80px;
-                overflow: hidden;
-                position: absolute;
-                width: 60%;
-                z-index: 20;
-
-                &__play {
-                    display: block;
                 }
             }
         }
@@ -141,6 +137,13 @@
         margin: 0 auto;
         padding:0;
         width: 100%;
+    }
+
+    .boat__image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../img/boat_1040.jpg');
+        height: 570px;
     }
 
     .media-with-caption__caption {
@@ -164,11 +167,21 @@
     margin-top:60px;
 }
 
+.bbc-news-vj-language--news {
+    .bbc-news-vj-video--voices {
+        background-image: url('../img/voices_of_lesbos_cover_1040_3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 .bbc-news-vj-language--afrique {
     .bbc-news-vj-video--drone {
         background-image: url('../img/drone_video_poster_1040.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .boat__image {
+        background-image: url('../img/boat_afrique_1040.jpg');
     }
 }
 
@@ -177,6 +190,9 @@
         background-image: url('../img/drone_video_poster_1040.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .boat__image {
+        background-image: url('../img/boat_arabic_1040.jpg');
     }
 }
 .bbc-news-vj-language--hausa {
