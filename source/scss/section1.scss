@@ -139,6 +139,9 @@
 
 
 .bbc-news-vj-direction--rtl {
+    .meta-list {
+        right: -30px;
+    }
     .meta-list__item--timestamp {
         border-right: none;
         border-left: 1px solid #dcdcdc;
