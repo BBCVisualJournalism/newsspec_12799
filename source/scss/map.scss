@@ -633,7 +633,7 @@
 
 
 .bbc-news-vj-direction--rtl {
-    .graveyard-map__footer {
+    .section .graveyard-map__footer {
         direction: rtl;
         &__title {
             right:6px;
@@ -651,7 +651,7 @@
             margin-left: 20px;
         }
         &__scale--one {
-            margin-left: 0 !important;
+            margin-left: 0;
         }
         &__scale--three {
             left:9px;
@@ -735,7 +735,7 @@
         background-size: cover;
     }
 }
-.bbc-news-vj-language--pasto {
+.bbc-news-vj-language--pashto {
     .graveyard-map--one {
         background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
         background-repeat: no-repeat;
