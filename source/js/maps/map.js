@@ -184,7 +184,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                                 new google.maps.LatLng(25.7597533, 2.0647545),
                                 new google.maps.LatLng(47.5702063, 41.037531)
                             ),
-                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/map1circles.png'
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/maps/map1circles.png'
                         }
                     ],
                     'textLabels': textLabels_map1,
@@ -212,7 +212,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                                 new google.maps.LatLng(26.3372008, 8.8775371), //sw
                                 new google.maps.LatLng(42.4339993, 36.6433935) //ne
                             ),
-                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/zoomcircles.png'
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/maps/zoomcircles.png'
                         }
                     ],
                     'textLabels': textLabels_map2,
@@ -240,7 +240,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
                                 new google.maps.LatLng(26.3372008, 8.8775371), //sw
                                 new google.maps.LatLng(42.4339993, 36.6433935) //ne
                             ),
-                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/zoomcircles.png'
+                            'image': '/news/special/2016/newsspec_12799/content/full-width/common/img/maps/zoomcircles.png'
                         }
                     ],
                     'textLabels': textLabels_map3,

@@ -23,6 +23,7 @@
             margin: 0 auto;
         }
         &__overlay{
+            background-repeat:no-repeat;
             display:none;
             height:178px;
             position: absolute;
@@ -31,41 +32,41 @@
             width:123px;
         }
         &--one {
-            background-image: url('../img/map_fallback_1.png');
+            background-image: url('../img/maps/english/map_fallback_1.png');
             background-repeat:no-repeat;
             background-size:contain;
             background-position:center;
             padding-bottom:93.68%;
             &__overlay {
-                background-image: url('../img/map1_small.png');
+                background-image: url('../img/maps/english/map1_small.png');
                 @media (min-width: 870px){
-                    background-image: url('../img/map1_large.png');
+                    background-image: url('../img/maps/english/map1_large.png');
                 }
             }
         }
         &--two {
-            background-image: url('../img/map_fallback_2.png');
+            background-image: url('../img/maps/english/map_fallback_2.png');
             background-repeat:no-repeat;
             background-size:contain;
             background-position:center;
             padding-bottom:110.9%;
             &__overlay {
-                background-image: url('../img/map2_small.png');
+                background-image: url('../img/maps/english/map2_small.png');
                 @media (min-width: 850px){
-                    background-image: url('../img/map2_large.png');
+                    background-image: url('../img/maps/english/map2_large.png');
                 }
             }
         }
         &--three {
-            background-image: url('../img/map_fallback_3.png');
+            background-image: url('../img/maps/english/map_fallback_3.png');
             background-repeat:no-repeat;
             background-size:contain;
             background-position:center;
             padding-bottom:96.17%;
             &__overlay {
-                background-image: url('../img/map3_small.png');
+                background-image: url('../img/maps/english/map3_small.png');
                 @media (min-width: 870px){
-                    background-image: url('../img/map3_large.png');
+                    background-image: url('../img/maps/english/map3_large.png');
                 }
             }
         }
@@ -667,190 +668,53 @@
 
 
 .bbc-news-vj-language--afrique {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 
 .bbc-news-vj-language--arabic {
     .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('../img/maps/arabic/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/arabic/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/arabic/map1_large.png');
+            }
+        }
     }
     .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('../img/maps/arabic/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/arabic/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/arabic/map2_large.png');
+            }
+        }
     }
     .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('../img/maps/arabic/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/arabic/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/arabic/map3_large.png');
+            }
+        }
     }
 }
 .bbc-news-vj-language--hausa {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--mundo {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--pashto {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--persian {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--russian {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--turkish {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--ukranian {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--urdu {
-    .graveyard-map--one {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://www.nationsonline.org/maps/Political-Mediterranean-Region-Map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 .bbc-news-vj-language--uzbek {
-    .graveyard-map--one {
-        background-image: url('http://toomanyadapters.com/wp-content/uploads/2014/10/London-Google-Maps.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--two {
-        background-image: url('http://toomanyadapters.com/wp-content/uploads/2014/10/London-Google-Maps.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .graveyard-map--three {
-        background-image: url('http://toomanyadapters.com/wp-content/uploads/2014/10/London-Google-Maps.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
