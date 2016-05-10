@@ -53,3 +53,14 @@
         }
     }
 }
+
+
+.bbc-news-vj-direction--rtl .bbcquote {
+    direction: rtl;
+    text-align: right;
+    &:before {
+        content: '';
+        direction: rtl;
+        text-align: right;
+    }
+}

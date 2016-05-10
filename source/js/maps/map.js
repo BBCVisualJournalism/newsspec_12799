@@ -168,6 +168,19 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
             }
         ];
 
+        var pageIsRtl = $('.bbc-news-vj-wrapper').hasClass('bbc-news-vj-direction--rtl');
+        if (pageIsRtl) {
+            for (var i=0; i<textLabels_map1.length; i++){
+                textLabels_map1[i].direction = 'rtl';
+            }
+            for (i=0; i<textLabels_map2.length; i++){
+                textLabels_map2[i].direction = 'rtl';
+            }
+            for (i=0; i<textLabels_map3.length; i++){
+                textLabels_map3[i].direction = 'rtl';
+            }
+        }
+
         var map1 = new BBCMap(
                 {
                     'elementId': 'newsspec_14121-map-canvas--one',
