@@ -637,6 +637,11 @@
     .newsspec_14121-map-wrapper .bbc-label-sea {
         font-style: normal;
     }
+    .section .graveyard-map__stats {
+        @media (min-width: 485px){
+            float:right;
+        }
+    }
     .section .graveyard-map__footer {
         direction: rtl;
         &__title {
