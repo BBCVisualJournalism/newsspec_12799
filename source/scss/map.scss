@@ -762,6 +762,19 @@
             }
         }
     }
+    .graveyard-map__footer__title {
+        width: 170px;
+    }
+    .graveyard-map__footer__scale__container {
+        margin-left:60px;
+        width:170px;
+        @media (min-width: 600px){
+            width: 260px;
+        }
+        @media (min-width: 850px){
+            margin-left: 90px;
+        }
+    }
 }
 .bbc-news-vj-language--mundo {
     .graveyard-map--one {
