@@ -184,12 +184,10 @@
     .clearfix {
         clear: both;
     }
-
     .map1__title {
         margin-left: 16px;
         margin-right: 16px;
     }
-
     .graveyard-map--one__container {
         .graveyard-map__footer__scale--one {
             margin-left:100px;
@@ -250,7 +248,6 @@
             }
         }
     }
-
     .graveyard-map--two__container, .graveyard-map--three__container {
         .graveyard-map__footer__scale--one {
             margin-left:100px;
@@ -355,6 +352,7 @@
     margin: 0;
 }
 
+/* map labels */
 .newsspec_14121-map-wrapper .bbc-label-city {
     font-size: 16px;
     font-weight: normal;
@@ -506,16 +504,6 @@
 .bbcFullScreen:before { content: "Open fullscreen mode";}
 .isFullScreen .bbcFullScreen:before { content: "Close fullscreen mode"; }
 
-
-
-
-
-
-
-
-
-
-
 .bbcZoomControl {
     padding: 0 8px 8px 0;
     color: #fff;
@@ -632,25 +620,22 @@
 }
 
 
-
+/* rtl languages */
 .bbc-news-vj-direction--rtl {
     .section .graveyard-map__stats {
         @media (min-width: 485px){
             float:right;
         }
     }
-
     .newsspec_14121-map-wrapper .bbc-label-city,
     .newsspec_14121-map-wrapper .bbc-label-region,
     .newsspec_14121-map-wrapper .bbc-label-country {
         font-size: 19px;
     }
-
     .newsspec_14121-map-wrapper .bbc-label-sea {
         font-size:18px;
         font-style: normal;
     }
-
     .section .graveyard-map__footer {
         direction: rtl;
         &__title {
@@ -684,10 +669,37 @@
     }
 }
 
-
+/* each language below */
 .bbc-news-vj-language--afrique {
+    .graveyard-map--one {
+        background-image: url('../img/maps/afrique/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/afrique/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/afrique/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/afrique/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/afrique/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/afrique/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/afrique/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/afrique/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/afrique/map3_large.png');
+            }
+        }
+    }
 }
-
 .bbc-news-vj-language--arabic {
     .graveyard-map--one {
         background-image: url('../img/maps/arabic/map_fallback_1.png');
@@ -722,20 +734,284 @@
     }
 }
 .bbc-news-vj-language--hausa {
+    .graveyard-map--one {
+        background-image: url('../img/maps/hausa/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/hausa/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/hausa/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/hausa/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/hausa/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/hausa/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/hausa/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/hausa/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/hausa/map3_large.png');
+            }
+        }
+    }
 }
 .bbc-news-vj-language--mundo {
+    .graveyard-map--one {
+        background-image: url('../img/maps/mundo/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/mundo/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/mundo/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/mundo/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/mundo/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/mundo/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/mundo/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/mundo/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/mundo/map3_large.png');
+            }
+        }
+    }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--pashto {
+    .graveyard-map--one {
+        background-image: url('../img/maps/pashto/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/pashto/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/pashto/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/pashto/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/pashto/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/pashto/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/pashto/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/pashto/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/pashto/map3_large.png');
+            }
+        }
+    }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--persian {
+    .graveyard-map--one {
+        background-image: url('../img/maps/persian/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/persian/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/persian/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/persian/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/persian/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/persian/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/persian/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/persian/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/persian/map3_large.png');
+            }
+        }
+    }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--russian {
+    .graveyard-map--one {
+        background-image: url('../img/maps/russian/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/russian/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/russian/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/russian/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/russian/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/russian/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/russian/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/russian/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/russian/map3_large.png');
+            }
+        }
+    }
 }
 .bbc-news-vj-language--turkish {
+    .graveyard-map--one {
+        background-image: url('../img/maps/turkish/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/turkish/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/turkish/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/turkish/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/turkish/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/turkish/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/turkish/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/turkish/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/turkish/map3_large.png');
+            }
+        }
+    }
 }
 .bbc-news-vj-language--ukranian {
+    .graveyard-map--one {
+        background-image: url('../img/maps/ukranian/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/ukranian/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/ukranian/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/ukranian/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/ukranian/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/ukranian/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/ukranian/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/ukranian/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/ukranian/map3_large.png');
+            }
+        }
+    }
 }
 .bbc-news-vj-language--urdu {
+    .graveyard-map--one {
+        background-image: url('../img/maps/urdu/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/urdu/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/urdu/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/urdu/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/urdu/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/urdu/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/urdu/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/urdu/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/urdu/map3_large.png');
+            }
+        }
+    }
 }
 .bbc-news-vj-language--uzbek {
+    .graveyard-map--one {
+        background-image: url('../img/maps/uzbek/map_fallback_1.png');
+        &__overlay {
+            background-image: url('../img/maps/uzbek/map1_small.png');
+            height: 164px;
+            @media (min-width: 870px){
+                background-image: url('../img/maps/uzbek/map1_large.png');
+            }
+        }
+    }
+    .graveyard-map--two {
+        background-image: url('../img/maps/uzbek/map_fallback_2.png');
+        &__overlay {
+            background-image: url('../img/maps/uzbek/map2_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/uzbek/map2_large.png');
+            }
+        }
+    }
+    .graveyard-map--three {
+        background-image: url('../img/maps/uzbek/map_fallback_3.png');
+        &__overlay {
+            background-image: url('../img/maps/uzbek/map3_small.png');
+            @media (min-width: 870px){
+                background-image: url('../img/maps/uzbek/map3_large.png');
+            }
+        }
+    }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
