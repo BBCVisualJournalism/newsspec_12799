@@ -1,5 +1,5 @@
 {
-  "version": "0.1.05",
+  "version": "0.1.1",
   "scripts": {
     "postinstall": "node_modules/.bin/bower update"
   },
