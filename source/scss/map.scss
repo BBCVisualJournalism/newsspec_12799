@@ -646,6 +646,7 @@
         direction: rtl;
         &__title {
             right:6px;
+            text-align:right;
             @media (min-width: 320px){
                 left: 35%;
             }
