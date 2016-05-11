@@ -699,6 +699,18 @@
             }
         }
     }
+    .graveyard-map__footer__title {
+        width: 195px;
+    }
+    .graveyard-map__footer__scale__container {
+        margin-left:25px;
+        @media (min-width: 1008px){
+            margin-left:60px;
+        }
+    }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--arabic {
     .graveyard-map--one {
