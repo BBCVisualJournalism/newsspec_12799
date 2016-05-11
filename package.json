@@ -1,11 +1,11 @@
 {
-  "version": "0.1.56",
+  "version": "0.1.57",
   "scripts": {
     "postinstall": "node_modules/.bin/bower update"
   },
   "devDependencies": {
     "bower": "~1.5.3",
-    "developer-scaffold-full-width-wrapper": "bbc/news-vj-developer-scaffold-full-width-wrapper#v2.0.0",
+    "developer-scaffold-full-width-wrapper": "bbc/news-vj-developer-scaffold-full-width-wrapper#v2.0.4",
     "developer-scaffold-iframe-wrapper": "bbc/news-vj-developer-scaffold-iframe-wrapper#v2.0.0",
     "grunt": "~0.4.0",
     "grunt-cli": "~0.1.11",
