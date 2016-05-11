@@ -3,7 +3,7 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
 
     // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);
 
-    var version = '0.1.3';
+    var version = '0.1.5';
 
     ///* --------------------------------- video stuff ---------------------------- */
     function initVideo() {
