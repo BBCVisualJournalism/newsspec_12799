@@ -976,32 +976,32 @@
         }
     }
 }
-.bbc-news-vj-language--ukranian {
+.bbc-news-vj-language--ukrainian {
     .graveyard-map--one {
-        background-image: url('../img/maps/ukranian/map_fallback_1.png');
+        background-image: url('../img/maps/ukrainian/map_fallback_1.png');
         &__overlay {
-            background-image: url('../img/maps/ukranian/map1_small.png');
+            background-image: url('../img/maps/ukrainian/map1_small.png');
             height: 164px;
             @media (min-width: 870px){
-                background-image: url('../img/maps/ukranian/map1_large.png');
+                background-image: url('../img/maps/ukrainian/map1_large.png');
             }
         }
     }
     .graveyard-map--two {
-        background-image: url('../img/maps/ukranian/map_fallback_2.png');
+        background-image: url('../img/maps/ukrainian/map_fallback_2.png');
         &__overlay {
-            background-image: url('../img/maps/ukranian/map2_small.png');
+            background-image: url('../img/maps/ukrainian/map2_small.png');
             @media (min-width: 870px){
-                background-image: url('../img/maps/ukranian/map2_large.png');
+                background-image: url('../img/maps/ukrainian/map2_large.png');
             }
         }
     }
     .graveyard-map--three {
-        background-image: url('../img/maps/ukranian/map_fallback_3.png');
+        background-image: url('../img/maps/ukrainian/map_fallback_3.png');
         &__overlay {
-            background-image: url('../img/maps/ukranian/map3_small.png');
+            background-image: url('../img/maps/ukrainian/map3_small.png');
             @media (min-width: 870px){
-                background-image: url('../img/maps/ukranian/map3_large.png');
+                background-image: url('../img/maps/ukrainian/map3_large.png');
             }
         }
     }
