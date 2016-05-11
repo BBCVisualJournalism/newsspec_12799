@@ -20,7 +20,7 @@
         margin-bottom:2.5em;
 
         &--drone {
-            background-image: url('../img/drone_video_poster_1040.jpg');
+            background-image: url('../img/kato_tritos_poster_image_1040_no-text.jpg');
             margin-bottom:2.5em;
         }
 
@@ -174,6 +174,9 @@
 }
 
 .bbc-news-vj-language--news {
+    .bbc-news-vj-video--drone {
+        background-image: url('../img/drone_video_poster_1040.jpg');
+    }
     .bbc-news-vj-video--voices {
         background-image: url('../img/voices_of_lesbos_cover_1040_3.jpg');
         background-repeat: no-repeat;

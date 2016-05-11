@@ -20,16 +20,19 @@ define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcastin
         ];
 
         var pageIsEnglish = $('.bbc-news-vj-wrapper').hasClass('bbc-news-vj-language--news'),
+            holdingImg1='';
             holdingImg3='';
 
         if(pageIsEnglish){
+            holdingImg1 = $('#drone_poster--english').text();
             holdingImg3 = $('#voices_poster--english').text();
         } else {
+            holdingImg1 = $('#drone_poster--other').text();
             holdingImg3 = $('#voices_poster--other').text();
         }
 
         var videoHoldingImgs = [
-            $('#drone_poster').text(),
+           holdingImg1,
             $('#lesbos_poster').text(),
             holdingImg3
         ];
