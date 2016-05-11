@@ -68,6 +68,7 @@
             }
         }
         &--topic {
+            display:none;
             float: left;
             margin-left: 6px;
         }
@@ -107,6 +108,12 @@
                 margin-left: 0;
             }
         }
+    }
+}
+
+.bbc-news-vj-language--news {
+    .meta-list__item--topic {
+        display: inherit;
     }
 }
 
