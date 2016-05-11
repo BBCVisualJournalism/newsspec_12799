@@ -984,6 +984,9 @@
             }
         }
     }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--ukrainian {
     .graveyard-map--one {
@@ -1013,6 +1016,12 @@
                 background-image: url('../img/maps/ukrainian/map3_large.png');
             }
         }
+    }
+    .graveyard-map__footer__title {
+        width: 175px;
+    }
+    .ns_onward-journeys {
+        display: none;
     }
 }
 .bbc-news-vj-language--urdu {
@@ -1044,6 +1053,9 @@
             }
         }
     }
+    .ns_onward-journeys {
+        display: none;
+    }
 }
 .bbc-news-vj-language--uzbek {
     .graveyard-map--one {
@@ -1073,6 +1085,9 @@
                 background-image: url('../img/maps/uzbek/map3_large.png');
             }
         }
+    }
+    .graveyard-map__footer__scale__container {
+        margin-left:70px;
     }
     .ns_onward-journeys {
         display: none;
