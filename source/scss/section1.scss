@@ -115,6 +115,9 @@
     .meta-list__item--topic {
         display: inherit;
     }
+    .meta-list__item--timestamp {
+        border-left: none;
+    }
 }
 
 .bbc-news-vj-wrapper .intro {

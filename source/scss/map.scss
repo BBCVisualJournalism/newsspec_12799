@@ -808,6 +808,22 @@
             }
         }
     }
+    .graveyard-map__footer__title {
+        width: 155px;
+        @media (min-width: 600px){
+            width: 200px;
+        }
+    }
+    .graveyard-map__footer__scale__container {
+        margin-left:30px;
+        width:170px;
+        @media (min-width: 600px){
+            width: 260px;
+        }
+        @media (min-width: 850px){
+            margin-left: 90px;
+        }
+    }
     .ns_onward-journeys {
         display: none;
     }
