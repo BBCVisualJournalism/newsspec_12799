@@ -45,17 +45,17 @@
         <picture>
             <source
                 media="(min-width: 1040px)"
-                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_1040.jpg">
+                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_1040.jpg?v=<%= version %>">
             <source
                 media="(min-width: 810px)"
-                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_810.jpg">
+                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_810.jpg?v=<%= version %>">
             <source
                 media="(min-width: 624px)"
-                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg">
+                srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg?v=<%= version %>">
 
             <img class="lesbos-map__image__fallback"
-                 src="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg"
-                 srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg"
+                 src="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg?v=<%= version %>"
+                 srcset="<%= pathStatic %>/common/img/maps/<%= vocab_dir %>/lesbos_crossing_624.jpg?v=<%= version %>"
                  alt="<%= section_2_map_alt_text %>">
         </picture>
         <p class="lesbos-map__image__source-text"><%= responsive_image_source %></p>
