@@ -55,7 +55,8 @@ module.exports = function (grunt) {
             'vendor-prefix'                 : false,
             'adjoining-classes'             : false,
             'universal-selector'            : false,
-            'force'                         : true
+            'force'                         : true,
+            'important'                     : false
         },
         src: ['./content/<%= config.wrapper %>/common/css/main.css']
     });
