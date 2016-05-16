@@ -2,6 +2,8 @@
 @import "./../../bower_components/news-vj-css-defaults/css/main";
 @import "./../../bower_components/sharetools/bin/templates/buttons/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
 
+$version: "0.1.89";
+
 // YOUR APPLICATION CSS GOES BELOW
 
 .bbc-news-vj-wrapper {
