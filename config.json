@@ -1,6 +1,6 @@
 {
-  "wrapper": "full-width",
-  "debug": "false",
+  "wrapper": "iframe",
+  "debug": "true",
   "project_number": "12799",
   "year": "2016",
   "services": {
@@ -8,7 +8,9 @@
     "others": "*"
   },
   "amdModulePaths": {
-    "bump-3": "empty:",
+    "bump-3": "http://emp.bbci.co.uk/emp/bump-3/bump-3",
+    "jquery-1.9": "http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.9.1",
+    "swfobject-2": "http://static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
     "jquery": "../../bower_components/jquery/dist/jquery.min",
     "template_engine": "../../bower_components/template_engine/template_engine",
     "ShareTools": "../../bower_components/sharetools/bin/sharetools.min",
