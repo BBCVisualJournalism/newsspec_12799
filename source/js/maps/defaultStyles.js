@@ -4,10 +4,8 @@ define({
 			{
 				'featureType': 'administrative',
 				'elementType': 'geometry',
-				'stylers': [
-					{ 'color': '#fdeac4' },
-					{ 'visibility': 'simplified' }
-				]
+				'stylers': [{ 'color': '#fdeac4' },
+					{ 'visibility': 'simplified' }]
 			},{
 			  'featureType': 'administrative.country',
 			  'elementType': 'geometry.stroke',

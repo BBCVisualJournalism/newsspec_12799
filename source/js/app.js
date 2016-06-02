@@ -1,4 +1,4 @@
-define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istatsLogger', 'video', 'pubsub', 'vocabs', 'progressiveEnhancement'],
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/map', 'wrapper', 'jquery', 'ShareTools', 'ShareToolsTemplate', 'istats-logger', 'video', 'pubsub', 'vocabs', 'progressive-enhancement'],
     function (GoogleMaps, map, wrapper, $, ShareTools, ShareTemplate, istatsLogger, VideoPlayer, pubsub, vocabs, progressiveEnhancement) {
 
     // console.log(wrapper.url().hostUrl, wrapper.url().onbbcdomain, wrapper.url().parameters);

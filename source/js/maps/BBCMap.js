@@ -1,9 +1,9 @@
-define(['jquery', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/markerTypes', 'maps/textLabelTypes'], function($, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, markerTypes, textLabelTypes) {
+define(['jquery', 'maps/bbclabeloverlay', 'maps/bbccircleoverlay', 'maps/bbcimageoverlay', 'maps/markertypes', 'maps/textlabeltypes'], function($, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, markerTypes, textLabelTypes) {
 
     var BBCMap = function (config) {
         this.map = null;
         this.textDirection = config.textDirection;
-        this.mapElementId = config.elementId; //String (map element id)
+        this.mapElementId = config.elementId;
         this.mapSettings = config.mapSettings;
         this.circleOverlays = config.circleOverlays; //Array of objects
         this.imageOverlays = config.imageOverlays;

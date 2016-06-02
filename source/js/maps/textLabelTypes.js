@@ -16,12 +16,9 @@ define({
 		hasText: true,
 		title: 'Standard placename'
 	},
-
 	placeNameOnSeaAboveRight: {
-		className: 'bbc-label-city on-sea above-right',
-		hasText: true,
-		title: 'Standard placename'
-	},
+		className: 'bbc-label-city on-sea above-right', hasText: true,title: 'Standard placename'
+	}, // test
 
 	placeNameWithBackground: {
 		className: 'bbc-label-city padded',

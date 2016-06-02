@@ -2,8 +2,7 @@ define(function() {
     var markers = {
     "type": "FeatureCollection",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-    "features": [
-        { "type": "Feature", "properties": { "title": "", "icon":"grave", "Latitude": 41.232839, "Longitude": 29.039678 }, "geometry": { "type": "Point", "coordinates": [ 29.039678, 41.232839 ] } },
+    "features": [{ "type": "Feature", "properties": { "title": "", "icon":"grave", "Latitude": 41.232839, "Longitude": 29.039678 }, "geometry": { "type": "Point", "coordinates": [ 29.039678, 41.232839 ] } },
         { "type": "Feature", "properties": { "title": "", "icon":"grave", "Latitude": 38.501565, "Longitude": 27.150637 }, "geometry": { "type": "Point", "coordinates": [ 27.150637, 38.501565 ] } },
         { "type": "Feature", "properties": { "title": "", "icon":"grave", "Latitude": 37.206911, "Longitude": 28.335300 }, "geometry": { "type": "Point", "coordinates": [ 28.3353, 37.206911 ] } },
         { "type": "Feature", "properties": { "title": "", "icon":"grave", "Latitude": 40.257361, "Longitude": 28.985357 }, "geometry": { "type": "Point", "coordinates": [ 28.985357, 40.257361 ] } },

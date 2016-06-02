@@ -1,13 +1,5 @@
 define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014'], function(GoogleMaps){
 
-    // This example creates a custom overlay called BBCLabelOverlay,
-    // for adding BBC styled text labels to maps
-
-    // Set the custom overlay object's prototype to a new instance
-    // of OverlayView. In effect, this will subclass the overlay class.
-    // Note that we set the prototype to an instance, rather than the
-    // parent class itself, because we do not wish to modify the parent class.
-
     /** @constructor */
     function BBCLabelOverlay(map, position, markerType, text, direction, zoomLevels) {
 

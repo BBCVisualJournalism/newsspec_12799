@@ -2,11 +2,9 @@
 
 //TODO: Add in bounding box settings?
 
-define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/defaultStyles'], function(GoogleMaps, defaultStyles){
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/defaultstyles'], function(GoogleMaps, defaultStyles){
 	var bbcSettings = {
 		one: {
-		    //Map style:
-		    // one of those defined in global styles
 		    mapStyle: defaultStyles.bespokeClean,
 		    //Map type:
 		    // ROADMAP, SATELLITE, HYBRID, TERRAIN

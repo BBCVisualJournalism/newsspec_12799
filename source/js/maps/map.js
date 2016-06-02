@@ -1,11 +1,10 @@
-define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/defaultStyles', 'maps/textLabelTypes', 'maps/markerTypes', 'maps/bbcSettings', 'maps/markers', 'maps/BBCMap', 'maps/BBCLabelOverlay', 'maps/BBCCircleOverlay', 'maps/BBCImageOverlay', 'maps/geojson', 'vocabs'],
+define(['http://maps.google.com/maps/api/js?v=3.22&client=gme-britishbroadcasting&channel=mtk-v3-schoolreport-2014', 'maps/defaultstyles', 'maps/textlabeltypes', 'maps/markertypes', 'maps/bbcsettings', 'maps/markers', 'maps/bbcmap', 'maps/bbclabeloverlay', 'maps/bbccircleoverlay', 'maps/bbcimageoverlay', 'maps/geojson', 'vocabs'],
     function (GoogleMaps, defaultStyles, textLabelTypes, markerTypes, bbcSettings, markers, BBCMap, BBCLabelOverlay, BBCCircleOverlay, BBCImageOverlay, toll, vocabs) {
         return function () {
 
         var textLabels_map1 = [
             {
-                'lat': 39.2703184,
-                'lng': 16.6304494,
+'lat': 39.2703184,  'lng': 16.6304494,
                 'text': vocabs.map1_label_1,
                 'labelType': 'country'
             },{
