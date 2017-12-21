@@ -70,7 +70,7 @@
             &::before {
                 content: '';
                 display: block;
-                background: url('../img/boilerplate-icons-sprite.png') no-repeat -10px -4010px;
+                background: url('#{$projectassets}/img/boilerplate-icons-sprite.png') no-repeat -10px -4010px;
                 width: 13px;
                 height: 16px;
                 position: absolute;
@@ -150,7 +150,7 @@
     width: 100%;
 
     &::before {
-        content: ''; // background-image: url(../img/1_death/buildings.png);
+        content: ''; // background-image: url(#{$projectassets}/img/1_death/buildings.png);
         background-size: contain;
         background-repeat: no-repeat;
         width: 193.5px;

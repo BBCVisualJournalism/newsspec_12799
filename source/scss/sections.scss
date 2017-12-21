@@ -21,12 +21,12 @@
         margin-bottom: 2.5em;
 
         &--drone {
-            background-image: url('../img/kato_tritos_poster_image_1040_no-text.jpg?v=#{$version}');
+            background-image: url('#{$projectassets}/img/kato_tritos_poster_image_1040_no-text.jpg?v=#{$version}');
             margin-bottom: 2.5em;
         }
 
         &--lesbos {
-            background-image: url('../img/arrival_image_1040.jpg?v=#{$version}');
+            background-image: url('#{$projectassets}/img/arrival_image_1040.jpg?v=#{$version}');
 
             @media (min-width: 800px) {
                 margin-bottom: 0;
@@ -34,7 +34,7 @@
         }
 
         &--voices {
-            background-image: url('../img/voices_of_lesbos_cover_1040.jpg?v=#{$version}');
+            background-image: url('#{$projectassets}/img/voices_of_lesbos_cover_1040.jpg?v=#{$version}');
 
             @media (min-width: 800px) {
                 margin-bottom: 0;
@@ -71,7 +71,7 @@
                 min-width: 90px;
                 background: 0 0;
                 background-color: transparent;
-                background-image: url(../img/play_button.png);
+                background-image: url(#{$projectassets}/img/play_button.png);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: 21px 26px;
@@ -171,7 +171,7 @@
     .boat__image {
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url('../img/boat_1040.jpg?v=#{$version}');
+        background-image: url('#{$projectassets}/img/boat_1040.jpg?v=#{$version}');
         padding-bottom: 57%;
     }
 
@@ -199,56 +199,56 @@
 
 .bbc-news-vj-language--news {
     .bbc-news-vj-video--drone {
-        background-image: url('../img/drone_video_poster_1040.jpg?v=#{$version}');
+        background-image: url('#{$projectassets}/img/drone_video_poster_1040.jpg?v=#{$version}');
     }
 
     .bbc-news-vj-video--voices {
-        background-image: url('../img/voices_of_lesbos_cover_1040_3.jpg?v=#{$version}');
+        background-image: url('#{$projectassets}/img/voices_of_lesbos_cover_1040_3.jpg?v=#{$version}');
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
 
 .bbc-news-vj-language--afrique .boat__image {
-    background-image: url('../img/boat_afrique_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_afrique_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--arabic .boat__image {
-    background-image: url('../img/boat_arabic_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_arabic_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--hausa .boat__image {
-    background-image: url('../img/boat_hausa_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_hausa_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--mundo .boat__image {
-    background-image: url('../img/boat_mundo_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_mundo_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--pashto .boat__image {
-    background-image: url('../img/boat_pashto_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_pashto_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--persian .boat__image {
-    background-image: url('../img/boat_persian_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_persian_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--russian .boat__image {
-    background-image: url('../img/boat_russian_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_russian_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--turkce .boat__image {
-    background-image: url('../img/boat_turkish_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_turkish_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--ukrainian .boat__image {
-    background-image: url('../img/boat_ukrainian_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_ukrainian_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--urdu .boat__image {
-    background-image: url('../img/boat_urdu_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_urdu_1040.jpg?v=#{$version}');
 }
 
 .bbc-news-vj-language--uzbek .boat__image {
-    background-image: url('../img/boat_uzbek_1040.jpg?v=#{$version}');
+    background-image: url('#{$projectassets}/img/boat_uzbek_1040.jpg?v=#{$version}');
 }

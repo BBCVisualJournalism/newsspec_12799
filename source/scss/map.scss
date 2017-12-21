@@ -31,49 +31,49 @@
         }
 
         &--one {
-            background-image: url('../img/maps/english/map_fallback_1.png');
+            background-image: url('#{$projectassets}/img/maps/english/map_fallback_1.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
             padding-bottom: 93.68%;
 
             &__overlay {
-                background-image: url('../img/maps/english/map1_small.png');
+                background-image: url('#{$projectassets}/img/maps/english/map1_small.png');
 
                 @media (min-width: 870px) {
-                    background-image: url('../img/maps/english/map1_large.png');
+                    background-image: url('#{$projectassets}/img/maps/english/map1_large.png');
                 }
             }
         }
 
         &--two {
-            background-image: url('../img/maps/english/map_fallback_2.png');
+            background-image: url('#{$projectassets}/img/maps/english/map_fallback_2.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
             padding-bottom: 110.9%;
 
             &__overlay {
-                background-image: url('../img/maps/english/map2_small.png');
+                background-image: url('#{$projectassets}/img/maps/english/map2_small.png');
 
                 @media (min-width: 850px) {
-                    background-image: url('../img/maps/english/map2_large.png');
+                    background-image: url('#{$projectassets}/img/maps/english/map2_large.png');
                 }
             }
         }
 
         &--three {
-            background-image: url('../img/maps/english/map_fallback_3.png');
+            background-image: url('#{$projectassets}/img/maps/english/map_fallback_3.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
             padding-bottom: 96.17%;
 
             &__overlay {
-                background-image: url('../img/maps/english/map3_small.png');
+                background-image: url('#{$projectassets}/img/maps/english/map3_small.png');
 
                 @media (min-width: 870px) {
-                    background-image: url('../img/maps/english/map3_large.png');
+                    background-image: url('#{$projectassets}/img/maps/english/map3_large.png');
                 }
             }
         }
@@ -747,38 +747,38 @@
 /* each language below */
 .bbc-news-vj-language--afrique {
     .graveyard-map--one {
-        background-image: url('../img/maps/afrique/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/afrique/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/afrique/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/afrique/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/afrique/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/afrique/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/afrique/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/afrique/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/afrique/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/afrique/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/afrique/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/afrique/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/afrique/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/afrique/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/afrique/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/afrique/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/afrique/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/afrique/map3_large.png');
             }
         }
     }
@@ -802,38 +802,38 @@
 
 .bbc-news-vj-language--arabic {
     .graveyard-map--one {
-        background-image: url('../img/maps/arabic/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/arabic/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/arabic/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/arabic/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/arabic/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/arabic/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/arabic/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/arabic/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/arabic/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/arabic/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/arabic/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/arabic/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/arabic/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/arabic/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/arabic/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/arabic/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/arabic/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/arabic/map3_large.png');
             }
         }
     }
@@ -845,38 +845,38 @@
 
 .bbc-news-vj-language--hausa {
     .graveyard-map--one {
-        background-image: url('../img/maps/hausa/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/hausa/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/hausa/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/hausa/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/hausa/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/hausa/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/hausa/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/hausa/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/hausa/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/hausa/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/hausa/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/hausa/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/hausa/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/hausa/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/hausa/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/hausa/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/hausa/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/hausa/map3_large.png');
             }
         }
     }
@@ -905,38 +905,38 @@
 
 .bbc-news-vj-language--mundo {
     .graveyard-map--one {
-        background-image: url('../img/maps/mundo/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/mundo/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/mundo/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/mundo/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/mundo/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/mundo/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/mundo/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/mundo/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/mundo/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/mundo/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/mundo/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/mundo/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/mundo/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/mundo/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/mundo/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/mundo/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/mundo/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/mundo/map3_large.png');
             }
         }
     }
@@ -969,38 +969,38 @@
 
 .bbc-news-vj-language--pashto {
     .graveyard-map--one {
-        background-image: url('../img/maps/pashto/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/pashto/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/pashto/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/pashto/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/pashto/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/pashto/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/pashto/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/pashto/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/pashto/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/pashto/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/pashto/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/pashto/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/pashto/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/pashto/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/pashto/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/pashto/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/pashto/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/pashto/map3_large.png');
             }
         }
     }
@@ -1024,38 +1024,38 @@
 
 .bbc-news-vj-language--persian {
     .graveyard-map--one {
-        background-image: url('../img/maps/persian/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/persian/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/persian/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/persian/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/persian/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/persian/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/persian/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/persian/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/persian/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/persian/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/persian/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/persian/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/persian/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/persian/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/persian/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/persian/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/persian/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/persian/map3_large.png');
             }
         }
     }
@@ -1067,38 +1067,38 @@
 
 .bbc-news-vj-language--russian {
     .graveyard-map--one {
-        background-image: url('../img/maps/russian/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/russian/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/russian/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/russian/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/russian/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/russian/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/russian/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/russian/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/russian/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/russian/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/russian/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/russian/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/russian/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/russian/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/russian/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/russian/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/russian/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/russian/map3_large.png');
             }
         }
     }
@@ -1114,38 +1114,38 @@
 
 .bbc-news-vj-language--turkce {
     .graveyard-map--one {
-        background-image: url('../img/maps/turkish/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/turkish/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/turkish/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/turkish/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/turkish/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/turkish/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/turkish/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/turkish/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/turkish/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/turkish/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/turkish/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/turkish/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/turkish/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/turkish/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/turkish/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/turkish/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/turkish/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/turkish/map3_large.png');
             }
         }
     }
@@ -1153,38 +1153,38 @@
 
 .bbc-news-vj-language--ukrainian {
     .graveyard-map--one {
-        background-image: url('../img/maps/ukrainian/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/ukrainian/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/ukrainian/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/ukrainian/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/ukrainian/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/ukrainian/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/ukrainian/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/ukrainian/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/ukrainian/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/ukrainian/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/ukrainian/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/ukrainian/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/ukrainian/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/ukrainian/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/ukrainian/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/ukrainian/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/ukrainian/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/ukrainian/map3_large.png');
             }
         }
     }
@@ -1200,38 +1200,38 @@
 
 .bbc-news-vj-language--urdu {
     .graveyard-map--one {
-        background-image: url('../img/maps/urdu/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/urdu/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/urdu/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/urdu/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/urdu/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/urdu/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/urdu/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/urdu/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/urdu/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/urdu/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/urdu/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/urdu/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/urdu/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/urdu/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/urdu/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/urdu/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/urdu/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/urdu/map3_large.png');
             }
         }
     }
@@ -1243,38 +1243,38 @@
 
 .bbc-news-vj-language--uzbek {
     .graveyard-map--one {
-        background-image: url('../img/maps/uzbek/map_fallback_1.png');
+        background-image: url('#{$projectassets}/img/maps/uzbek/map_fallback_1.png');
 
         &__overlay {
-            background-image: url('../img/maps/uzbek/map1_small.png');
+            background-image: url('#{$projectassets}/img/maps/uzbek/map1_small.png');
             height: 164px;
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/uzbek/map1_large.png');
+                background-image: url('#{$projectassets}/img/maps/uzbek/map1_large.png');
             }
         }
     }
 
     .graveyard-map--two {
-        background-image: url('../img/maps/uzbek/map_fallback_2.png');
+        background-image: url('#{$projectassets}/img/maps/uzbek/map_fallback_2.png');
 
         &__overlay {
-            background-image: url('../img/maps/uzbek/map2_small.png');
+            background-image: url('#{$projectassets}/img/maps/uzbek/map2_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/uzbek/map2_large.png');
+                background-image: url('#{$projectassets}/img/maps/uzbek/map2_large.png');
             }
         }
     }
 
     .graveyard-map--three {
-        background-image: url('../img/maps/uzbek/map_fallback_3.png');
+        background-image: url('#{$projectassets}/img/maps/uzbek/map_fallback_3.png');
 
         &__overlay {
-            background-image: url('../img/maps/uzbek/map3_small.png');
+            background-image: url('#{$projectassets}/img/maps/uzbek/map3_small.png');
 
             @media (min-width: 870px) {
-                background-image: url('../img/maps/uzbek/map3_large.png');
+                background-image: url('#{$projectassets}/img/maps/uzbek/map3_large.png');
             }
         }
     }

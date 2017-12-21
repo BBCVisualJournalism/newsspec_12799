@@ -1,0 +1,225 @@
+<section class="section section--two" id="section--two">
+
+    <div style="display: none">
+
+        <span id="drone_poster--english">{{ projectAssets }}/img/drone_video_poster_1040.jpg?v={{ vocab.version }}</span>
+        <span id="drone_poster--other">{{ projectAssets }}/img/kato_tritos_poster_image_1040_no-text.jpg?v={{ vocab.version }}</span>
+        <span id="lesbos_poster">{{ projectAssets }}/img/arrival_image_1040.jpg?v={{ vocab.version }}</span>
+        <span id="voices_poster--english">{{ projectAssets }}/img/voices_of_lesbos_cover_1040_3.jpg?v={{ vocab.version }}</span>
+        <span id="voices_poster--other">{{ projectAssets }}/img/voices_of_lesbos_cover_1040.jpg?v={{ vocab.version }}</span>
+        <span id="fb_share_img">{{ projectAssets }}/img/italy_graves_intro_1400.jpg?v={{ vocab.version }}</span>
+
+    </div>
+
+    <div class="bbc-news-vj-video-wrapper">
+        <div class="bbc-news-vj-video bbc-news-vj-video--drone" id="bbc-news-vj-video--drone">
+            <div class="bbc-news-vj-video__player"></div>
+        </div>
+    </div>
+
+    <div class="bbc-news-vj-grid-wrapper">
+        <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+            <h2>{{ vocab.section2_title }}</h2>
+
+            <p>{{ vocab.section2_para_1 }}</p>
+            <p>{{ vocab.section2_para_2 }}</p>
+            <p>{{ vocab.section2_para_3 }}</p>
+
+            <img src="{{ projectAssets }}/img/firuz_640.jpg" width="100%" />
+            <figcaption class="media-with-caption__caption">
+                {{ vocab.section2_img_1_caption }}
+            </figcaption>
+
+            <p>{{ vocab.section2_para_4 }}</p>
+            <p>{{ vocab.section2_para_5 }}</p>
+            <p>{{ vocab.section2_para_6 }}</p>
+            <p>{{ vocab.section2_para_7 }}</p>
+            <p>{{ vocab.section2_para_8 }}</p>
+
+            <h2>{{ vocab.section2_title_2 }}</h2>
+
+        </div>
+    </div>
+
+    <div class="bbc-news-vj-grid-wrapper">
+        <picture>
+            <source media="(min-width: 1040px)" srcset="{{ projectAssets }}/img/maps/{{ language }}/lesbos_crossing_1040.jpg?v={{ vocab.version }}">
+            <source media="(min-width: 810px)" srcset="{{ projectAssets }}/img/maps/{{ language }}/lesbos_crossing_810.jpg?v={{ vocab.version }}">
+            <source media="(min-width: 624px)" srcset="{{ projectAssets }}/img/maps/{{ language }}/lesbos_crossing_624.jpg?v={{ vocab.version }}">
+
+            <img class="lesbos-map__image__fallback" src="{{ projectAssets }}/img/maps/{{ language }}/lesbos_crossing_624.jpg?v={{ vocab.version }}"
+                srcset="{{ projectAssets }}/img/maps/{{ language }}/lesbos_crossing_624.jpg?v={{ vocab.version }}"
+                alt="{{ vocab.section_2_map_alt_text }}">
+        </picture>
+        <p class="lesbos-map__image__source-text">{{ vocab.responsive_image_source }}</p>
+
+        <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+            <p>{{ vocab.section2_para_9 }}</p>
+            <p>{{ vocab.section2_para_10 }}</p>
+            <p>{{ vocab.section2_para_11 }}</p>
+        </div>
+
+        <img src="{{ projectAssets }}/img/firuz_family_photos_1040.jpg" />
+        <figcaption class="media-with-caption__caption">
+            {{ vocab.section2_img_2_caption }}
+        </figcaption>
+
+        <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+            <h2>{{ vocab.map_section_title }}</h2>
+            <p>{{ vocab.map_section_para_1 }}</p>
+            <p>{{ vocab.map_section_para_2 }}</p>
+            <p>{{ vocab.map_section_para_3 }}</p>
+            <p>{{ vocab.map_section_para_4 }}</p>
+            <p>{{ vocab.map_section_para_5 }}</p>
+            <p>{{ vocab.map_section_para_5a }}</p>
+        </div>
+
+        <div class="graveyard-map--one__container" id="graveyard-map--one__container">
+            <h2 class="map1__title">{{ vocab.map1_title }}</h2>
+            <div class="graveyard-map__subtitle graveyard-map__subtitle--one">
+                <div class="graveyard-map__stats graveyard-map__stats--one">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--one">{{ vocab.map1_incidents_stat }}</p>
+                    <p>{{ vocab.map_key_incidents }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--two">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--two">{{ vocab.map1_deadormissing_stat }}</p>
+                    <p>{{ vocab.map_key_deadormissing }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--three">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--three">{{ vocab.map1_cemeteries_stat }}</p>
+                    <p>{{ vocab.map_key_cemeteries }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--four">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--four">{{ vocab.map1_unmarkedgraves_stat }}</p>
+                    <p>{{ vocab.map_key_unmarkedgraves }}</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="newsspec_14121-map-wrapper">
+                <div class="graveyard-map graveyard-map--one" id="graveyard-map--one">
+                    <div class="graveyard-map__canvas" id="newsspec_14121-map-canvas--one"></div>
+                    <div class="graveyard-map__overlay graveyard-map--one__overlay"></div>
+                </div>
+                <div id="mapSettings"></div>
+            </div>
+            <div class="graveyard-map__source graveyard-map__source--one">{{ vocab.map_source }}</div>
+            <div class="graveyard-map__footer">
+                <span class="graveyard-map__footer__title">{{ vocab.map_footer_title }}</span>
+                <span class="graveyard-map__footer__scale__container">
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--one">5</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--two">20</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--three">100</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--four">200</span>
+                </span>
+                <span class="graveyard-map__footer__grave-marker">{{ vocab.map_footer_graves_text }}</span>
+            </div>
+        </div>
+
+
+
+
+        <div class="graveyard-map--two__container" id="graveyard-map--two__container">
+            <div class="graveyard-map__title graveyard-map__title--two">
+                <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+                    <h2 class="graveyard-map__title__text">{{ vocab.map2_title }}</h2>
+                    <p>{{ vocab.map_section_para_6 }}</p>
+                    <p>{{ vocab.map_section_para_7 }}</p>
+                    <p>{{ vocab.map_section_para_8 }}</p>
+                    <!-- <p>{{ vocab.map_section_para_9 }}</p> -->
+                    <!-- <p>{{ vocab.map_section_para_10 }}</p> -->
+                </div>
+            </div>
+            <div class="graveyard-map__subtitle graveyard-map__subtitle--two">
+                <div class="graveyard-map__stats graveyard-map__stats--one">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--one">{{ vocab.map2_incidents_stat }}</p>
+                    <p>{{ vocab.map_key_incidents }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--two">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--two">{{ vocab.map2_deadormissing_stat }}</p>
+                    <p>{{ vocab.map_key_deadormissing }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--three">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--three">{{ vocab.map2_cemeteries_stat }}</p>
+                    <p>{{ vocab.map_key_cemeteries }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--four">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--four">{{ vocab.map2_unmarkedgraves_stat }}</p>
+                    <p>{{ vocab.map_key_unmarkedgraves }}</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="newsspec_14121-map-wrapper">
+                <div class="graveyard-map graveyard-map--two" id="graveyard-map--two">
+                    <div class="graveyard-map__canvas" id="newsspec_14121-map-canvas--two"></div>
+                    <div class="graveyard-map__overlay graveyard-map--two__overlay"></div>
+                </div>
+                <div id="mapSettings"></div>
+            </div>
+            <div class="graveyard-map__source graveyard-map__source--two">{{ vocab.map_source }}</div>
+            <div class="graveyard-map__footer">
+                <span class="graveyard-map__footer__title">{{ vocab.map_footer_title }}</span>
+                <span class="graveyard-map__footer__scale__container">
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--one">5</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--two">20</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--three">100</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--four">200</span>
+                </span>
+                <span class="graveyard-map__footer__grave-marker">{{ vocab.map_footer_graves_text }}</span>
+            </div>
+        </div>
+
+
+
+
+        <div class="graveyard-map--two__container" id="graveyard-map--two__container">
+            <div class="graveyard-map__title graveyard-map__title--three">
+                <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+                    <h2 class="graveyard-map__title__text">{{ vocab.map3_title }}</h2>
+                    <p>{{ vocab.map_section_para_11 }}</p>
+                    <p>{{ vocab.map_section_para_12 }}</p>
+                    <p>{{ vocab.map_section_para_13 }}</p>
+                    <!-- <p>{{ vocab.map_section_para_14 }}</p> -->
+                </div>
+            </div>
+            <div class="graveyard-map__subtitle graveyard-map__subtitle--three">
+                <div class="graveyard-map__stats graveyard-map__stats--one">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--one">{{ vocab.map3_incidents_stat }}</p>
+                    <p>{{ vocab.map_key_incidents }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--two">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--two">{{ vocab.map3_deadormissing_stat }}</p>
+                    <p>{{ vocab.map_key_deadormissing }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--three">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--three">{{ vocab.map3_cemeteries_stat }}</p>
+                    <p>{{ vocab.map_key_cemeteries }}</p>
+                </div>
+                <div class="graveyard-map__stats graveyard-map__stats--four">
+                    <p class="graveyard-map__stats__number graveyard-map__stats__number--four">{{ vocab.map3_unmarkedgraves_stat }}</p>
+                    <p>{{ vocab.map_key_unmarkedgraves }}</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="newsspec_14121-map-wrapper">
+                <div class="graveyard-map graveyard-map--three" id="graveyard-map--three">
+                    <div class="graveyard-map__canvas" id="newsspec_14121-map-canvas--three"></div>
+                    <div class="graveyard-map__overlay graveyard-map--three__overlay"></div>
+                </div>
+                <div id="mapSettings"></div>
+            </div>
+            <div class="graveyard-map__source graveyard-map__source--three">{{ vocab.map_source }}</div>
+            <div class="graveyard-map__footer">
+                <span class="graveyard-map__footer__title">{{ vocab.map_footer_title }}</span>
+                <span class="graveyard-map__footer__scale__container">
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--one">5</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--two">20</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--three">100</span>
+                    <span class="graveyard-map__footer__scale graveyard-map__footer__scale--four">200</span>
+                </span>
+                <span class="graveyard-map__footer__grave-marker">{{ vocab.map_footer_graves_text }}</span>
+            </div>
+        </div>
+
+
+    </div>
+</section>
