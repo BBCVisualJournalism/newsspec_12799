@@ -1,31 +1,33 @@
 {
+  "name": "newsspec_12799",
   "version": "0.1.89",
-  "scripts": {
-    "postinstall": "node_modules/.bin/bower update"
+  "dependencies": {
+    "@bbc/developer-scaffold-amp-wrapper": "~8.0.0",
+    "@bbc/developer-scaffold-core-wrapper": "~8.0.0",
+    "@bbc/developer-scaffold-embed-wrapper": "~8.0.0",
+    "@bbc/developer-scaffold-envelope-wrapper": "~8.0.0",
+    "@bbc/developer-scaffold-full-width-wrapper": "~8.1.0",
+    "@bbc/developer-scaffold-news-app-wrapper": "~8.1.0",
+    "@bbc/news-vj-build-tasks": "~2.1.0",
+    "@bbc/news-vj-component-html": "^2.0.0",
+    "@bbc/news-vj-css-defaults": "^3.0.0",
+    "@bbc/news-vj-sharetools": "^5.0.0",
+    "@bbc/news-vj-ws-config": "^2.0.0",
+    "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "bower": "~1.5.3",
-    "developer-scaffold-full-width-wrapper": "bbc/news-vj-developer-scaffold-full-width-wrapper#v2.0.4",
-    "developer-scaffold-iframe-wrapper": "bbc/news-vj-developer-scaffold-iframe-wrapper#v2.0.0",
-    "grunt": "~0.4.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "grunt": "~0.4.5",
     "grunt-cli": "~0.1.11",
-    "grunt-cloudfile-to-vocab": "~1.0.1",
-    "grunt-contrib-clean": "0.5.0",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-concurrent": "~0.4.3",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-csslint": "~0.2.0",
-    "grunt-contrib-cssmin": "0.9.0",
-    "grunt-contrib-imagemin": "~0.3.0",
-    "grunt-contrib-jshint": "0.12.0",
-    "grunt-contrib-requirejs": "0.4.1",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-uglify": "0.2.4",
-    "grunt-deploy-to-env": "~0.1.0",
-    "grunt-jsonlint": "1.0.4",
-    "grunt-multi-lang-site-generator": "~0.5.0",
-    "time-grunt": "~0.2.9"
+    "webpack": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-loose"
+    ]
   },
   "_comment": "^^^ PLEASE NOTE THAT THE VERSION NUMBER ABOVE IS REQUIRED BY THE TESTS"
 }

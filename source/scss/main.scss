@@ -1,74 +1,43 @@
-@import "./../../bower_components/normalize-scss/_normalize.scss";
-@import "./../../bower_components/news-vj-css-defaults/css/main";
-@import "./../../bower_components/sharetools/bin/templates/buttons/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
+@import "variables.scss";
+@import "./../../node_modules/@bbc/news-vj-css-defaults/css/main";
+@import "./../../node_modules/@bbc/news-vj-sharetools/bin/templates/dropdown/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
 
-$version: "0.1.89";
+@import "../../node_modules/@bbc/news-vj-component-html/blockquote/blockquote";
 
 // YOUR APPLICATION CSS GOES BELOW
 
 .bbc-news-vj-wrapper {
-    position:relative;
-}
 
-.bbc-news-vj-wrapper .section--method p {
-    word-wrap: break-word; // fix long links
-}
+    // Developer:
+    //  SASS placeholder selectors (i.e. `%button--standard`) mean that the corresponding CSS
+    //  is only pulled into our CSS file if we use `@extend`.
+    //  The CSS for the buttons, radio inputs and checkboxes amount to around 10KB, so only
+    //  include what you need.
 
-.bbc-news-vj-grid-wrapper {
-    position: relative;
-}
-
-@import "_mediaquery";
-@import "hero";
-@import "section1"; //intro section
-@import "sections"; //all other sections
-@import "map";
-@import "quotes";
-@import "charts";
-@import "credits";
-
-.bbc-news-vj-wrapper--js-enabled {}
-
-.bbc-news-vj-wrapper--map-enabled {
-
-    .section .graveyard-map__overlay,
-    .section .graveyard-map__footer {
-        display: block;
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    input[type=tel],
+    input[type=search],
+    input[type=number],
+    input[type=submit],
+    input[type=button],
+    button,
+    textarea,
+    select {
+        @extend %form-input;
     }
 
-    .section .graveyard-map,
-    .section .graveyard-map__canvas {
-        height:800px;
+    select {
+        @extend %form--select;
     }
 
-    .section .graveyard-map--one,
-    .section .graveyard-map--two,
-    .section .graveyard-map--three {
-        background-image: none;
-        padding-bottom:0;
+    input[type="checkbox"] {
+        @extend %form--checkbox;
     }
 
-    // added responsive sizing of map containers
-    .section .graveyard-map--one,
-    .section .graveyard-map--one__container { display: none; }
-
-    .section .graveyard-map--two { height: 290px; }
-    .section .graveyard-map--three { height: 460px; }
-    @media (min-width: 320px) {
-        .section .graveyard-map--two { height: 590px; }
+    input[type="radio"] {
+        @extend %form--radio;
     }
-    @media (min-width: 460px) {
-        .section .graveyard-map--one__container { display: block; }
-        .section .graveyard-map--one { display: block; height: 460px; }
-        .section .graveyard-map--two { height: 460px; }
-        .section .graveyard-map--three { height: 360px; }
-    }
-    @media (min-width: 850px) {
-        .section .graveyard-map--two { height: 800px; }
-    }
-    @media (min-width: 870px) {
-        .section .graveyard-map--one { height: 640px; }
-        .section .graveyard-map--three { height: 660px; }
-    }
-
 }

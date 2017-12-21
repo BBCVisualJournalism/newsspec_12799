@@ -1,17 +1,14 @@
 {
-  "wrapper": "full-width",
-  "debug": "false",
-  "project_number": "12799",
-  "year": "2016",
-  "services": {
-    "default": "english",
-    "others": "*"
-  },
-  "amdModulePaths": {
-    "bump-3": "empty:",
-    "jquery": "../../bower_components/jquery/dist/jquery.min",
-    "template_engine": "../../bower_components/template_engine/template_engine",
-    "ShareTools": "../../bower_components/sharetools/bin/sharetools.min",
-    "ShareToolsTemplate": "../../bower_components/sharetools/bin/templates/buttons/template"
-  }
+  "wrappers": [
+      "amp",
+      "core",
+      "embed",
+      "envelope",
+      "full-width",
+      "news-app"
+  ],
+  "debug": "true",
+  "fixLinting": "false",
+  "outputPath": "include/newsspec/newsspec_12799",
+  "envJsonRelativeToHomeDirectory": "Sites/bbc/news/special/env.json"
 }

@@ -1,13 +1,9 @@
-define(['wrapper', 'jquery'], function (wrapper, $) {
+import $ from 'jquery';
 
-    var ProgressiveEnhancement = function () {};
+class ProgressiveEnhancement {
+    init() {
+        $('.bbc-news-vj-wrapper').addClass('bbc-news-vj-wrapper--js-enabled');
+    }
+}
 
-    ProgressiveEnhancement.prototype = {
-        init: function () {
-            $('.bbc-news-vj-wrapper').addClass('bbc-news-vj-wrapper--js-enabled');
-        }
-    };
-
-    return new ProgressiveEnhancement();
-
-});
+export default ProgressiveEnhancement;

@@ -1,20 +1,20 @@
-define(['jquery'], function ($) {
+import $ from 'jquery';
 
-    var isElementInViewport = function ($element, fully) {
-        var $window = $(window);
+const isElementInViewport = ($element, fully) => {
+    const $window = $(window);
 
-        var elementTop = $element.offset().top;
-        var elementBottom = elementTop + $element.outerHeight();
+    const elementTop = $element.offset().top;
+    const elementBottom = elementTop + $element.outerHeight();
 
-        var windowTop = $window.scrollTop();
-        var windowBottom = windowTop + $window.height();
+    const windowTop = $window.scrollTop();
+    const windowBottom = windowTop + $window.height();
 
-        if (fully) {
-            return ((elementBottom <= windowBottom) && (elementTop >= windowTop));
-        } else {
-            return ((elementTop <= windowBottom) && (elementBottom >= windowTop));
-        }
-    };
+    if (fully) {
+        return ((elementBottom <= windowBottom) && (elementTop >= windowTop));
+    }
+    return ((elementTop <= windowBottom) && (elementBottom >= windowTop));
+};
 
-    return { isElementInViewport : isElementInViewport };
-});
+export default {
+    isElementInViewport: isElementInViewport,
+};

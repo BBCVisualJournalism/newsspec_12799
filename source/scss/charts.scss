@@ -1,66 +1,82 @@
 .section {
     .chart__container {
-        width:100%;
+        width: 100%;
         text-align: center;
-        float:left;
+        float: left;
+
         @media (min-width: 1008px) {
-            display:inline-block;
-            padding:0;
-            margin:0;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
             width: 50%;
         }
+
         .chart {
             color: black;
-            height:360px;
-            max-height:600px;
-            margin:0 20px 0 20px;
-            text-align:center;
-            width:100%;
-            &__header{
-                margin-bottom:15px;
-                text-align:left;
-                @media (min-width: 400px) { //copy fluid__inner wrapper
+            height: 360px;
+            max-height: 600px;
+            margin: 0 20px;
+            text-align: center;
+            width: 100%;
+
+            &__header {
+                margin-bottom: 15px;
+                text-align: left;
+
+                @media (min-width: 400px) {
+                    //copy fluid__inner wrapper
                     padding-left: 16px;
                     padding-right: 16px;
                 }
-                @media (min-width: 600px) { //copy fluid__inner wrapper
+
+                @media (min-width: 600px) {
+                    //copy fluid__inner wrapper
                     padding: 0;
                     margin-left: 8.1%;
                     margin-right: 8.1%;
                 }
-                @media (min-width: 800px){ //copy fluid__inner wrapper
+
+                @media (min-width: 800px) {
+                    //copy fluid__inner wrapper
                     margin-left: 16.4%;
                     margin-right: 16.4%;
                 }
-                @media (min-width:1008px){
+
+                @media (min-width: 1008px) {
                     margin-left: auto;
                     margin-right: auto;
-                    margin-bottom:-10px;
+                    margin-bottom: -10px;
                 }
-                &--title{
-                    font-weight:bold;
+
+                &--title {
+                    font-weight: bold;
                 }
+
                 &--impact {
                     font-size: 1.5em;
-                    padding-top:10px;
+                    padding-top: 10px;
+
                     &__stat {
                         color: #007373;
                         font-weight: bold;
                     }
                 }
             }
+
             &--one {
                 background-color: #222;
-                background: url(http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg);
+                background-image: url(http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/mami-dog-cropped.jpg);
                 background-position: 50%;
                 background-repeat: no-repeat;
                 background-size: contain;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom:20px;
+                margin-bottom: 20px;
+
                 @media (min-width: 1008px) {
-                    margin-bottom:0;
+                    margin-bottom: 0;
                 }
+
                 &--js-enabled {
                     background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20id%3D%22head%22%20version%3D%221.1%22%20font-family%3D%22Helvetica%2C%20Arial%22%20width%3D%22692%22%20height%3D%22401%22%3E%3Ctitle%3ECharts%20SVG%20Example%20-%20Simple%20Line%20Chart%3C/title%3E%3Cdesc%3E%0A%20%20SVG%20chart%20generated%20by%20Charts%20SVG%0A%3C/desc%3E%3Cmetadata%3E%3Crdf%3ARDF%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Ardfs%3D%22http%3A//www.w3.org/2000/01/rdf-schema%23%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%3E%3Crdf%3ADescription%20dc%3Atitle%3D%22Charts%20SVG%20Example%20-%20Simple%20Line%20Chart%22%20dc%3Adescription%3D%22SVG%20chart%20generated%20by%20Charts%20SVG%22%20dc%3Adate%3D%222014-3-13%22%20dc%3Aformat%3D%22image/svg+xml%22%20dc%3Alanguage%3D%22en%22/%3E%3C/rdf%3ARDF%3E%3C/metadata%3E%3Crect%20id%3D%22imagebackground%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22692%22%20height%3D%22401%22%20stroke-width%3D%221%22%20stroke%3D%22none%22%20fill%3D%22white%22/%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20.gridline%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20lightgrey%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axisline-x%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axisline-y%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axisline-y2%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axismark-main%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axismark-second%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axistitle-x%20%7B%0A%20%20%20%20font-size%3A%2018px%3B%0A%20%20%7D%0A%20%20.axisnumber-x%20%7B%0A%20%20%20%20font-size%3A%2015px%3B%0A%20%20%7D%0A%20%20.axistitle-y%20%7B%0A%20%20%20%20font-size%3A%2018px%3B%0A%20%20%7D%0A%20%20.axisnumber-y%20%7B%0A%20%20%20%20font-size%3A%2015px%3B%0A%20%20%7D%0A%3C/style%3E%3Cdefs%3E%3Cpattern%20id%3D%22x-gridline%22%20x%3D%220%22%20y%3D%220%22%20height%3D%22350%22%20width%3D%2283.333%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22350%22%20class%3D%22gridline%22/%3E%3C/pattern%3E%3Cpattern%20id%3D%22y-gridline%22%20x%3D%220%22%20y%3D%220%22%20height%3D%2221.875%22%20width%3D%22500%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22500%22%20y2%3D%220%22%20class%3D%22gridline%22/%3E%3C/pattern%3E%3C/defs%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Crect%20id%3D%22x-gridline-area%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22505%22%20height%3D%22350%22%20fill%3D%22url%28%23x-gridline%29%22/%3E%3Crect%20id%3D%22y-gridline-area%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22500%22%20height%3D%22353.5%22%20fill%3D%22url%28%23y-gridline%29%22/%3E%3C/g%3E%3Cdefs%3E%3Cpattern%20id%3D%22x-axismark-main%22%20x%3D%220%22%20width%3D%2283.333%22%20height%3D%226%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%226%22%20class%3D%22axismark-main%22/%3E%3C/pattern%3E%3Cpattern%20id%3D%22y-axismark-main%22%20y%3D%220%22%20width%3D%226%22%20height%3D%2221.875%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%22-1%22%20y1%3D%220%22%20x2%3D%226%22%20y2%3D%220%22%20class%3D%22axismark-main%22/%3E%3C/pattern%3E%3C/defs%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Crect%20id%3D%22x-axismark%22%20x%3D%220%22%20y%3D%22-6%22%20width%3D%22505%22%20height%3D%226%22%20fill%3D%22url%28%23x-axismark-main%29%22/%3E%3Crect%20id%3D%22y-axismark%22%20x%3D%22-6%22%20y%3D%220%22%20width%3D%226%22%20height%3D%22353.5%22%20fill%3D%22url%28%23y-axismark-main%29%22/%3E%3C/g%3E%3Cg%20id%3D%22axis-x-values%22%20class%3D%22axisnumber-x%22%20transform%3D%22translate%2854%2C%20389%29%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%220%22%3E0%3C/text%3E%3Ctext%20x%3D%2283.33%22%3E1%3C/text%3E%3Ctext%20x%3D%22166.67%22%3E2%3C/text%3E%3Ctext%20x%3D%22250%22%3E3%3C/text%3E%3Ctext%20x%3D%22333.33%22%3E4%3C/text%3E%3Ctext%20x%3D%22416.67%22%3E5%3C/text%3E%3Ctext%20x%3D%22500%22%3E6%3C/text%3E%3C/g%3E%3Cg%20id%3D%22axis-y-values%22%20class%3D%22axisnumber-y%22%20transform%3D%22translate%2842%2C%20367%29%22%20text-anchor%3D%22end%22%3E%3Ctext%20y%3D%22-0%22%3E0%3C/text%3E%3Ctext%20y%3D%22-21.88%22%3E10%3C/text%3E%3Ctext%20y%3D%22-43.75%22%3E20%3C/text%3E%3Ctext%20y%3D%22-65.63%22%3E30%3C/text%3E%3Ctext%20y%3D%22-87.5%22%3E40%3C/text%3E%3Ctext%20y%3D%22-109.38%22%3E50%3C/text%3E%3Ctext%20y%3D%22-131.25%22%3E60%3C/text%3E%3Ctext%20y%3D%22-153.13%22%3E70%3C/text%3E%3Ctext%20y%3D%22-175%22%3E80%3C/text%3E%3Ctext%20y%3D%22-196.88%22%3E90%3C/text%3E%3Ctext%20y%3D%22-218.75%22%3E100%3C/text%3E%3Ctext%20y%3D%22-240.63%22%3E110%3C/text%3E%3Ctext%20y%3D%22-262.5%22%3E120%3C/text%3E%3Ctext%20y%3D%22-284.38%22%3E130%3C/text%3E%3Ctext%20y%3D%22-306.25%22%3E140%3C/text%3E%3Ctext%20y%3D%22-328.13%22%3E150%3C/text%3E%3Ctext%20y%3D%22-350%22%3E160%3C/text%3E%3C/g%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20/*--%20general%20style%20of%20graph%20lines%20--*/%0A%20%20.series-lines-general%20%7B%0A%20%20%20%20stroke-width%3A%20%20%20%201%3B%0A%20%20%20%20stroke-linejoin%3A%20round%3B%0A%20%20%20%20stroke-linecap%3A%20%20round%3B%0A%20%20%20%20fill%3A%20%20%20%20%20%20%20%20%20%20%20%20none%3B%0A%20%20%7D%0A%20%20/*--%20series%201%20--*/%0A%20%20.series1%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20%20%20rgb%280%2C%200%2C%20255%29%3B%0A%20%20%20%20stroke-width%3A%20%20%20%20%201%3B%0A%20%20%7D%0A%20%20/*--%20series%202%20--*/%0A%20%20.series2%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20%20%20rgb%280%2C%20192%2C%200%29%3B%0A%20%20%20%20stroke-width%3A%20%20%20%20%201%3B%0A%20%20%7D%0A%3C/style%3E%3Cg%20id%3D%22graphs%22%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Cpolyline%20id%3D%22graph2%22%20class%3D%22series-lines-general%20series2%22%20points%3D%22%2066.7%20175%20183.3%2043.8%20225%20142.2%20375%2087.5%20425%20196.9%20%22/%3E%3Cpolyline%20id%3D%22graph1%22%20class%3D%22series-lines-general%20series1%22%20points%3D%22%2083.3%20153.1%20166.7%2021.9%20250%20109.4%20333.3%2021.9%20416.7%20153.1%20%22/%3E%3C/g%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Cline%20id%3D%22x-axis%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22500%22%20y2%3D%220%22%20class%3D%22axisline-x%22/%3E%3Cline%20id%3D%22y-axis%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22350%22%20class%3D%22axisline-y%22/%3E%3C/g%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20.legendbox%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%20%20fill%3A%20%20%20%20%20%20%20%20%20white%3B%0A%20%20%7D%0A%20%20.legendtext%20%7B%0A%20%20%20%20font-size%3A%20%20%2015px%3B%0A%20%20%20%20text-anchor%3A%20start%3B%0A%20%20%7D%0A%3C/style%3E%3Cg%20id%3D%22legend%22%20transform%3D%22translate%28563%2C%2047%29%22%3E%3Crect%20id%3D%22legend-background%22%20class%3D%22legendbox%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22123%22%20height%3D%2254%22/%3E%3Cpolyline%20id%3D%22legend-line1%22%20class%3D%22series-lines-general%20series1%22%20transform%3D%22scale%281%2C%20-1%29%22%20points%3D%226%20-14%2021%20-14%2036%20-14%22/%3E%3Ctext%20id%3D%22legend-text1%22%20class%3D%22legendtext%22%20x%3D%2242%22%20y%3D%2221%22%3E1st%20W%3C/text%3E%3Cpolyline%20id%3D%22legend-line2%22%20class%3D%22series-lines-general%20series2%22%20transform%3D%22scale%281%2C%20-1%29%22%20points%3D%226%20-35%2021%20-35%2036%20-35%22/%3E%3Ctext%20id%3D%22legend-text2%22%20class%3D%22legendtext%22%20x%3D%2242%22%20y%3D%2242%22%3E2nd%20W%3C/text%3E%3C/g%3E%3C/svg%3E);
                     background-position: 50%;
@@ -70,18 +86,21 @@
                     margin-right: auto;
                 }
             }
+
             &--two {
                 background-color: #444;
-                background: url(http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/daniele.jpg);
+                background-image: url(http://newsimg.bbc.co.uk/news/special/2016/newsspec_12934/content/full-width/common/img/daniele.jpg);
                 background-position: 50%;
                 background-repeat: no-repeat;
                 background-size: contain;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom:20px;
+                margin-bottom: 20px;
+
                 @media (min-width: 1008px) {
-                    margin-bottom:0;
+                    margin-bottom: 0;
                 }
+
                 &--js-enabled {
                     background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20id%3D%22head%22%20version%3D%221.1%22%20font-family%3D%22Helvetica%2C%20Arial%22%20width%3D%22692%22%20height%3D%22401%22%3E%3Ctitle%3ECharts%20SVG%20Example%20-%20Simple%20Line%20Chart%3C/title%3E%3Cdesc%3E%0A%20%20SVG%20chart%20generated%20by%20Charts%20SVG%0A%3C/desc%3E%3Cmetadata%3E%3Crdf%3ARDF%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Ardfs%3D%22http%3A//www.w3.org/2000/01/rdf-schema%23%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%3E%3Crdf%3ADescription%20dc%3Atitle%3D%22Charts%20SVG%20Example%20-%20Simple%20Line%20Chart%22%20dc%3Adescription%3D%22SVG%20chart%20generated%20by%20Charts%20SVG%22%20dc%3Adate%3D%222014-3-13%22%20dc%3Aformat%3D%22image/svg+xml%22%20dc%3Alanguage%3D%22en%22/%3E%3C/rdf%3ARDF%3E%3C/metadata%3E%3Crect%20id%3D%22imagebackground%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22692%22%20height%3D%22401%22%20stroke-width%3D%221%22%20stroke%3D%22none%22%20fill%3D%22white%22/%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20.gridline%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20lightgrey%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axisline-x%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axisline-y%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axisline-y2%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%20%20%202%3B%0A%20%20%20%20stroke-linecap%3A%20round%3B%0A%20%20%7D%0A%20%20.axismark-main%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axismark-second%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%7D%0A%20%20.axistitle-x%20%7B%0A%20%20%20%20font-size%3A%2018px%3B%0A%20%20%7D%0A%20%20.axisnumber-x%20%7B%0A%20%20%20%20font-size%3A%2015px%3B%0A%20%20%7D%0A%20%20.axistitle-y%20%7B%0A%20%20%20%20font-size%3A%2018px%3B%0A%20%20%7D%0A%20%20.axisnumber-y%20%7B%0A%20%20%20%20font-size%3A%2015px%3B%0A%20%20%7D%0A%3C/style%3E%3Cdefs%3E%3Cpattern%20id%3D%22x-gridline%22%20x%3D%220%22%20y%3D%220%22%20height%3D%22350%22%20width%3D%2283.333%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22350%22%20class%3D%22gridline%22/%3E%3C/pattern%3E%3Cpattern%20id%3D%22y-gridline%22%20x%3D%220%22%20y%3D%220%22%20height%3D%2221.875%22%20width%3D%22500%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22500%22%20y2%3D%220%22%20class%3D%22gridline%22/%3E%3C/pattern%3E%3C/defs%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Crect%20id%3D%22x-gridline-area%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22505%22%20height%3D%22350%22%20fill%3D%22url%28%23x-gridline%29%22/%3E%3Crect%20id%3D%22y-gridline-area%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22500%22%20height%3D%22353.5%22%20fill%3D%22url%28%23y-gridline%29%22/%3E%3C/g%3E%3Cdefs%3E%3Cpattern%20id%3D%22x-axismark-main%22%20x%3D%220%22%20width%3D%2283.333%22%20height%3D%226%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%226%22%20class%3D%22axismark-main%22/%3E%3C/pattern%3E%3Cpattern%20id%3D%22y-axismark-main%22%20y%3D%220%22%20width%3D%226%22%20height%3D%2221.875%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cline%20x1%3D%22-1%22%20y1%3D%220%22%20x2%3D%226%22%20y2%3D%220%22%20class%3D%22axismark-main%22/%3E%3C/pattern%3E%3C/defs%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Crect%20id%3D%22x-axismark%22%20x%3D%220%22%20y%3D%22-6%22%20width%3D%22505%22%20height%3D%226%22%20fill%3D%22url%28%23x-axismark-main%29%22/%3E%3Crect%20id%3D%22y-axismark%22%20x%3D%22-6%22%20y%3D%220%22%20width%3D%226%22%20height%3D%22353.5%22%20fill%3D%22url%28%23y-axismark-main%29%22/%3E%3C/g%3E%3Cg%20id%3D%22axis-x-values%22%20class%3D%22axisnumber-x%22%20transform%3D%22translate%2854%2C%20389%29%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%220%22%3E0%3C/text%3E%3Ctext%20x%3D%2283.33%22%3E1%3C/text%3E%3Ctext%20x%3D%22166.67%22%3E2%3C/text%3E%3Ctext%20x%3D%22250%22%3E3%3C/text%3E%3Ctext%20x%3D%22333.33%22%3E4%3C/text%3E%3Ctext%20x%3D%22416.67%22%3E5%3C/text%3E%3Ctext%20x%3D%22500%22%3E6%3C/text%3E%3C/g%3E%3Cg%20id%3D%22axis-y-values%22%20class%3D%22axisnumber-y%22%20transform%3D%22translate%2842%2C%20367%29%22%20text-anchor%3D%22end%22%3E%3Ctext%20y%3D%22-0%22%3E0%3C/text%3E%3Ctext%20y%3D%22-21.88%22%3E10%3C/text%3E%3Ctext%20y%3D%22-43.75%22%3E20%3C/text%3E%3Ctext%20y%3D%22-65.63%22%3E30%3C/text%3E%3Ctext%20y%3D%22-87.5%22%3E40%3C/text%3E%3Ctext%20y%3D%22-109.38%22%3E50%3C/text%3E%3Ctext%20y%3D%22-131.25%22%3E60%3C/text%3E%3Ctext%20y%3D%22-153.13%22%3E70%3C/text%3E%3Ctext%20y%3D%22-175%22%3E80%3C/text%3E%3Ctext%20y%3D%22-196.88%22%3E90%3C/text%3E%3Ctext%20y%3D%22-218.75%22%3E100%3C/text%3E%3Ctext%20y%3D%22-240.63%22%3E110%3C/text%3E%3Ctext%20y%3D%22-262.5%22%3E120%3C/text%3E%3Ctext%20y%3D%22-284.38%22%3E130%3C/text%3E%3Ctext%20y%3D%22-306.25%22%3E140%3C/text%3E%3Ctext%20y%3D%22-328.13%22%3E150%3C/text%3E%3Ctext%20y%3D%22-350%22%3E160%3C/text%3E%3C/g%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20/*--%20general%20style%20of%20graph%20lines%20--*/%0A%20%20.series-lines-general%20%7B%0A%20%20%20%20stroke-width%3A%20%20%20%201%3B%0A%20%20%20%20stroke-linejoin%3A%20round%3B%0A%20%20%20%20stroke-linecap%3A%20%20round%3B%0A%20%20%20%20fill%3A%20%20%20%20%20%20%20%20%20%20%20%20none%3B%0A%20%20%7D%0A%20%20/*--%20series%201%20--*/%0A%20%20.series1%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20%20%20rgb%280%2C%200%2C%20255%29%3B%0A%20%20%20%20stroke-width%3A%20%20%20%20%201%3B%0A%20%20%7D%0A%20%20/*--%20series%202%20--*/%0A%20%20.series2%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20%20%20%20%20rgb%280%2C%20192%2C%200%29%3B%0A%20%20%20%20stroke-width%3A%20%20%20%20%201%3B%0A%20%20%7D%0A%3C/style%3E%3Cg%20id%3D%22graphs%22%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Cpolyline%20id%3D%22graph2%22%20class%3D%22series-lines-general%20series2%22%20points%3D%22%2066.7%20175%20183.3%2043.8%20225%20142.2%20375%2087.5%20425%20196.9%20%22/%3E%3Cpolyline%20id%3D%22graph1%22%20class%3D%22series-lines-general%20series1%22%20points%3D%22%2083.3%20153.1%20166.7%2021.9%20250%20109.4%20333.3%2021.9%20416.7%20153.1%20%22/%3E%3C/g%3E%3Cg%20transform%3D%22scale%281%2C%20-1%29%20translate%2854%2C%20-362%29%22%3E%3Cline%20id%3D%22x-axis%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22500%22%20y2%3D%220%22%20class%3D%22axisline-x%22/%3E%3Cline%20id%3D%22y-axis%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22350%22%20class%3D%22axisline-y%22/%3E%3C/g%3E%3Cstyle%20id%3D%22styles%22%20type%3D%22text/css%22%3E%0A%20%20.legendbox%20%7B%0A%20%20%20%20stroke%3A%20%20%20%20%20%20%20black%3B%0A%20%20%20%20stroke-width%3A%201%3B%0A%20%20%20%20fill%3A%20%20%20%20%20%20%20%20%20white%3B%0A%20%20%7D%0A%20%20.legendtext%20%7B%0A%20%20%20%20font-size%3A%20%20%2015px%3B%0A%20%20%20%20text-anchor%3A%20start%3B%0A%20%20%7D%0A%3C/style%3E%3Cg%20id%3D%22legend%22%20transform%3D%22translate%28563%2C%2047%29%22%3E%3Crect%20id%3D%22legend-background%22%20class%3D%22legendbox%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22123%22%20height%3D%2254%22/%3E%3Cpolyline%20id%3D%22legend-line1%22%20class%3D%22series-lines-general%20series1%22%20transform%3D%22scale%281%2C%20-1%29%22%20points%3D%226%20-14%2021%20-14%2036%20-14%22/%3E%3Ctext%20id%3D%22legend-text1%22%20class%3D%22legendtext%22%20x%3D%2242%22%20y%3D%2221%22%3E1st%20W%3C/text%3E%3Cpolyline%20id%3D%22legend-line2%22%20class%3D%22series-lines-general%20series2%22%20transform%3D%22scale%281%2C%20-1%29%22%20points%3D%226%20-35%2021%20-35%2036%20-35%22/%3E%3Ctext%20id%3D%22legend-text2%22%20class%3D%22legendtext%22%20x%3D%2242%22%20y%3D%2242%22%3E2nd%20W%3C/text%3E%3C/g%3E%3C/svg%3E);
                     background-position: 50%;
