@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import bump from 'bump-3';
 import wrapper from 'wrapper';
 import utils from './utils';
 
@@ -9,8 +10,7 @@ class Video {
         this.fullFeatureWidth = 800;
         this.selector = videoContainerSelector;
         this.$videoContainer = $(this.selector);
-        // this.videoEl = bump(this.selector).find('.bbc-news-vj-video__player');
-        this.videoEl = this.$videoContainer.find('.bbc-news-vj-video__player');
+        this.videoEl = bump(this.selector).find('.bbc-news-vj-video__player');
         this.vpid = vpid;
         this.holdingImage = holdingImage;
         this.autoplay = window.innerWidth < this.fullFeatureWidth ? false : autoplay;

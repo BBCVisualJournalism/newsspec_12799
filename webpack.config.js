@@ -6,6 +6,7 @@ const config = {
     externals: [
         'vocab',
         'wrapper',
+        'bump-3',
     ],
 
     resolve: {

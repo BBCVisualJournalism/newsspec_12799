@@ -1,9 +1,0 @@
-<%= include("hero.tmpl") %>
-<%= include("section1_intro.tmpl") %>
-<%= include("section2_drone-maps.tmpl") %>
-<%= include("section3_case-study.tmpl") %>
-<%= include("section4_finding-relatives.tmpl") %>
-<%= include("section5.tmpl") %>
-<%= include("methodology.tmpl") %>
-<%= include("credits.tmpl") %>
-<%= include("vocabs.tmpl") %>
