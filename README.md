@@ -1,38 +1,26 @@
-# newsspec-12799: unmarked_graves
+[![Built with `generator-vj-include` v8.3.0](https://img.shields.io/badge/vj_include-8.3.0-blue.svg)](https://github.com/bbc/news-vj-developer-scaffold)
 
-VJ project
+# newsspec-13789
 
-## Getting started
+Description TBC
 
-Automated install:
+## Setup
 
-```
-scaffold_install
-```
+`npm i` if you haven't already.
 
-(Or install manually - `npm install` in the project root and in the root of every developer-scaffold wrapper in the node_modules/ directory.)
+## Development
+
+Make any tweaks you need to the output. Consider making a Pull Request back to the include generator if the default was not good enough for your requirements.
 
 Compile the project:
 
-```
-grunt
-```
+`compile.js`
 
-If you've added images:
+## Deployment
 
-```
-grunt images
-```
+Deploy your project (uses Sling under the hood):
 
-Build World Service version:
-
-```
-grunt translate
-```
-
-## Developer scaffold
-
-This project was built using the [developer scaffold](https://github.com/bbc/news-vj-developer-scaffold) version 1.1.1.
+`deploy.js --env=aws-test`
 
 ## License
-Copyright (c) 2016 BBC 
+Copyright (c) 2017 BBC
