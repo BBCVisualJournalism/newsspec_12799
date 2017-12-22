@@ -86,11 +86,12 @@ const handleScroll = () => {
 const setShareToolsLogging = () => {
     $('.share__tool').on('click', function () {
         const parent = $(this).parents('.bbc-news-vj-sharetools');
-        const shareToolsIndex = parent.attr('id').split('--')[1];
+        // const shareToolsIndex = parent.attr('id').split('--')[1];
+        const viewLabel = $(this).children().attr('data-network');
         const istatsInfo = {
             actionName: 'newsspec-interaction',
             actionType: 'user-shared',
-            viewLabel: shareToolsIndex,
+            viewLabel,
         };
         // console.log(istatsInfo);
         wrapper.callIstats(istatsInfo);
