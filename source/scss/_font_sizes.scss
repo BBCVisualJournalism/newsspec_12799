@@ -1,0 +1,16 @@
+.bbc-news-vj-wrapper {
+    font-size: 16px;
+
+    // @TODO - use the GEL breakpoint variables above
+    @media (min-width: 600px) {
+        font-size: 18px;
+    }
+
+    @media (min-width: 1008px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 18px;
+    }
+}
