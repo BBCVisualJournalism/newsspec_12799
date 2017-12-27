@@ -6,10 +6,6 @@ import pubsub from './pubsub';
 import vocabs from './vocabs';
 import istatsLogger from './istatsLogger';
 import VideoPlayer from './video';
-import ProgressiveEnhancement from './progressiveEnhancement';
-
-
-const progressiveEnhancement = new ProgressiveEnhancement();
 
 const version = '0.1.89';
 
@@ -138,12 +134,11 @@ function initMaps() {
 
 // *------------------------------- init ------------------------------- */
 function init() {
-    // initMaps();
+    $('.bbc-news-vj-wrapper').addClass('bbc-news-vj-wrapper--js-enabled');
     initVideo();
     initShareTools();
     istatsLogger.init();
     wrapper.markPageAsLoaded();
-    progressiveEnhancement.init();
 }
 
 init();

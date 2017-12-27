@@ -1,5 +1,6 @@
 .DS_Store
 .sass-cache
+.idea
 content
 
 bower_components
