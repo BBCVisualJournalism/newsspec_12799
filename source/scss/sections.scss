@@ -252,3 +252,19 @@
 .bbc-news-vj-language--uzbek .boat__image {
     background-image: url('#{$projectassets}/img/boat_uzbek_1040.jpg?v=#{$version}');
 }
+
+.bbc-news-vj-wrapper--embed {
+    .section {
+        .bbc-news-vj-video {
+            &__overlay {
+                &__play {
+                    padding-left: 0.3vh;
+                }
+
+                &__text {
+                    margin-left: 0.5vh;
+                }
+            }
+        }
+    }
+}
