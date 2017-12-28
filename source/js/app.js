@@ -1,7 +1,7 @@
 import * as wrapper from 'wrapper';
 import $ from 'jquery';
 import ShareTools from 'ShareTools';
-import ShareTemplate from 'ShareToolsTemplate';
+import ShareToolsTemplateForSport from 'ShareToolsTemplateForSport';
 import pubsub from './pubsub';
 import vocabs from './vocabs';
 import istatsLogger from './istatsLogger';
@@ -109,7 +109,7 @@ function initShareTools() {
                 },
             },
         },
-        template: ShareTemplate,
+        template: ShareToolsTemplateForSport,
     };
 
     if (wrapper.wrapper === 'app') {

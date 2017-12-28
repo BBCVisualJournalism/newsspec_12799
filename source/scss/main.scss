@@ -1,8 +1,7 @@
 @import "variables.scss";
 @import "./../../node_modules/normalize-scss/sass/_normalize.scss";
 @import "./../../node_modules/@bbc/news-vj-css-defaults/css/main";
-@import "./../../node_modules/@bbc/news-vj-sharetools/bin/templates/dropdown/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
-
+@import "./../../node_modules/@bbc/news-vj-sharetools/bin/templates/buttons/share.scss";
 @import "../../node_modules/@bbc/news-vj-component-html/blockquote/blockquote";
 
 $version: "0.1.89";

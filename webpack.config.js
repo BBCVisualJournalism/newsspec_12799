@@ -14,7 +14,7 @@ const config = {
             jquery: `${__dirname}/node_modules/jquery/dist/jquery.min`,
             template_engine: `${__dirname}/node_modules/template_engine/template_engine`,
             ShareTools: `${__dirname}/node_modules/@bbc/news-vj-sharetools/bin/sharetools.min`,
-            ShareToolsTemplate: `${__dirname}/node_modules/@bbc/news-vj-sharetools/bin/templates/dropdown/template`,
+            ShareToolsTemplateForSport: `${__dirname}/node_modules/@bbc/news-vj-sharetools/bin/templates/buttons/template`,
         },
         modules: [
             `${__dirname}source/js`,
