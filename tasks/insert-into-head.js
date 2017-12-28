@@ -93,9 +93,7 @@ module.exports = function (grunt) {
                 const vocabs = [];
                 for (let i = 0; i < items.length; i++) {
                     const vocab = items[i].replace('.json', '');
-                    if (vocab !== 'core') {
-                        vocabs.push(vocab);
-                    }
+                    vocabs.push(vocab);
                 }
                 return resolve(vocabs);
             })
@@ -106,10 +104,14 @@ module.exports = function (grunt) {
     function getAvailableWrappers() {
         const wrappers = [].concat(config.wrappers);
         if (!config.debug) {
-            const index = wrappers.indexOf('full-width');
-            if (index > -1) {
-                wrappers.splice(index, 1);
+            const fullWidthIndex = wrappers.indexOf('full-width');
+            if (fullWidthIndex > -1) {
+                wrappers.splice(fullWidthIndex, 1);
             }
+        }
+        const coreIndex = wrappers.indexOf('core');
+        if (coreIndex > -1) {
+            wrappers.splice(coreIndex, 1);
         }
         return wrappers;
     }
