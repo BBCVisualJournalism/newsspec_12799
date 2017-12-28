@@ -8,6 +8,18 @@ module.exports = function (grunt) {
 
     grunt.registerTask('insert-into-head', function () {
         const done = this.async();
+        runTask(done);
+    });
+
+    grunt.event.on('watch', function (action, filepath) {
+        if (!filepath.endsWith('.inc') && !filepath.endsWith('.hbs')) {
+            return;
+        }
+        setTimeout(runTask.bind(null, () => {
+        }), 3000);
+    });
+
+    function runTask(done) {
         const content = `\n
             <script src="//static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.9.1.js?v=0.1.89"></script>
             <script src="//emp.bbci.co.uk/emp/bump-3/bump-3.js?v=0.1.89"></script>
@@ -22,17 +34,7 @@ module.exports = function (grunt) {
             grunt.log.error(err);
             done();
         });
-    });
-
-    /*
-    grunt.event.on('watch', function (action, filepath) {
-        if (!filepath.endsWith('.inc') && !filepath.endsWith('.hbs')) {
-            return;
-        }
-        onChange();
-    });
-    */
-
+    }
 
     function getAllDestinations() {
         const wrappers = getAvailableWrappers();
