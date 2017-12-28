@@ -44,7 +44,12 @@ module.exports = function (grunt) {
             vocabs.forEach((vocab) => {
                 const pathToVocabDestination = `${config.outputPath}/${vocab}/main`;
                 wrappers.forEach((wrapper) => {
-                    const destination = `${pathToVocabDestination}/test--${wrapper}.html`;
+                    let destination;
+                    if (wrapper === 'embed') {
+                        destination = `${pathToVocabDestination}/pym-iframe.html`;
+                    } else {
+                        destination = `${pathToVocabDestination}/test--${wrapper}.html`;
+                    }
                     destinations.push(destination);
                 });
             });
@@ -87,7 +92,10 @@ module.exports = function (grunt) {
 
                 const vocabs = [];
                 for (let i = 0; i < items.length; i++) {
-                    vocabs.push(items[i].replace('.json', ''));
+                    const vocab = items[i].replace('.json', '');
+                    if (vocab !== 'core') {
+                        vocabs.push(vocab);
+                    }
                 }
                 return resolve(vocabs);
             })
