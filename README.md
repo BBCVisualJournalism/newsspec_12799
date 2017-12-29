@@ -16,6 +16,14 @@ Compile the project:
 
 `compile.js`
 
+## Gotchas
+The `insert-into-head` grunt task injects `bump-3` and its dependency `jQuery-1.9.1` 
+into the generated `pym-iframe.html` file by default.
+<br/>
+
+It also injects it into the generated `test--full-width.html` file when `debug` is set to true in `config.js`,
+so remember to set it to false before building for deployment. 
+
 ## Deployment
 
 Deploy your project (uses Sling under the hood):
