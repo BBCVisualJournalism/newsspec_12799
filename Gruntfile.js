@@ -2,11 +2,12 @@
 module.exports = function (grunt) {
     const path = require('path');
     const os = require('os');
+    const rootConfig = grunt.file.readJSON('config.json');
     const config = {
         pkg: grunt.file.readJSON('package.json'),
-        config: grunt.file.readJSON('config.json'),
+        config: rootConfig,
         translations: grunt.file.readJSON('node_modules/@bbc/news-vj-ws-config/config.json'),
-        env: getEnvData(grunt.file.readJSON('config.json')),
+        env: getEnvData(rootConfig),
     };
 
     function getEnvData(config) {
