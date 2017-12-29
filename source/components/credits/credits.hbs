@@ -6,6 +6,13 @@
             <h2>{{ vocab.credits_title }}</h2>
             <p>{{ vocab.credits }}</p>
 
+            <h2>
+                {{#if vocabs.share_header}}
+                    {{ vocabs.share_header }}
+                {{else}}
+                    Share this page
+                {{/if}}
+            </h2>
             <div class="share__holder"></div>
             <p style="clear:both;">
                 <a href="{{ vocab.about_sharing_link }}">{{ vocab.about_sharing_label }}</a>
