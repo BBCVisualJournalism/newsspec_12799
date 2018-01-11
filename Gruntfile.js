@@ -1,38 +1,41 @@
-/*jshint es3: false */
+/* jshint es3: false */
 module.exports = function (grunt) {
+    const path = require('path');
+    const os = require('os');
+    const rootConfig = grunt.file.readJSON('config.json');
+    const config = {
+        pkg: grunt.file.readJSON('package.json'),
+        config: rootConfig,
+        translations: grunt.file.readJSON('node_modules/@bbc/news-vj-ws-config/config.json'),
+        env: getEnvData(rootConfig),
+    };
 
-    var path = require('path');
-
-    function getEnvData() {
-        var env = {
-            'local': {
-                'domain':       'http://local.bbc.co.uk:1031',
-                'domainStatic': 'http://static.local.bbc.co.uk:1033'
-            }
+    function getEnvData(config) {
+        let env = {
+            local: {
+                domain: 'http://www.local.bbc.co.uk:1031',
+                domainStatic: 'http://static.local.bbc.co.uk:1031',
+            },
         };
-        var environmentFilePath = path.join(__dirname, '../../env.json');
+        const environmentFilePath = path.join(os.homedir(), config.envJsonRelativeToHomeDirectory);
         if (grunt.file.exists(environmentFilePath)) {
             env = grunt.file.readJSON(environmentFilePath);
         }
         else {
-            grunt.log.warn('env.json was NOT found at the following location: ' + environmentFilePath);
+            grunt.log.warn(`env.json was NOT found at the following location: ${environmentFilePath}`);
             grunt.log.ok('Using hardcoded JSON in Gruntfile.js instead!');
         }
         return env;
     }
 
-    var config = {
-        env:          getEnvData(),
-        pkg:          grunt.file.readJSON('package.json'),
-        config:       grunt.file.readJSON('config.json'),
-        translations: grunt.file.readJSON('bower_components/news-vj-ws-config/config.json')
-    };
-
-    config.config.wrapperPrefix = 'node_modules/developer-scaffold-' + config.config.wrapper + '-wrapper/';
-
     require('time-grunt')(grunt);
     grunt.initConfig(config);
-    config.wrapper = require('./' + config.config.wrapperPrefix + 'Gruntfile.js')(grunt, config);
-    grunt.config('wrapper', config.wrapper);
+    const taskDirs = grunt.file.expand('node_modules/@bbc/news-vj-build-tasks/tasks/**');
+    taskDirs.forEach((taskDir) => {
+        grunt.loadTasks(taskDir);
+    });
     grunt.loadTasks('tasks');
+    for (let i = 0; i < config.config.wrappers.length; i++) {
+        grunt.loadNpmTasks(`@bbc/developer-scaffold-${config.config.wrappers[i]}-wrapper`);
+    }
 };

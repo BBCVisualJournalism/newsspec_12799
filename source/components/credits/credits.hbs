@@ -1,0 +1,52 @@
+<div class="section section--footer" id="section--footer">
+
+    <div class="bbc-news-vj-grid-wrapper">
+        <div class="bbc-news-vj-grid-wrapper__fluid-inner">
+            <div class="ns_creditsLineThin"></div>
+            <h2>{{ vocab.credits_title }}</h2>
+            <p>{{ vocab.credits }}</p>
+
+            <h2>
+                {{#if vocabs.share_header}}
+                    {{ vocabs.share_header }}
+                {{else}}
+                    Share this page
+                {{/if}}
+            </h2>
+            <div class="share__holder"></div>
+            <p style="clear:both;">
+                <a href="{{ vocab.about_sharing_link }}">{{ vocab.about_sharing_label }}</a>
+            </p>
+
+            <div class="ns_onward-journeys">
+                <div class="ns_creditsLineThick"></div>
+                <h2>{{ vocab.onward_journeys_title }}</h2>
+                <div class="ns_creditsLineThin"></div>
+
+                <div class="ns_onward-journeys-inner">
+                    <ul>
+                        <li class="ns_onward-journeys-list-one">
+                            <a href="{{ vocab.onward_journey_url_1 }}">
+                                <img src="{{ vocab.onward_journey_img_url_1 }}" alt="{{ vocab.onward_journey_text_1 }}">
+                                <span>{{ vocab.onward_journey_text_1 }}</span>
+                            </a>
+                        </li>
+                        <li class="ns_onward-journeys-list-two">
+                            <a href="{{ vocab.onward_journey_url_2 }}">
+                                <img src="{{ vocab.onward_journey_img_url_2 }}" alt="{{ vocab.onward_journey_text_2 }}">
+                                <span>{{ vocab.onward_journey_text_2 }}</span>
+                            </a>
+                        </li>
+                        <li class="ns_onward-journeys-list-three">
+                            <a href="{{ vocab.onward_journey_url_3 }}">
+                                <img src="{{ vocab.onward_journey_img_url_3 }}" alt="{{ vocab.onward_journey_text_3 }}">
+                                <span>{{ vocab.onward_journey_text_3 }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

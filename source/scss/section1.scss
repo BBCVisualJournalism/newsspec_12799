@@ -1,13 +1,17 @@
 .section--one {
-    margin-top:40px;
+    margin-top: 40px;
+
     .intro--stat {
-        font-size:1.45em;
+        font-size: 1.45em;
+
         &--one {
-            margin-bottom:0.25em;
+            margin-bottom: 0.25em;
         }
+
         &--two {
-            margin-top:0;
+            margin-top: 0;
         }
+
         .red-text {
             color: #c00;
             font-weight: bold;
@@ -20,12 +24,14 @@
     font-size: 14px;
     margin-bottom: 1.5em;
     padding: 0;
+
     &__border {
         border-bottom: 1px solid #dcdcdc;
         padding-top: 8px;
-        @media (min-width: 1280px){
+
+        @media (min-width: 1280px) {
             border: none;
-            padding:0;
+            padding: 0;
         }
     }
 
@@ -36,30 +42,35 @@
         margin-bottom: 6px;
         padding-right: 0.5em;
         position: relative;
+
         &:last-child {
             border: none;
             margin-right: 0;
             padding-right: 0;
         }
+
         &--author {
             font-weight: normal;
         }
+
         &--role {
             color: #999;
-            display:block;
+            display: block;
             word-wrap: break-word;
             word-break: break-word;
         }
+
         &--timestamp {
             border-right: 1px solid #dcdcdc;
-            clear:both;
+            clear: both;
             display: block;
-            float:left;
+            float: left;
             padding-left: 1.375em;
-            &:before {
+
+            &::before {
                 content: '';
                 display: block;
-                background: url('../img/boilerplate-icons-sprite.png') no-repeat -10px -4010px;
+                background: url('#{$projectassets}/img/boilerplate-icons-sprite.png') no-repeat -10px -4010px;
                 width: 13px;
                 height: 16px;
                 position: absolute;
@@ -67,17 +78,22 @@
                 top: 1px;
             }
         }
+
         &--topic {
-            display:none;
+            display: none;
             float: left;
             margin-left: 6px;
         }
+
         &--topic a {
             color: #c00;
             text-decoration: none;
             font-weight: normal;
             border: none;
-            &:active, &:focus, &:hover {
+
+            &:active,
+            &:focus,
+            &:hover {
                 color: #c00;
             }
         }
@@ -88,22 +104,27 @@
         border-bottom: none;
         border-right: 1px solid #dcdcdc;
         margin: 0;
-        max-width:170px;
+        max-width: 170px;
         position: absolute;
         left: 0;
+
         &__item {
-            margin-left:-10px;
+            margin-left: -10px;
+
             &--timestamp {
                 border-right: 1px solid #dcdcdc;
                 margin-right: 6px;
             }
+
             &--author {
                 display: block;
                 float: none;
             }
+
             &--role {
                 float: none;
             }
+
             &--topic {
                 margin-left: 0;
             }
@@ -115,6 +136,7 @@
     .meta-list__item--topic {
         display: inherit;
     }
+
     .meta-list__item--timestamp {
         border-left: none;
     }
@@ -126,9 +148,9 @@
 
 .bbc-news-vj-wrapper .hero-stat {
     width: 100%;
-    &:before {
-        content: '';
-        // background-image: url(../img/1_death/buildings.png);
+
+    &::before {
+        content: ''; // background-image: url(#{$projectassets}/img/1_death/buildings.png);
         background-size: contain;
         background-repeat: no-repeat;
         width: 193.5px;
@@ -136,22 +158,25 @@
         position: absolute;
         top: -48px;
     }
+
     &__title-one {
         font-size: 1.25em;
     }
+
     &__title-two {
         font-size: 1.25em;
     }
+
     &__title--stat {
         font-weight: 800;
     }
 }
 
-
 .bbc-news-vj-direction--rtl {
     .meta-list {
         right: -30px;
     }
+
     .meta-list__item--timestamp {
         border-right: none;
         border-left: 1px solid #dcdcdc;
@@ -159,19 +184,23 @@
         float: right;
         padding-right: 20px;
         padding-left: 12px;
-        @media (min-width: 1280px){
+
+        @media (min-width: 1280px) {
             border: none;
             padding-right: 24px;
             padding-left: 20px;
         }
     }
+
     .meta-list__item--timestamp::before {
-        left:auto;
-        right:0;
-        @media (min-width: 1280px){
-            padding-right:18px;
+        left: auto;
+        right: 0;
+
+        @media (min-width: 1280px) {
+            padding-right: 18px;
         }
     }
+
     .meta-list__item--topic {
         float: right;
     }

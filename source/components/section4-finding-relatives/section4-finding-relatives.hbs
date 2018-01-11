@@ -1,24 +1,24 @@
 <section class="section section--four"  id="section--four">
 
-    <img id="turkey-cemetary__image" src="<%= pathStatic %>/common/img/turkey_cemetery_1400.jpg" alt="<%= section4_img1_alt_text %>" width="100%" />
+    <img id="turkey-cemetary__image" src="{{ projectAssets }}/img/turkey_cemetery_1400.jpg" alt="{{ vocab.section4_img1_alt_text }}" width="100%" />
 
     <div class="bbc-news-vj-grid-wrapper">
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
-            <h2><%= section4_title %></h2>
+            <h2>{{ vocab.section4_title }}</h2>
         </div>
     </div>
 
     <div class="bbc-news-vj-grid-wrapper">
             <div class="bbc-news-vj-grid-wrapper__fluid-inner">
-                <p><%= section4_para_1 %></p>
+                <p>{{{ vocab.section4_para_1 }}}</p>
         </div>
     </div>
 
     <div class="bbc-news-vj-grid-wrapper">
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
-            <p><%= section4_para_2 %></p>
-            <p><%= section4_para_3 %></p>
-            <p><%= section4_para_4 %></p>
+            <p>{{{ vocab.section4_para_2 }}}</p>
+            <p>{{{ vocab.section4_para_3 }}}</p>
+            <p>{{{ vocab.section4_para_4 }}}</p>
         </div>
     </div>
 
@@ -28,8 +28,8 @@
             <div class="bbc-news-vj-video__overlay bbc-news-vj-video__overlay--hidden">
                 <button class="bbc-news-vj-video__overlay__play" aria-label="Play"></button>
                 <div class="bbc-news-vj-video__overlay__text">
-                    <div class="bbc-news-vj-video__overlay__text__title"><%= section5_video_title %></div>
-                    <div class="bbc-news-vj-video__overlay__text__summary"><%= section5_video_summary %></div>
+                    <div class="bbc-news-vj-video__overlay__text__title">{{ vocab.section5_video_title }}</div>
+                    <div class="bbc-news-vj-video__overlay__text__summary">{{ vocab.section5_video_summary }}</div>
                 </div>
             </div>
         </div>
@@ -37,17 +37,17 @@
 
     <div class="bbc-news-vj-grid-wrapper">
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
-            <p><%= section4_para_5 %></p>
-            <p><%= section4_para_6 %></p>
+            <p>{{{ vocab.section4_para_5 }}}</p>
+            <p>{{{ vocab.section4_para_6 }}}</p>
 
             <blockquote class="bbcquote">
-                <%= section_4_blockquote %>
-                <cite class="bbcquote__cite"><%= section_4_blockquote_credit %></cite>
+                {{ vocab.section_4_blockquote }}
+                <cite class="bbcquote__cite">{{ vocab.section_4_blockquote_credit }}</cite>
             </blockquote>
 
-            <p><%= section4_para_7 %></p>
-            <p><%= section4_para_8 %></p>
-            <p><%= section4_para_9 %></p>
+            <p>{{{ vocab.section4_para_7 }}}</p>
+            <p>{{{ vocab.section4_para_8 }}}</p>
+            <p>{{{ vocab.section4_para_9 }}}</p>
         </div>
     </div>
 

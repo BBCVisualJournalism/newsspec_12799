@@ -3,33 +3,33 @@
         <div class="bbc-news-vj-grid-wrapper__fluid-inner">
 
             <ul class="meta-list">
-                <span class="meta-list__item meta-list__item--author"><%= author_name %></span>
-                <span class="meta-list__item meta-list__item--role"><%= bbc_news %></span>
-                <time class="meta-list__item meta-list__item--timestamp" datetime="2016-04-01"><%= timestamp %></time>
+                <span class="meta-list__item meta-list__item--author">{{ vocab.author_name }}</span>
+                <span class="meta-list__item meta-list__item--role">{{ vocab.bbc_news }}</span>
+                <time class="meta-list__item meta-list__item--timestamp" datetime="2016-04-01">{{ vocab.timestamp }}</time>
                 <span class="meta-list__item meta-list__item--topic">
-                    <a href="<%= topic_link %>"><%= topic_label %></a>
+                    <a href="{{ vocab.topic_link }}">{{ vocab.topic_label }}</a>
                 </span>
             </ul>
             <div class="meta-list__border clearfix"></div>
 
             <p class="intro">
-                <%= intro_para_1 %>
+                {{ vocab.intro_para_1 }}
             </p>
             <p>
-                <%= intro_para_2 %>
+                {{ vocab.intro_para_2 }}
             </p>
              <p>
-                <%= intro_para_3 %>
+                {{ vocab.intro_para_3 }}
             </p>
              <p>
-                <%= intro_para_4 %>
+                {{ vocab.intro_para_4 }}
             </p>
 
             <p class="intro--stat intro--stat--one">
-                <%= stat_text_1 %>
+                {{{ vocab.stat_text_1 }}}
             </p>
             <p class="intro--stat intro--stat--two">
-                <%= stat_text_2 %>
+                {{{ vocab.stat_text_2 }}}
             </p>
 
         </div>

@@ -1,13 +1,14 @@
-@import "./../../bower_components/normalize-scss/_normalize.scss";
-@import "./../../bower_components/news-vj-css-defaults/css/main";
-@import "./../../bower_components/sharetools/bin/templates/buttons/share.scss"; // Developer: choose your sharetools of choice ('dropdown', 'buttons'). This should match the ShareToolsTemplate value in config.json
+@import "variables.scss";
+@import "./../../node_modules/@bbc/news-vj-css-defaults/css/main";
+@import "./../../node_modules/@bbc/news-vj-sharetools/bin/templates/buttons/share.scss";
+@import "../../node_modules/@bbc/news-vj-component-html/blockquote/blockquote";
 
 $version: "0.1.89";
 
 // YOUR APPLICATION CSS GOES BELOW
 
 .bbc-news-vj-wrapper {
-    position:relative;
+    position: relative;
 }
 
 .bbc-news-vj-wrapper .section--method p {
@@ -26,11 +27,10 @@ $version: "0.1.89";
 @import "quotes";
 @import "charts";
 @import "credits";
-
-.bbc-news-vj-wrapper--js-enabled {}
+@import "_grid";
+@import "_font_sizes";
 
 .bbc-news-vj-wrapper--map-enabled {
-
     .section .graveyard-map__overlay,
     .section .graveyard-map__footer {
         display: block;
@@ -38,14 +38,14 @@ $version: "0.1.89";
 
     .section .graveyard-map,
     .section .graveyard-map__canvas {
-        height:800px;
+        height: 800px;
     }
 
     .section .graveyard-map--one,
     .section .graveyard-map--two,
     .section .graveyard-map--three {
         background-image: none;
-        padding-bottom:0;
+        padding-bottom: 0;
     }
 
     // added responsive sizing of map containers
@@ -54,21 +54,43 @@ $version: "0.1.89";
 
     .section .graveyard-map--two { height: 290px; }
     .section .graveyard-map--three { height: 460px; }
+
     @media (min-width: 320px) {
         .section .graveyard-map--two { height: 590px; }
     }
+
     @media (min-width: 460px) {
-        .section .graveyard-map--one__container { display: block; }
-        .section .graveyard-map--one { display: block; height: 460px; }
-        .section .graveyard-map--two { height: 460px; }
-        .section .graveyard-map--three { height: 360px; }
-    }
-    @media (min-width: 850px) {
-        .section .graveyard-map--two { height: 800px; }
-    }
-    @media (min-width: 870px) {
-        .section .graveyard-map--one { height: 640px; }
-        .section .graveyard-map--three { height: 660px; }
+        .section .graveyard-map--one__container {
+            display: block;
+        }
+
+        .section .graveyard-map--one {
+            display: block;
+            height: 460px;
+        }
+
+        .section .graveyard-map--two {
+            height: 460px;
+        }
+
+        .section .graveyard-map--three {
+            height: 360px;
+        }
     }
 
+    @media (min-width: 850px) {
+        .section .graveyard-map--two {
+            height: 800px;
+        }
+    }
+
+    @media (min-width: 870px) {
+        .section .graveyard-map--one {
+            height: 640px;
+        }
+
+        .section .graveyard-map--three {
+            height: 660px;
+        }
+    }
 }

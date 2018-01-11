@@ -1,38 +1,34 @@
-# newsspec-12799: unmarked_graves
+[![Built with `generator-vj-include` v8.3.0](https://img.shields.io/badge/vj_include-8.3.0-blue.svg)](https://github.com/bbc/news-vj-developer-scaffold)
 
-VJ project
+# newsspec-12799
 
-## Getting started
+Description TBC
 
-Automated install:
+## Setup
 
-```
-scaffold_install
-```
+`npm i` if you haven't already.
 
-(Or install manually - `npm install` in the project root and in the root of every developer-scaffold wrapper in the node_modules/ directory.)
+## Development
+
+Make any tweaks you need to the output. Consider making a Pull Request back to the include generator if the default was not good enough for your requirements.
 
 Compile the project:
 
-```
-grunt
-```
+`compile.js`
 
-If you've added images:
+## Gotchas
+The `insert-into-head` grunt task injects `bump-3` and its dependency `jQuery-1.9.1` 
+into the generated `pym-iframe.html` file by default.
+<br/>
 
-```
-grunt images
-```
+It also injects it into the generated `test--full-width.html` file when `debug` is set to true in `config.js`,
+so remember to set it to false before building for deployment. 
 
-Build World Service version:
+## Deployment
 
-```
-grunt translate
-```
+Deploy your project (uses Sling under the hood):
 
-## Developer scaffold
-
-This project was built using the [developer scaffold](https://github.com/bbc/news-vj-developer-scaffold) version 1.1.1.
+`deploy.js --env=aws-test`
 
 ## License
-Copyright (c) 2016 BBC 
+Copyright (c) 2017 BBC

@@ -1,0 +1,9 @@
+{{> hero }}
+{{> section1-intro }}
+{{> section2-drone-maps }}
+{{> section3-case-study }}
+{{> section4-finding-relatives }}
+{{> section5 }}
+{{> methodology }}
+{{> credits }}
+{{> vocabs }}

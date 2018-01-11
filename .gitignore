@@ -1,9 +1,14 @@
 .DS_Store
 .sass-cache
+.idea
 content
 
 bower_components
 node_modules
 npm-debug.log
 
+# temporary directories used by the scaffold
 tmp
+
+# generated output directory
+include

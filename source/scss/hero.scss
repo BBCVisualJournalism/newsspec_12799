@@ -3,15 +3,16 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    background-image: url('../img/italy_graves_intro_1400.jpg');
+    background-image: url('#{$projectassets}/img/italy_graves_intro_1400.jpg');
     height: 0;
     padding-bottom: 55%;
     position: relative;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
-       @media (max-aspect-ratio: 1/1) {
+    width: 100%;
+
+    @media (max-aspect-ratio: 1/1) {
         padding-bottom: 100%;
     }
 
@@ -53,74 +54,72 @@
 
     &__titles {
         background-color: #fff;
-        bottom:0;
+        bottom: 0;
         color: #000;
         // text-shadow: 0.0625em 0.0625em 0.25em #000;
         left: 8px;
         right: 8px;
-        margin:0 auto;
-        padding:18px;
-        padding-bottom:0;
-        position:absolute;
+        margin: 0 auto;
+        padding: 18px;
+        padding-bottom: 0;
+        position: absolute;
         text-align: left;
+
         @media (min-width: 400px) {
-            left:  16px;
+            left: 16px;
             right: 16px;
         }
+
         // to do
         @media (min-width: 600px) {
-            left:  16px;
+            left: 16px;
             right: 16px;
         }
 
         @media (min-width: 700px) {
             padding-bottom: 0;
         }
+
         @media (min-width: 1008px) {
-            padding:16px;
+            padding: 16px;
         }
-        @media (min-width: 1280px) {
-        }
-
-
 
         @media (min-width: 280px) {
-            max-width:290px;
+            max-width: 290px;
         }
 
         @media (min-width: 350px) {
-            max-width:375px;
+            max-width: 375px;
         }
 
         @media (min-width: 415px) {
-            max-width:385px;
+            max-width: 385px;
         }
 
         @media (min-width: 545px) {
-            max-width:515px;
+            max-width: 515px;
         }
 
         @media (min-width: 600px) {
-            max-width:560px;
+            max-width: 560px;
         }
 
         @media (min-width: 700px) {
-            max-width:600px;
-            width:600px;
+            max-width: 600px;
+            width: 600px;
             padding: 22px;
-            padding-bottom:0;
+            padding-bottom: 0;
         }
 
         @media (min-width: 1008px) {
-            max-width:630px;
-            width:630px;
+            max-width: 630px;
+            width: 630px;
         }
 
         @media (min-width: 1280px) {
-            max-width:705px;
-            width:705px
+            max-width: 705px;
+            width: 705px;
         }
-
     }
 
     &__heading {
@@ -147,7 +146,7 @@
 
 .bbc-news-vj-direction--rtl {
     .hero__titles {
-        direction:rtl;
-        text-align:right;
+        direction: rtl;
+        text-align: right;
     }
 }
