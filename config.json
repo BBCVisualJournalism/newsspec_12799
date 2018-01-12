@@ -4,7 +4,7 @@
       "embed",
       "full-width"
   ],
-  "debug": "true",
+  "debug": "false",
   "fixLinting": "false",
   "outputPath": "include/newsspec/newsspec_12799",
   "envJsonRelativeToHomeDirectory": "Sites/bbc/news/special/env.json"
